@@ -1,3 +1,11 @@
 # data file
 data/
 ref/
+diffpool/model_param/
+diffpool/model_param_*/
+diffpool/try_param/
+
+GT_B_part/data/
+GT_B_part/diffpool/model_param/
+GT_B_part/diffpool/model_param_*/
+GT_B_part/diffpool/try_param/
