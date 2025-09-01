@@ -4,7 +4,10 @@ ref/
 diffpool/model_param/
 diffpool/model_param_*/
 diffpool/try_param/
+diffpool/bk/
 
+bk/
+GT_B_part/
 GT_B_part/data/
 GT_B_part/diffpool/model_param/
 GT_B_part/diffpool/model_param_*/
