@@ -34,6 +34,7 @@ class DiffPool(nn.Module):
         aggregator_type,
         assign_dim,
         pool_ratio,
+        custom_loss_weight,
         cat=False,
     ):
         super(DiffPool, self).__init__()
@@ -43,6 +44,7 @@ class DiffPool(nn.Module):
         self.batch_size = batch_size
         self.link_pred_loss = []
         self.entropy_loss = []
+        self.custom_loss_weight = custom_loss_weight
 
         # list of GNN modules before the first diffpool operation
         self.gc_before_pool = nn.ModuleList()
@@ -240,8 +242,7 @@ class DiffPool(nn.Module):
         # criterion = nn.CrossEntropyLoss(weight=torch.tensor([1, 2.6, 17.6, 4, 16, 40, 4, 80, 20, 2.2]).cuda()) # 没数据增强-old
         # criterion = nn.CrossEntropyLoss(weight=torch.tensor([1, 2.4, 20, 6.4, 10.4, 44.8, 3, 102.4, 23.2, 2.4]).cuda()) # 数据增强-old
         # criterion = nn.CrossEntropyLoss(weight=torch.tensor([1.0, 3.0, 23.0, 8.0, 17.0, 69.0, 4.0, 102.0, 29.0, 3.0]).cuda()) # 没数据增强-快速收敛测试
-        criterion = nn.CrossEntropyLoss(weight=torch.tensor([2.42,6.37,47.9,16.0,33.7,138.0,8.59,224.0,57.4,5.85]).cuda()) # 10 fold train-2025/06/12
-        # criterion = nn.CrossEntropyLoss()
+        criterion = nn.CrossEntropyLoss(weight=torch.tensor(self.custom_loss_weight).cuda()) # 支持外部传输的损失权重
         loss = criterion(pred, label)
         for key, value in self.first_diffpool_layer.loss_log.items():
             loss += value
