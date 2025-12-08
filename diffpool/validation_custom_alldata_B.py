@@ -143,7 +143,7 @@ def train(dataset, model, prog_args, val_dataset=None):
 
 
 # fold_num = 1
-# family_fold_type = 'GTB'
+# family_fold_type = 'GTA'
 # 获取命令行参数
 args = sys.argv[1:]
 fold_num = int(args[0].strip())
@@ -153,38 +153,34 @@ print("{:=^100}".format(f'fold num is : {fold_num}, family type is : {family_fol
 
 print("{:=^100}".format('prog_args'))
 prog_args = argparse.Namespace(dataset=f'GTmining_6_6_{family_fold_type}_fold{fold_num}', pool_ratio=0.10, num_pool=1, cuda=1, lr=1.0, clip=float("inf"),
-                               batch_size=128, epoch=500, n_worker=10, gc_per_block=3, aggregator_type="meanpool",
-                               dropout=0.00, method="diffpool", bn=True, bias=True, save_dir=f"./model_param",
+                               batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type="meanpool",
+                               dropout=0.00, method="diffpool", bn=True, bias=True, save_dir=f"./model_param_alldata",
                                load_epoch=-1, data_mode="default", linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type=family_fold_type)
 print( textwrap.fill(str(prog_args), width=100))
 
 print("{:=^100}".format('加载数据'))
 dataset_train = tu.RhaFinderDataset(name="GTmining",
-                                    raw_dir=f'../data/dl_data/{family_fold_type}/fold{fold_num}/train/')
+                                    raw_dir=f'../data/dl_data/{family_fold_type}_alldata/fold{fold_num}/train/')
 dataset_validation = tu.RhaFinderDataset(name="GTmining",
-                                   raw_dir=f'../data/dl_data/{family_fold_type}/fold{fold_num}/validation/')
+                                   raw_dir=f'../data/dl_data/{family_fold_type}_alldata/fold{fold_num}/validation/')
 dataset_test = tu.RhaFinderDataset(name="GTmining",
-                                   raw_dir=f'../data/dl_data/{family_fold_type}/fold{fold_num}/test/')
-dataset_nova = tu.RhaFinderDataset(name="GTmining",
-                                   raw_dir=f'../data/dl_data/{family_fold_type}/fold{fold_num}/nova/')
+                                   raw_dir=f'../data/dl_data/{family_fold_type}_alldata/fold{fold_num}/test/')
 train_dataloader = prepare_data(dataset_train, shuffle=True, prog_args=prog_args)
 validation_dataloader = prepare_data(dataset_validation, shuffle=False, prog_args=prog_args)
 test_dataloader = prepare_data(dataset_test, shuffle=False, prog_args=prog_args)
-nova_dataloader = prepare_data(dataset_nova, shuffle=False, prog_args=prog_args)
 
 
 input_dim_train, label_dim_train, max_num_node_train = dataset_train.statistics()
 input_dim_validation, label_dim_validation, max_num_node_validation = dataset_validation.statistics()
 input_dim_test, label_dim_test, max_num_node_test = dataset_test.statistics()
-input_dim_nova, label_dim_nova, max_num_node_nova = dataset_nova.statistics()
-max_num_node = max([max_num_node_train, max_num_node_validation, max_num_node_test, max_num_node_nova])
+max_num_node = max([max_num_node_train, max_num_node_validation, max_num_node_test])
 input_dim = input_dim_train
 label_dim = label_dim_train
 print("++++++++++ STATISTICS ABOUT THE DATASET ++++++++++")
 print("dataset feature dimension is", input_dim_train)
 print("dataset label dimension is", label_dim_train)
 print("the max num node is", max_num_node)
-print("number of graphs is", len(dataset_train) + len(dataset_validation)+ len(dataset_test)+ len(dataset_nova))
+print("number of graphs is", len(dataset_train) + len(dataset_validation)+ len(dataset_test))
 
 hidden_dim = prog_args.hidden_dim  # used to be 64
 embedding_dim = prog_args.embedding_dim
@@ -243,7 +239,112 @@ print("MODEL:::::::", prog_args.method)
 if prog_args.cuda:
     model = model.cuda()
 
+def evaluate(dataloader, model, label_dim=None):
+    """
+    evaluate function
+    """
+    model.eval()
+    correct_label = 0
+    with torch.no_grad():
+        val_pred_indi = torch.tensor([], device='cuda')
+        val_label_indi = torch.tensor([], device='cuda')
+        for batch_idx, (batch_graph, graph_labels) in enumerate(dataloader):
+            for key, value in batch_graph.ndata.items():
+                batch_graph.ndata[key] = value.float()
+            graph_labels = graph_labels.long()
+            if torch.cuda.is_available():
+                batch_graph = batch_graph.to(torch.cuda.current_device())
+                graph_labels = graph_labels.cuda()
+            ypred = model(batch_graph)
+            indi = torch.argmax(ypred, dim=1)
+            val_pred_indi = torch.cat((val_pred_indi, indi), dim=0)
+            val_label_indi = torch.cat((val_label_indi, graph_labels), dim=0)
+            correct = torch.sum(indi == graph_labels)
+            correct_label += correct.item()
+        val_f1_score = f1_score(val_pred_indi.cpu(), val_label_indi.cpu(), average='macro')
 
-logger = train(
-    train_dataloader, model, prog_args, val_dataset=test_dataloader
-)
+        # 用来解决可能缺少类的问题
+        addition_list = torch.tensor([x for x in range(label_dim)], device='cuda')
+        val_pred_indi = torch.cat((val_pred_indi, addition_list), dim=0)
+        val_label_indi = torch.cat((val_label_indi, addition_list), dim=0)
+
+        val_f1_score_classes = f1_score(val_pred_indi.cpu(), val_label_indi.cpu(), average=None)
+    result = correct_label / len(dataloader.dataset)
+    return result, val_f1_score, val_f1_score_classes
+
+
+# 先过一遍train_dataloader，让模型中的一些参数先初始化一下
+model.train()
+for batch_idx, (batch_graph, graph_labels) in enumerate(train_dataloader):
+    for key, value in batch_graph.ndata.items():
+        batch_graph.ndata[key] = value.float()
+    graph_labels = graph_labels.long()
+    if torch.cuda.is_available():
+        batch_graph = batch_graph.to(torch.cuda.current_device())
+        graph_labels = graph_labels.cuda()
+    ypred = model(batch_graph)
+    loss = model.loss(ypred, graph_labels)
+    loss.backward()
+    nn.utils.clip_grad_norm_(model.parameters(), max_norm=prog_args.clip)
+    model.zero_grad()
+
+
+f_validation_log = open(prog_args.save_dir + "/" + prog_args.dataset + "/validation_log.csv", 'w')
+
+def write_log_columns(temp_line, line_flag, data_log_type, label_dim_train):
+    temp_line = temp_line + f',{data_log_type}_accuracy,{data_log_type}_f1_score'
+    line_flag += 2
+    for x in range(label_dim_train):
+        temp_line = temp_line + f',{data_log_type}_f1_score_class_{x}'
+        line_flag += 1
+    return temp_line, line_flag
+
+temp_line = 'epoch'
+line_flag = 1
+temp_line, line_flag = write_log_columns(temp_line, line_flag, 'validation', label_dim_train)
+temp_line, line_flag = write_log_columns(temp_line, line_flag, 'test', label_dim_train)
+temp_line = temp_line + '\n'
+f_validation_log.write(temp_line)
+
+def evaluate_dataloader(dataloader, model, label_dim_train=None, temp_line=None, temp_line_flag=None):
+    result, val_f1_score, val_f1_score_classes = evaluate(dataloader, model, label_dim=label_dim_train)
+    temp_line = temp_line + f',{result* 100},{val_f1_score}'
+    temp_line_flag += 2
+    for x in val_f1_score_classes:
+        temp_line = temp_line + f',{x}'
+        temp_line_flag += 1
+    return temp_line, temp_line_flag
+
+if family_fold_type == 'GTA':
+    eee = 1000
+elif family_fold_type == 'GTB':
+    eee = 500
+else:
+    raise ValueError('SSSB')
+for epoch in range(0,eee):
+# for epoch in range(0,prog_args.epoch):
+# for epoch in range(0,10):
+    begin_time = time.time()
+    print("\nEPOCH ###### {} ######".format(epoch))
+    if epoch is not None and prog_args.save_dir is not None:
+        model.load_state_dict(
+            torch.load(
+                prog_args.save_dir
+                + "/"
+                + prog_args.dataset
+                + "/model.iter-"
+                + "{:04d}".format(epoch), weights_only=True
+            )
+        )
+    temp_line = f'{epoch}'
+    temp_line_flag = 1
+    temp_line, temp_line_flag = evaluate_dataloader(validation_dataloader, model, label_dim_train=label_dim_train, temp_line=temp_line, temp_line_flag=temp_line_flag)
+    temp_line, temp_line_flag = evaluate_dataloader(test_dataloader, model, label_dim_train=label_dim_train, temp_line=temp_line, temp_line_flag=temp_line_flag)
+    temp_line = temp_line + '\n'
+    assert temp_line_flag == line_flag, 'Wrong log line number, please check what happen.'
+    f_validation_log.write(temp_line)
+
+    elapsed_time = time.time() - begin_time
+    print("epoch {:.4f} with epoch time {:.4f} s".format(epoch, elapsed_time))
+
+f_validation_log.close()

@@ -208,7 +208,7 @@ for key in ['si', 'hbond', 'charge', 'hphob']:
 
 # Save data only if everything went well. 
 np.save(storage_filename, output_dict)
-print(f"Finished extract features from the strucutr {pdb_filename.rstrip('.pdb')}. Thanks for your using!")
+print(f"Finished extract features from the strucutr {pdb_filename.split('.pdb')[0]}. Thanks for your using!")
 
 
 

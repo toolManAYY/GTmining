@@ -64,7 +64,7 @@ vertex_normal = compute_normal(regular_mesh.vertices, regular_mesh.faces)
 vertex_hbond = assignChargesToNewMesh(regular_mesh.vertices, vertices1, vertex_hbond, masif_opts)
 vertex_hphobicity = assignChargesToNewMesh(regular_mesh.vertices, vertices1, vertex_hphobicity, masif_opts)
 
-vertex_charges = computeAPBS(regular_mesh.vertices, protonate_file, protonate_file.rstrip('.pdb'))
+vertex_charges = computeAPBS(regular_mesh.vertices, protonate_file, protonate_file.split('.pdb')[0])
 
 iface = np.zeros(len(regular_mesh.vertices))
 # Compute the surface of the entire complex and from that compute the interface.
@@ -87,7 +87,7 @@ save_ply(ply_filename, regular_mesh.vertices, regular_mesh.faces, normals=vertex
         charges=vertex_charges, normalize_charges=True, hbond=vertex_hbond, \
             hphob=vertex_hphobicity, iface=iface)
 
-print(f"Finished extract features from the strucutr {pdb_filename.rstrip('.pdb')}. Thanks for your using!")
+print(f"Finished extract features from the strucutr {pdb_filename.split('.pdb')[0]}. Thanks for your using!")
 
 
 
