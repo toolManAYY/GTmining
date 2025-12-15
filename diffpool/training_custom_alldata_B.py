@@ -159,11 +159,11 @@ prog_args = argparse.Namespace(dataset=f'GTmining_6_6_{family_fold_type}_fold{fo
 print( textwrap.fill(str(prog_args), width=100))
 
 print("{:=^100}".format('加载数据'))
-dataset_train = tu.RhaFinderDataset(name="GTmining",
+dataset_train = tu.LegacyTUDataset(name="GTmining",
                                     raw_dir=f'../data/dl_data/{family_fold_type}_alldata/fold{fold_num}/train/')
-dataset_validation = tu.RhaFinderDataset(name="GTmining",
+dataset_validation = tu.LegacyTUDataset(name="GTmining",
                                    raw_dir=f'../data/dl_data/{family_fold_type}_alldata/fold{fold_num}/validation/')
-dataset_test = tu.RhaFinderDataset(name="GTmining",
+dataset_test = tu.LegacyTUDataset(name="GTmining",
                                    raw_dir=f'../data/dl_data/{family_fold_type}_alldata/fold{fold_num}/test/')
 train_dataloader = prepare_data(dataset_train, shuffle=True, prog_args=prog_args)
 validation_dataloader = prepare_data(dataset_validation, shuffle=False, prog_args=prog_args)

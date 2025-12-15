@@ -2,6 +2,7 @@
 data/
 ref/
 diffpool/model_param/
+diffpool/result/
 diffpool/model_param_*/
 diffpool/try_param/
 diffpool/bk/
