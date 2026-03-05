@@ -1,7 +1,3239 @@
-===============================fold num is : 3, family type is : GTB================================
+Fold type GTA, Fold: 1, Top 100 Epochs: [672, 698, 723, 931, 883, 638, 940, 925, 600, 718, 839, 834, 885, 853, 970, 508, 917, 816, 868, 928, 721, 786, 918, 845, 686, 720, 610, 892, 678, 671, 629, 728, 647, 779, 734, 888, 890, 884, 900, 746, 752, 586, 939, 577, 830, 674, 824, 826, 961, 625, 953, 996, 719, 593, 924, 887, 916, 635, 755, 611, 948, 813, 732, 862, 683, 835, 736, 729, 999, 993, 944, 540, 988, 670, 743, 901, 954, 983, 778, 772, 827, 717, 656, 776, 608, 684, 812, 945, 690, 799, 825, 859, 715, 673, 615, 542, 921, 946, 739, 956]
+Fold type GTA, Fold: 2, Top 100 Epochs: [820, 883, 764, 822, 994, 851, 733, 746, 770, 732, 699, 972, 752, 782, 966, 868, 801, 876, 997, 795, 945, 862, 762, 629, 710, 810, 817, 993, 650, 644, 999, 970, 835, 808, 670, 859, 767, 895, 990, 991, 968, 772, 601, 901, 717, 934, 872, 819, 900, 903, 807, 974, 916, 826, 788, 695, 841, 785, 882, 850, 885, 909, 984, 566, 839, 815, 896, 651, 871, 944, 890, 743, 766, 992, 686, 910, 905, 860, 937, 932, 663, 996, 637, 891, 866, 734, 894, 971, 827, 730, 838, 735, 775, 792, 715, 565, 701, 949, 780, 867]
+Fold type GTA, Fold: 3, Top 100 Epochs: [974, 973, 879, 849, 838, 996, 930, 893, 850, 884, 929, 863, 854, 825, 871, 933, 960, 891, 631, 875, 794, 842, 907, 987, 721, 978, 661, 696, 872, 947, 819, 755, 943, 968, 950, 800, 989, 847, 793, 866, 840, 917, 961, 870, 809, 828, 774, 883, 803, 817, 876, 874, 632, 895, 744, 865, 858, 788, 889, 812, 835, 902, 638, 846, 910, 998, 920, 763, 836, 898, 955, 588, 839, 783, 967, 862, 762, 956, 869, 829, 773, 944, 739, 860, 941, 972, 715, 679, 873, 924, 789, 881, 999, 691, 771, 945, 857, 791, 813, 844]
+Fold type GTA, Fold: 4, Top 100 Epochs: [570, 895, 999, 754, 728, 690, 940, 814, 794, 804, 964, 741, 942, 929, 777, 909, 904, 778, 914, 632, 949, 941, 636, 871, 699, 771, 894, 698, 974, 878, 864, 617, 838, 962, 801, 905, 880, 889, 891, 993, 665, 590, 642, 855, 958, 874, 758, 825, 836, 898, 553, 647, 961, 763, 963, 987, 812, 800, 723, 684, 765, 603, 873, 735, 757, 821, 734, 827, 654, 970, 948, 580, 972, 783, 749, 997, 621, 955, 900, 822, 540, 919, 730, 742, 811, 708, 789, 944, 883, 756, 692, 848, 862, 809, 953, 978, 946, 770, 733, 785]
+Fold type GTA, Fold: 5, Top 100 Epochs: [721, 788, 717, 910, 451, 494, 791, 437, 787, 388, 573, 392, 907, 946, 633, 620, 840, 601, 969, 570, 505, 535, 724, 358, 837, 461, 830, 821, 771, 577, 947, 720, 474, 950, 719, 611, 763, 981, 472, 809, 928, 622, 512, 543, 987, 686, 371, 533, 417, 541, 672, 416, 780, 310, 710, 696, 519, 395, 448, 589, 663, 479, 297, 503, 870, 715, 986, 772, 569, 706, 940, 742, 776, 838, 698, 865, 526, 978, 799, 457, 428, 883, 566, 312, 890, 727, 884, 418, 613, 389, 989, 581, 588, 964, 586, 429, 484, 583, 832, 885]
+Fold type GTA, Fold: 6, Top 100 Epochs: [823, 950, 951, 947, 915, 949, 948, 706, 825, 953, 786, 833, 965, 824, 909, 918, 912, 957, 954, 961, 919, 807, 920, 838, 567, 834, 473, 668, 835, 910, 974, 708, 642, 977, 546, 964, 822, 694, 903, 449, 678, 468, 685, 409, 952, 687, 529, 844, 426, 809, 972, 526, 555, 797, 780, 925, 966, 686, 793, 724, 648, 795, 510, 923, 675, 765, 759, 514, 689, 879, 971, 622, 906, 927, 629, 429, 673, 541, 631, 880, 841, 967, 956, 969, 719, 349, 680, 744, 988, 960, 848, 970, 811, 837, 878, 475, 761, 904, 462, 789]
+Fold type GTA, Fold: 7, Top 100 Epochs: [964, 885, 929, 975, 915, 862, 965, 953, 978, 875, 930, 982, 908, 934, 704, 922, 903, 824, 935, 983, 961, 950, 907, 956, 843, 967, 808, 901, 952, 949, 979, 898, 994, 837, 853, 802, 996, 948, 857, 840, 768, 910, 715, 728, 890, 998, 939, 747, 697, 936, 995, 886, 836, 938, 970, 718, 712, 918, 795, 735, 866, 977, 833, 829, 969, 823, 725, 810, 754, 780, 940, 745, 676, 848, 988, 733, 807, 835, 992, 955, 615, 799, 874, 960, 801, 895, 878, 740, 786, 944, 826, 714, 821, 859, 783, 744, 986, 925, 719, 779]
+Fold type GTA, Fold: 8, Top 100 Epochs: [882, 650, 430, 595, 834, 740, 661, 958, 689, 842, 675, 736, 705, 845, 712, 467, 881, 833, 686, 726, 662, 511, 407, 396, 997, 439, 676, 719, 531, 752, 647, 518, 835, 713, 729, 660, 735, 459, 734, 561, 486, 477, 837, 962, 702, 922, 963, 902, 366, 693, 711, 532, 536, 633, 975, 981, 960, 471, 947, 646, 700, 358, 542, 507, 566, 502, 683, 456, 526, 896, 838, 652, 728, 716, 474, 434, 830, 419, 732, 479, 950, 753, 410, 437, 292, 562, 651, 438, 534, 901, 519, 826, 853, 634, 957, 991, 703, 772, 415, 829]
+Fold type GTA, Fold: 9, Top 100 Epochs: [482, 969, 442, 364, 454, 612, 539, 763, 869, 818, 710, 719, 978, 828, 666, 354, 547, 607, 947, 722, 686, 822, 540, 657, 871, 298, 940, 751, 721, 405, 879, 956, 935, 608, 903, 813, 423, 839, 959, 913, 933, 342, 982, 663, 441, 777, 344, 749, 769, 742, 967, 555, 456, 308, 815, 846, 411, 375, 759, 426, 747, 299, 934, 816, 485, 945, 370, 439, 962, 944, 976, 807, 667, 983, 385, 314, 628, 752, 416, 891, 840, 736, 748, 394, 501, 841, 767, 823, 820, 843, 508, 475, 378, 723, 377, 546, 990, 761, 637, 984]
+Fold type GTA, Fold: 10, Top 100 Epochs: [426, 473, 353, 683, 802, 563, 926, 842, 644, 692, 878, 730, 515, 789, 635, 737, 755, 962, 679, 839, 616, 780, 753, 637, 892, 836, 830, 548, 841, 481, 745, 723, 636, 630, 765, 840, 761, 874, 696, 560, 493, 678, 694, 735, 559, 322, 763, 445, 428, 938, 581, 886, 582, 758, 388, 656, 743, 438, 742, 976, 602, 772, 707, 601, 384, 752, 619, 468, 495, 915, 771, 914, 877, 782, 453, 626, 505, 597, 585, 909, 757, 569, 777, 614, 570, 621, 859, 872, 521, 624, 715, 571, 556, 888, 967, 883, 921, 860, 971, 399]
+===============================fold num is : 1, family type is : GTA================================
 =============================================prog_args==============================================
-Namespace(dataset='GTmining_6_6_GTB_fold3', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
-batch_size=128, epoch=500, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+Namespace(dataset='GTmining_6_6_GTA_fold1', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTA')
+================================================加载数据================================================
+++++++++++ STATISTICS ABOUT THE DATASET ++++++++++
+dataset feature dimension is 7
+dataset label dimension is 9
+the max num node is 537
+number of graphs is 11489
+++++++++++MODEL STATISTICS++++++++
+model hidden dim is 64
+model embedding dim for graph instance embedding 64
+initial batched pool graph dim is 53
+model init finished
+MODEL::::::: diffpool
+===============================fold num is : 1, family type is : GTA================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTA_fold1', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTA')
+================================================加载数据================================================
+Fold_num is 1==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 672 ######
+/home/admin123/software/miniconda3/envs/GTmining_env/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+epoch 672.0000 with epoch time 65.7660 s
+
+EPOCH ###### 698 ######
+epoch 698.0000 with epoch time 65.4210 s
+
+EPOCH ###### 723 ######
+epoch 723.0000 with epoch time 65.7750 s
+
+EPOCH ###### 931 ######
+epoch 931.0000 with epoch time 65.8461 s
+
+EPOCH ###### 883 ######
+epoch 883.0000 with epoch time 65.9321 s
+
+EPOCH ###### 638 ######
+epoch 638.0000 with epoch time 65.8088 s
+
+EPOCH ###### 940 ######
+epoch 940.0000 with epoch time 65.3583 s
+
+EPOCH ###### 925 ######
+epoch 925.0000 with epoch time 65.9463 s
+
+EPOCH ###### 600 ######
+epoch 600.0000 with epoch time 65.5304 s
+
+EPOCH ###### 718 ######
+epoch 718.0000 with epoch time 65.8861 s
+
+EPOCH ###### 839 ######
+epoch 839.0000 with epoch time 65.5987 s
+
+EPOCH ###### 834 ######
+epoch 834.0000 with epoch time 65.6796 s
+
+EPOCH ###### 885 ######
+epoch 885.0000 with epoch time 65.5176 s
+
+EPOCH ###### 853 ######
+epoch 853.0000 with epoch time 65.7199 s
+
+EPOCH ###### 970 ######
+epoch 970.0000 with epoch time 65.6871 s
+
+EPOCH ###### 508 ######
+epoch 508.0000 with epoch time 65.7547 s
+
+EPOCH ###### 917 ######
+epoch 917.0000 with epoch time 65.8216 s
+
+EPOCH ###### 816 ######
+epoch 816.0000 with epoch time 65.5460 s
+
+EPOCH ###### 868 ######
+epoch 868.0000 with epoch time 65.4422 s
+
+EPOCH ###### 928 ######
+epoch 928.0000 with epoch time 65.9588 s
+===============================fold num is : 2, family type is : GTA================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTA_fold2', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTA')
+================================================加载数据================================================
+Fold_num is 2==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 820 ######
+Traceback (most recent call last):
+  File "/home/admin123/work/GTmining/diffpool/select_epoch_temp_script.py", line 261, in <module>
+    protein_id = id_card_protein[protein_temp_id_card]
+KeyError: '12.19, 13.29, 6.38, -0.64, 0.00, -0.19, -0.71###13.50, 11.78, 9.44, -0.89, 0.00, -0.16, -0.71###11.66, 12.18, 6.87, -0.57, 0.04, -0.10, -0.71'
+Fold type GTA, Fold: 1, Top 100 Epochs: [672, 698, 723, 931, 883, 638, 940, 925, 600, 718, 839, 834, 885, 853, 970, 508, 917, 816, 868, 928, 721, 786, 918, 845, 686, 720, 610, 892, 678, 671, 629, 728, 647, 779, 734, 888, 890, 884, 900, 746, 752, 586, 939, 577, 830, 674, 824, 826, 961, 625, 953, 996, 719, 593, 924, 887, 916, 635, 755, 611, 948, 813, 732, 862, 683, 835, 736, 729, 999, 993, 944, 540, 988, 670, 743, 901, 954, 983, 778, 772, 827, 717, 656, 776, 608, 684, 812, 945, 690, 799, 825, 859, 715, 673, 615, 542, 921, 946, 739, 956]
+Fold type GTA, Fold: 2, Top 100 Epochs: [820, 883, 764, 822, 994, 851, 733, 746, 770, 732, 699, 972, 752, 782, 966, 868, 801, 876, 997, 795, 945, 862, 762, 629, 710, 810, 817, 993, 650, 644, 999, 970, 835, 808, 670, 859, 767, 895, 990, 991, 968, 772, 601, 901, 717, 934, 872, 819, 900, 903, 807, 974, 916, 826, 788, 695, 841, 785, 882, 850, 885, 909, 984, 566, 839, 815, 896, 651, 871, 944, 890, 743, 766, 992, 686, 910, 905, 860, 937, 932, 663, 996, 637, 891, 866, 734, 894, 971, 827, 730, 838, 735, 775, 792, 715, 565, 701, 949, 780, 867]
+Fold type GTA, Fold: 3, Top 100 Epochs: [974, 973, 879, 849, 838, 996, 930, 893, 850, 884, 929, 863, 854, 825, 871, 933, 960, 891, 631, 875, 794, 842, 907, 987, 721, 978, 661, 696, 872, 947, 819, 755, 943, 968, 950, 800, 989, 847, 793, 866, 840, 917, 961, 870, 809, 828, 774, 883, 803, 817, 876, 874, 632, 895, 744, 865, 858, 788, 889, 812, 835, 902, 638, 846, 910, 998, 920, 763, 836, 898, 955, 588, 839, 783, 967, 862, 762, 956, 869, 829, 773, 944, 739, 860, 941, 972, 715, 679, 873, 924, 789, 881, 999, 691, 771, 945, 857, 791, 813, 844]
+Fold type GTA, Fold: 4, Top 100 Epochs: [570, 895, 999, 754, 728, 690, 940, 814, 794, 804, 964, 741, 942, 929, 777, 909, 904, 778, 914, 632, 949, 941, 636, 871, 699, 771, 894, 698, 974, 878, 864, 617, 838, 962, 801, 905, 880, 889, 891, 993, 665, 590, 642, 855, 958, 874, 758, 825, 836, 898, 553, 647, 961, 763, 963, 987, 812, 800, 723, 684, 765, 603, 873, 735, 757, 821, 734, 827, 654, 970, 948, 580, 972, 783, 749, 997, 621, 955, 900, 822, 540, 919, 730, 742, 811, 708, 789, 944, 883, 756, 692, 848, 862, 809, 953, 978, 946, 770, 733, 785]
+Fold type GTA, Fold: 5, Top 100 Epochs: [721, 788, 717, 910, 451, 494, 791, 437, 787, 388, 573, 392, 907, 946, 633, 620, 840, 601, 969, 570, 505, 535, 724, 358, 837, 461, 830, 821, 771, 577, 947, 720, 474, 950, 719, 611, 763, 981, 472, 809, 928, 622, 512, 543, 987, 686, 371, 533, 417, 541, 672, 416, 780, 310, 710, 696, 519, 395, 448, 589, 663, 479, 297, 503, 870, 715, 986, 772, 569, 706, 940, 742, 776, 838, 698, 865, 526, 978, 799, 457, 428, 883, 566, 312, 890, 727, 884, 418, 613, 389, 989, 581, 588, 964, 586, 429, 484, 583, 832, 885]
+Fold type GTA, Fold: 6, Top 100 Epochs: [823, 950, 951, 947, 915, 949, 948, 706, 825, 953, 786, 833, 965, 824, 909, 918, 912, 957, 954, 961, 919, 807, 920, 838, 567, 834, 473, 668, 835, 910, 974, 708, 642, 977, 546, 964, 822, 694, 903, 449, 678, 468, 685, 409, 952, 687, 529, 844, 426, 809, 972, 526, 555, 797, 780, 925, 966, 686, 793, 724, 648, 795, 510, 923, 675, 765, 759, 514, 689, 879, 971, 622, 906, 927, 629, 429, 673, 541, 631, 880, 841, 967, 956, 969, 719, 349, 680, 744, 988, 960, 848, 970, 811, 837, 878, 475, 761, 904, 462, 789]
+Fold type GTA, Fold: 7, Top 100 Epochs: [964, 885, 929, 975, 915, 862, 965, 953, 978, 875, 930, 982, 908, 934, 704, 922, 903, 824, 935, 983, 961, 950, 907, 956, 843, 967, 808, 901, 952, 949, 979, 898, 994, 837, 853, 802, 996, 948, 857, 840, 768, 910, 715, 728, 890, 998, 939, 747, 697, 936, 995, 886, 836, 938, 970, 718, 712, 918, 795, 735, 866, 977, 833, 829, 969, 823, 725, 810, 754, 780, 940, 745, 676, 848, 988, 733, 807, 835, 992, 955, 615, 799, 874, 960, 801, 895, 878, 740, 786, 944, 826, 714, 821, 859, 783, 744, 986, 925, 719, 779]
+Fold type GTA, Fold: 8, Top 100 Epochs: [882, 650, 430, 595, 834, 740, 661, 958, 689, 842, 675, 736, 705, 845, 712, 467, 881, 833, 686, 726, 662, 511, 407, 396, 997, 439, 676, 719, 531, 752, 647, 518, 835, 713, 729, 660, 735, 459, 734, 561, 486, 477, 837, 962, 702, 922, 963, 902, 366, 693, 711, 532, 536, 633, 975, 981, 960, 471, 947, 646, 700, 358, 542, 507, 566, 502, 683, 456, 526, 896, 838, 652, 728, 716, 474, 434, 830, 419, 732, 479, 950, 753, 410, 437, 292, 562, 651, 438, 534, 901, 519, 826, 853, 634, 957, 991, 703, 772, 415, 829]
+Fold type GTA, Fold: 9, Top 100 Epochs: [482, 969, 442, 364, 454, 612, 539, 763, 869, 818, 710, 719, 978, 828, 666, 354, 547, 607, 947, 722, 686, 822, 540, 657, 871, 298, 940, 751, 721, 405, 879, 956, 935, 608, 903, 813, 423, 839, 959, 913, 933, 342, 982, 663, 441, 777, 344, 749, 769, 742, 967, 555, 456, 308, 815, 846, 411, 375, 759, 426, 747, 299, 934, 816, 485, 945, 370, 439, 962, 944, 976, 807, 667, 983, 385, 314, 628, 752, 416, 891, 840, 736, 748, 394, 501, 841, 767, 823, 820, 843, 508, 475, 378, 723, 377, 546, 990, 761, 637, 984]
+Fold type GTA, Fold: 10, Top 100 Epochs: [426, 473, 353, 683, 802, 563, 926, 842, 644, 692, 878, 730, 515, 789, 635, 737, 755, 962, 679, 839, 616, 780, 753, 637, 892, 836, 830, 548, 841, 481, 745, 723, 636, 630, 765, 840, 761, 874, 696, 560, 493, 678, 694, 735, 559, 322, 763, 445, 428, 938, 581, 886, 582, 758, 388, 656, 743, 438, 742, 976, 602, 772, 707, 601, 384, 752, 619, 468, 495, 915, 771, 914, 877, 782, 453, 626, 505, 597, 585, 909, 757, 569, 777, 614, 570, 621, 859, 872, 521, 624, 715, 571, 556, 888, 967, 883, 921, 860, 971, 399]
+===============================fold num is : 1, family type is : GTA================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTA_fold1', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTA')
+================================================加载数据================================================
+++++++++++ STATISTICS ABOUT THE DATASET ++++++++++
+dataset feature dimension is 7
+dataset label dimension is 9
+the max num node is 537
+number of graphs is 11489
+++++++++++MODEL STATISTICS++++++++
+model hidden dim is 64
+model embedding dim for graph instance embedding 64
+initial batched pool graph dim is 53
+model init finished
+MODEL::::::: diffpool
+===============================fold num is : 1, family type is : GTA================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTA_fold1', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTA')
+================================================加载数据================================================
+Fold_num is 1==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 672 ######
+/home/admin123/software/miniconda3/envs/GTmining_env/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+epoch 672.0000 with epoch time 65.3416 s
+
+EPOCH ###### 698 ######
+epoch 698.0000 with epoch time 65.8807 s
+
+EPOCH ###### 723 ######
+epoch 723.0000 with epoch time 66.2858 s
+
+EPOCH ###### 931 ######
+epoch 931.0000 with epoch time 65.9181 s
+
+EPOCH ###### 883 ######
+epoch 883.0000 with epoch time 66.4716 s
+
+EPOCH ###### 638 ######
+epoch 638.0000 with epoch time 65.9681 s
+
+EPOCH ###### 940 ######
+epoch 940.0000 with epoch time 66.0281 s
+
+EPOCH ###### 925 ######
+epoch 925.0000 with epoch time 65.2874 s
+
+EPOCH ###### 600 ######
+epoch 600.0000 with epoch time 65.9115 s
+
+EPOCH ###### 718 ######
+epoch 718.0000 with epoch time 65.8791 s
+
+EPOCH ###### 839 ######
+epoch 839.0000 with epoch time 65.5167 s
+
+EPOCH ###### 834 ######
+epoch 834.0000 with epoch time 65.8219 s
+
+EPOCH ###### 885 ######
+epoch 885.0000 with epoch time 66.2456 s
+
+EPOCH ###### 853 ######
+epoch 853.0000 with epoch time 66.3496 s
+
+EPOCH ###### 970 ######
+epoch 970.0000 with epoch time 65.8909 s
+
+EPOCH ###### 508 ######
+epoch 508.0000 with epoch time 65.8925 s
+
+EPOCH ###### 917 ######
+epoch 917.0000 with epoch time 66.1661 s
+
+EPOCH ###### 816 ######
+epoch 816.0000 with epoch time 65.7938 s
+
+EPOCH ###### 868 ######
+epoch 868.0000 with epoch time 65.7369 s
+
+EPOCH ###### 928 ######
+epoch 928.0000 with epoch time 66.3300 s
+
+EPOCH ###### 721 ######
+epoch 721.0000 with epoch time 66.7150 s
+
+EPOCH ###### 786 ######
+epoch 786.0000 with epoch time 67.5474 s
+
+EPOCH ###### 918 ######
+epoch 918.0000 with epoch time 67.3555 s
+
+EPOCH ###### 845 ######
+epoch 845.0000 with epoch time 67.4192 s
+
+EPOCH ###### 686 ######
+epoch 686.0000 with epoch time 67.8365 s
+
+EPOCH ###### 720 ######
+epoch 720.0000 with epoch time 67.1936 s
+
+EPOCH ###### 610 ######
+epoch 610.0000 with epoch time 67.4756 s
+
+EPOCH ###### 892 ######
+epoch 892.0000 with epoch time 67.5207 s
+
+EPOCH ###### 678 ######
+epoch 678.0000 with epoch time 67.5365 s
+
+EPOCH ###### 671 ######
+epoch 671.0000 with epoch time 67.2895 s
+
+EPOCH ###### 629 ######
+epoch 629.0000 with epoch time 68.4305 s
+
+EPOCH ###### 728 ######
+epoch 728.0000 with epoch time 67.5673 s
+
+EPOCH ###### 647 ######
+epoch 647.0000 with epoch time 67.5508 s
+
+EPOCH ###### 779 ######
+epoch 779.0000 with epoch time 67.4698 s
+
+EPOCH ###### 734 ######
+epoch 734.0000 with epoch time 68.4689 s
+
+EPOCH ###### 888 ######
+epoch 888.0000 with epoch time 67.4647 s
+
+EPOCH ###### 890 ######
+epoch 890.0000 with epoch time 67.4719 s
+
+EPOCH ###### 884 ######
+epoch 884.0000 with epoch time 67.5480 s
+
+EPOCH ###### 900 ######
+epoch 900.0000 with epoch time 67.4012 s
+
+EPOCH ###### 746 ######
+epoch 746.0000 with epoch time 67.6908 s
+
+EPOCH ###### 752 ######
+epoch 752.0000 with epoch time 67.2797 s
+
+EPOCH ###### 586 ######
+epoch 586.0000 with epoch time 67.5462 s
+
+EPOCH ###### 939 ######
+epoch 939.0000 with epoch time 67.3117 s
+
+EPOCH ###### 577 ######
+epoch 577.0000 with epoch time 67.3458 s
+
+EPOCH ###### 830 ######
+epoch 830.0000 with epoch time 67.8994 s
+
+EPOCH ###### 674 ######
+epoch 674.0000 with epoch time 67.3153 s
+
+EPOCH ###### 824 ######
+epoch 824.0000 with epoch time 67.4717 s
+
+EPOCH ###### 826 ######
+epoch 826.0000 with epoch time 67.6671 s
+
+EPOCH ###### 961 ######
+epoch 961.0000 with epoch time 67.4697 s
+
+EPOCH ###### 625 ######
+epoch 625.0000 with epoch time 67.5031 s
+
+EPOCH ###### 953 ######
+epoch 953.0000 with epoch time 66.7027 s
+
+EPOCH ###### 996 ######
+epoch 996.0000 with epoch time 67.3180 s
+
+EPOCH ###### 719 ######
+epoch 719.0000 with epoch time 67.2564 s
+
+EPOCH ###### 593 ######
+epoch 593.0000 with epoch time 67.5919 s
+
+EPOCH ###### 924 ######
+epoch 924.0000 with epoch time 67.5948 s
+
+EPOCH ###### 887 ######
+epoch 887.0000 with epoch time 67.7458 s
+
+EPOCH ###### 916 ######
+epoch 916.0000 with epoch time 67.0859 s
+
+EPOCH ###### 635 ######
+epoch 635.0000 with epoch time 67.3719 s
+
+EPOCH ###### 755 ######
+epoch 755.0000 with epoch time 67.3389 s
+
+EPOCH ###### 611 ######
+epoch 611.0000 with epoch time 67.2969 s
+
+EPOCH ###### 948 ######
+epoch 948.0000 with epoch time 67.4519 s
+
+EPOCH ###### 813 ######
+epoch 813.0000 with epoch time 67.1034 s
+
+EPOCH ###### 732 ######
+epoch 732.0000 with epoch time 67.4472 s
+
+EPOCH ###### 862 ######
+epoch 862.0000 with epoch time 67.4270 s
+
+EPOCH ###### 683 ######
+epoch 683.0000 with epoch time 67.4124 s
+
+EPOCH ###### 835 ######
+epoch 835.0000 with epoch time 67.3089 s
+
+EPOCH ###### 736 ######
+epoch 736.0000 with epoch time 67.1487 s
+
+EPOCH ###### 729 ######
+epoch 729.0000 with epoch time 67.3361 s
+
+EPOCH ###### 999 ######
+epoch 999.0000 with epoch time 67.4654 s
+
+EPOCH ###### 993 ######
+epoch 993.0000 with epoch time 67.3382 s
+
+EPOCH ###### 944 ######
+epoch 944.0000 with epoch time 67.4123 s
+
+EPOCH ###### 540 ######
+epoch 540.0000 with epoch time 67.2461 s
+
+EPOCH ###### 988 ######
+epoch 988.0000 with epoch time 67.6569 s
+
+EPOCH ###### 670 ######
+epoch 670.0000 with epoch time 67.3166 s
+
+EPOCH ###### 743 ######
+epoch 743.0000 with epoch time 67.4610 s
+
+EPOCH ###### 901 ######
+epoch 901.0000 with epoch time 67.5402 s
+
+EPOCH ###### 954 ######
+epoch 954.0000 with epoch time 67.3660 s
+
+EPOCH ###### 983 ######
+epoch 983.0000 with epoch time 67.4727 s
+
+EPOCH ###### 778 ######
+epoch 778.0000 with epoch time 67.2741 s
+
+EPOCH ###### 772 ######
+epoch 772.0000 with epoch time 68.1002 s
+
+EPOCH ###### 827 ######
+epoch 827.0000 with epoch time 67.2348 s
+
+EPOCH ###### 717 ######
+epoch 717.0000 with epoch time 67.1641 s
+
+EPOCH ###### 656 ######
+epoch 656.0000 with epoch time 67.3844 s
+
+EPOCH ###### 776 ######
+epoch 776.0000 with epoch time 67.5384 s
+
+EPOCH ###### 608 ######
+epoch 608.0000 with epoch time 67.4214 s
+
+EPOCH ###### 684 ######
+epoch 684.0000 with epoch time 67.3845 s
+
+EPOCH ###### 812 ######
+epoch 812.0000 with epoch time 67.2027 s
+
+EPOCH ###### 945 ######
+epoch 945.0000 with epoch time 67.4036 s
+
+EPOCH ###### 690 ######
+epoch 690.0000 with epoch time 67.5158 s
+
+EPOCH ###### 799 ######
+epoch 799.0000 with epoch time 67.4971 s
+
+EPOCH ###### 825 ######
+epoch 825.0000 with epoch time 67.6987 s
+
+EPOCH ###### 859 ######
+epoch 859.0000 with epoch time 67.3325 s
+
+EPOCH ###### 715 ######
+epoch 715.0000 with epoch time 67.8316 s
+
+EPOCH ###### 673 ######
+epoch 673.0000 with epoch time 67.9516 s
+
+EPOCH ###### 615 ######
+epoch 615.0000 with epoch time 67.5818 s
+
+EPOCH ###### 542 ######
+epoch 542.0000 with epoch time 67.3141 s
+
+EPOCH ###### 921 ######
+epoch 921.0000 with epoch time 67.6316 s
+
+EPOCH ###### 946 ######
+epoch 946.0000 with epoch time 67.1842 s
+
+EPOCH ###### 739 ######
+epoch 739.0000 with epoch time 67.1858 s
+
+EPOCH ###### 956 ######
+epoch 956.0000 with epoch time 67.6485 s
+===============================fold num is : 2, family type is : GTA================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTA_fold2', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTA')
+================================================加载数据================================================
+Fold_num is 2==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 820 ######
+epoch 820.0000 with epoch time 67.2463 s
+
+EPOCH ###### 883 ######
+epoch 883.0000 with epoch time 67.2824 s
+
+EPOCH ###### 764 ######
+epoch 764.0000 with epoch time 67.4786 s
+
+EPOCH ###### 822 ######
+epoch 822.0000 with epoch time 67.4219 s
+
+EPOCH ###### 994 ######
+epoch 994.0000 with epoch time 67.1587 s
+
+EPOCH ###### 851 ######
+epoch 851.0000 with epoch time 67.4415 s
+
+EPOCH ###### 733 ######
+epoch 733.0000 with epoch time 67.0221 s
+
+EPOCH ###### 746 ######
+epoch 746.0000 with epoch time 67.4146 s
+
+EPOCH ###### 770 ######
+epoch 770.0000 with epoch time 67.9609 s
+
+EPOCH ###### 732 ######
+epoch 732.0000 with epoch time 67.9487 s
+
+EPOCH ###### 699 ######
+epoch 699.0000 with epoch time 67.5648 s
+
+EPOCH ###### 972 ######
+epoch 972.0000 with epoch time 67.4835 s
+
+EPOCH ###### 752 ######
+epoch 752.0000 with epoch time 67.4511 s
+
+EPOCH ###### 782 ######
+epoch 782.0000 with epoch time 67.3162 s
+
+EPOCH ###### 966 ######
+epoch 966.0000 with epoch time 67.2930 s
+
+EPOCH ###### 868 ######
+epoch 868.0000 with epoch time 67.1920 s
+
+EPOCH ###### 801 ######
+epoch 801.0000 with epoch time 67.3763 s
+
+EPOCH ###### 876 ######
+epoch 876.0000 with epoch time 67.2863 s
+
+EPOCH ###### 997 ######
+epoch 997.0000 with epoch time 68.1087 s
+
+EPOCH ###### 795 ######
+epoch 795.0000 with epoch time 68.3237 s
+
+EPOCH ###### 945 ######
+epoch 945.0000 with epoch time 68.2199 s
+
+EPOCH ###### 862 ######
+epoch 862.0000 with epoch time 67.6167 s
+
+EPOCH ###### 762 ######
+epoch 762.0000 with epoch time 67.1072 s
+
+EPOCH ###### 629 ######
+epoch 629.0000 with epoch time 67.5197 s
+
+EPOCH ###### 710 ######
+epoch 710.0000 with epoch time 67.3994 s
+
+EPOCH ###### 810 ######
+epoch 810.0000 with epoch time 67.2153 s
+
+EPOCH ###### 817 ######
+epoch 817.0000 with epoch time 67.4750 s
+
+EPOCH ###### 993 ######
+epoch 993.0000 with epoch time 67.5306 s
+
+EPOCH ###### 650 ######
+epoch 650.0000 with epoch time 67.3910 s
+
+EPOCH ###### 644 ######
+epoch 644.0000 with epoch time 67.2738 s
+
+EPOCH ###### 999 ######
+epoch 999.0000 with epoch time 68.0708 s
+
+EPOCH ###### 970 ######
+epoch 970.0000 with epoch time 67.6829 s
+
+EPOCH ###### 835 ######
+epoch 835.0000 with epoch time 68.0576 s
+
+EPOCH ###### 808 ######
+epoch 808.0000 with epoch time 67.5727 s
+
+EPOCH ###### 670 ######
+epoch 670.0000 with epoch time 67.6290 s
+
+EPOCH ###### 859 ######
+epoch 859.0000 with epoch time 67.4143 s
+
+EPOCH ###### 767 ######
+epoch 767.0000 with epoch time 67.2035 s
+
+EPOCH ###### 895 ######
+epoch 895.0000 with epoch time 67.3308 s
+
+EPOCH ###### 990 ######
+epoch 990.0000 with epoch time 67.3759 s
+
+EPOCH ###### 991 ######
+epoch 991.0000 with epoch time 67.5625 s
+
+EPOCH ###### 968 ######
+epoch 968.0000 with epoch time 67.3496 s
+
+EPOCH ###### 772 ######
+epoch 772.0000 with epoch time 68.1420 s
+
+EPOCH ###### 601 ######
+epoch 601.0000 with epoch time 67.6240 s
+
+EPOCH ###### 901 ######
+epoch 901.0000 with epoch time 67.6311 s
+
+EPOCH ###### 717 ######
+epoch 717.0000 with epoch time 67.5174 s
+
+EPOCH ###### 934 ######
+epoch 934.0000 with epoch time 67.4801 s
+
+EPOCH ###### 872 ######
+epoch 872.0000 with epoch time 67.3352 s
+
+EPOCH ###### 819 ######
+epoch 819.0000 with epoch time 67.4783 s
+
+EPOCH ###### 900 ######
+epoch 900.0000 with epoch time 67.4526 s
+
+EPOCH ###### 903 ######
+epoch 903.0000 with epoch time 67.1300 s
+
+EPOCH ###### 807 ######
+epoch 807.0000 with epoch time 67.3575 s
+
+EPOCH ###### 974 ######
+epoch 974.0000 with epoch time 67.3282 s
+
+EPOCH ###### 916 ######
+epoch 916.0000 with epoch time 68.4329 s
+
+EPOCH ###### 826 ######
+epoch 826.0000 with epoch time 67.3312 s
+
+EPOCH ###### 788 ######
+epoch 788.0000 with epoch time 67.2882 s
+
+EPOCH ###### 695 ######
+epoch 695.0000 with epoch time 67.6001 s
+
+EPOCH ###### 841 ######
+epoch 841.0000 with epoch time 67.0683 s
+
+EPOCH ###### 785 ######
+epoch 785.0000 with epoch time 67.1453 s
+
+EPOCH ###### 882 ######
+epoch 882.0000 with epoch time 67.4609 s
+
+EPOCH ###### 850 ######
+epoch 850.0000 with epoch time 67.2110 s
+
+EPOCH ###### 885 ######
+epoch 885.0000 with epoch time 67.3150 s
+
+EPOCH ###### 909 ######
+epoch 909.0000 with epoch time 67.1138 s
+
+EPOCH ###### 984 ######
+epoch 984.0000 with epoch time 67.5378 s
+
+EPOCH ###### 566 ######
+epoch 566.0000 with epoch time 67.4536 s
+
+EPOCH ###### 839 ######
+epoch 839.0000 with epoch time 67.3433 s
+
+EPOCH ###### 815 ######
+epoch 815.0000 with epoch time 67.7854 s
+
+EPOCH ###### 896 ######
+epoch 896.0000 with epoch time 67.3101 s
+
+EPOCH ###### 651 ######
+epoch 651.0000 with epoch time 67.4770 s
+
+EPOCH ###### 871 ######
+epoch 871.0000 with epoch time 67.0442 s
+
+EPOCH ###### 944 ######
+epoch 944.0000 with epoch time 67.3870 s
+
+EPOCH ###### 890 ######
+epoch 890.0000 with epoch time 67.8542 s
+
+EPOCH ###### 743 ######
+epoch 743.0000 with epoch time 67.4764 s
+
+EPOCH ###### 766 ######
+epoch 766.0000 with epoch time 67.3539 s
+
+EPOCH ###### 992 ######
+epoch 992.0000 with epoch time 67.3931 s
+
+EPOCH ###### 686 ######
+epoch 686.0000 with epoch time 67.3153 s
+
+EPOCH ###### 910 ######
+epoch 910.0000 with epoch time 67.1255 s
+
+EPOCH ###### 905 ######
+epoch 905.0000 with epoch time 67.3028 s
+
+EPOCH ###### 860 ######
+epoch 860.0000 with epoch time 67.1283 s
+
+EPOCH ###### 937 ######
+epoch 937.0000 with epoch time 67.9193 s
+
+EPOCH ###### 932 ######
+epoch 932.0000 with epoch time 67.1044 s
+
+EPOCH ###### 663 ######
+epoch 663.0000 with epoch time 67.4860 s
+
+EPOCH ###### 996 ######
+epoch 996.0000 with epoch time 67.4030 s
+
+EPOCH ###### 637 ######
+epoch 637.0000 with epoch time 67.6179 s
+
+EPOCH ###### 891 ######
+epoch 891.0000 with epoch time 68.0387 s
+
+EPOCH ###### 866 ######
+epoch 866.0000 with epoch time 67.4724 s
+
+EPOCH ###### 734 ######
+epoch 734.0000 with epoch time 67.1173 s
+
+EPOCH ###### 894 ######
+epoch 894.0000 with epoch time 67.1513 s
+
+EPOCH ###### 971 ######
+epoch 971.0000 with epoch time 67.7634 s
+
+EPOCH ###### 827 ######
+epoch 827.0000 with epoch time 67.1125 s
+
+EPOCH ###### 730 ######
+epoch 730.0000 with epoch time 67.3186 s
+
+EPOCH ###### 838 ######
+epoch 838.0000 with epoch time 67.3501 s
+
+EPOCH ###### 735 ######
+epoch 735.0000 with epoch time 66.9642 s
+
+EPOCH ###### 775 ######
+epoch 775.0000 with epoch time 67.4376 s
+
+EPOCH ###### 792 ######
+epoch 792.0000 with epoch time 67.5128 s
+
+EPOCH ###### 715 ######
+epoch 715.0000 with epoch time 68.5373 s
+
+EPOCH ###### 565 ######
+epoch 565.0000 with epoch time 67.4329 s
+
+EPOCH ###### 701 ######
+epoch 701.0000 with epoch time 67.4230 s
+
+EPOCH ###### 949 ######
+epoch 949.0000 with epoch time 67.3316 s
+
+EPOCH ###### 780 ######
+epoch 780.0000 with epoch time 67.3843 s
+
+EPOCH ###### 867 ######
+epoch 867.0000 with epoch time 67.0691 s
+===============================fold num is : 3, family type is : GTA================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTA_fold3', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTA')
+================================================加载数据================================================
+Fold_num is 3==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 974 ######
+epoch 974.0000 with epoch time 67.2243 s
+
+EPOCH ###### 973 ######
+epoch 973.0000 with epoch time 67.4197 s
+
+EPOCH ###### 879 ######
+epoch 879.0000 with epoch time 67.3068 s
+
+EPOCH ###### 849 ######
+epoch 849.0000 with epoch time 67.4707 s
+
+EPOCH ###### 838 ######
+epoch 838.0000 with epoch time 67.1796 s
+
+EPOCH ###### 996 ######
+epoch 996.0000 with epoch time 67.3950 s
+
+EPOCH ###### 930 ######
+epoch 930.0000 with epoch time 68.1174 s
+
+EPOCH ###### 893 ######
+epoch 893.0000 with epoch time 67.5798 s
+
+EPOCH ###### 850 ######
+epoch 850.0000 with epoch time 67.6396 s
+
+EPOCH ###### 884 ######
+epoch 884.0000 with epoch time 67.3775 s
+
+EPOCH ###### 929 ######
+epoch 929.0000 with epoch time 66.4485 s
+
+EPOCH ###### 863 ######
+epoch 863.0000 with epoch time 67.1543 s
+
+EPOCH ###### 854 ######
+epoch 854.0000 with epoch time 67.4975 s
+
+EPOCH ###### 825 ######
+epoch 825.0000 with epoch time 67.4137 s
+
+EPOCH ###### 871 ######
+epoch 871.0000 with epoch time 67.0936 s
+
+EPOCH ###### 933 ######
+epoch 933.0000 with epoch time 67.4391 s
+
+EPOCH ###### 960 ######
+epoch 960.0000 with epoch time 67.2742 s
+
+EPOCH ###### 891 ######
+epoch 891.0000 with epoch time 67.5500 s
+
+EPOCH ###### 631 ######
+epoch 631.0000 with epoch time 67.6703 s
+
+EPOCH ###### 875 ######
+epoch 875.0000 with epoch time 67.8428 s
+
+EPOCH ###### 794 ######
+epoch 794.0000 with epoch time 68.0162 s
+
+EPOCH ###### 842 ######
+epoch 842.0000 with epoch time 67.6081 s
+
+EPOCH ###### 907 ######
+epoch 907.0000 with epoch time 67.5029 s
+
+EPOCH ###### 987 ######
+epoch 987.0000 with epoch time 67.1420 s
+
+EPOCH ###### 721 ######
+epoch 721.0000 with epoch time 67.4708 s
+
+EPOCH ###### 978 ######
+epoch 978.0000 with epoch time 67.3397 s
+
+EPOCH ###### 661 ######
+epoch 661.0000 with epoch time 67.4141 s
+
+EPOCH ###### 696 ######
+epoch 696.0000 with epoch time 67.3341 s
+
+EPOCH ###### 872 ######
+epoch 872.0000 with epoch time 67.5112 s
+
+EPOCH ###### 947 ######
+epoch 947.0000 with epoch time 67.2757 s
+
+EPOCH ###### 819 ######
+epoch 819.0000 with epoch time 67.6450 s
+
+EPOCH ###### 755 ######
+epoch 755.0000 with epoch time 67.0442 s
+
+EPOCH ###### 943 ######
+epoch 943.0000 with epoch time 67.6328 s
+
+EPOCH ###### 968 ######
+epoch 968.0000 with epoch time 67.2315 s
+
+EPOCH ###### 950 ######
+epoch 950.0000 with epoch time 67.2784 s
+
+EPOCH ###### 800 ######
+epoch 800.0000 with epoch time 67.3445 s
+
+EPOCH ###### 989 ######
+epoch 989.0000 with epoch time 67.3068 s
+
+EPOCH ###### 847 ######
+epoch 847.0000 with epoch time 67.3803 s
+
+EPOCH ###### 793 ######
+epoch 793.0000 with epoch time 67.2378 s
+
+EPOCH ###### 866 ######
+epoch 866.0000 with epoch time 67.5137 s
+
+EPOCH ###### 840 ######
+epoch 840.0000 with epoch time 67.0849 s
+
+EPOCH ###### 917 ######
+epoch 917.0000 with epoch time 67.4849 s
+
+EPOCH ###### 961 ######
+epoch 961.0000 with epoch time 67.4427 s
+
+EPOCH ###### 870 ######
+epoch 870.0000 with epoch time 67.2896 s
+
+EPOCH ###### 809 ######
+epoch 809.0000 with epoch time 67.6069 s
+
+EPOCH ###### 828 ######
+epoch 828.0000 with epoch time 67.6682 s
+
+EPOCH ###### 774 ######
+epoch 774.0000 with epoch time 68.2174 s
+
+EPOCH ###### 883 ######
+epoch 883.0000 with epoch time 67.3819 s
+
+EPOCH ###### 803 ######
+epoch 803.0000 with epoch time 67.6300 s
+
+EPOCH ###### 817 ######
+epoch 817.0000 with epoch time 66.9791 s
+
+EPOCH ###### 876 ######
+epoch 876.0000 with epoch time 67.1740 s
+
+EPOCH ###### 874 ######
+epoch 874.0000 with epoch time 67.2911 s
+
+EPOCH ###### 632 ######
+epoch 632.0000 with epoch time 67.5678 s
+
+EPOCH ###### 895 ######
+epoch 895.0000 with epoch time 67.4679 s
+
+EPOCH ###### 744 ######
+epoch 744.0000 with epoch time 67.1229 s
+
+EPOCH ###### 865 ######
+epoch 865.0000 with epoch time 67.2874 s
+
+EPOCH ###### 858 ######
+epoch 858.0000 with epoch time 67.6251 s
+
+EPOCH ###### 788 ######
+epoch 788.0000 with epoch time 67.4746 s
+
+EPOCH ###### 889 ######
+epoch 889.0000 with epoch time 67.3450 s
+
+EPOCH ###### 812 ######
+epoch 812.0000 with epoch time 67.3737 s
+
+EPOCH ###### 835 ######
+epoch 835.0000 with epoch time 67.3101 s
+
+EPOCH ###### 902 ######
+epoch 902.0000 with epoch time 67.3982 s
+
+EPOCH ###### 638 ######
+epoch 638.0000 with epoch time 67.1782 s
+
+EPOCH ###### 846 ######
+epoch 846.0000 with epoch time 67.4672 s
+
+EPOCH ###### 910 ######
+epoch 910.0000 with epoch time 67.2009 s
+
+EPOCH ###### 998 ######
+epoch 998.0000 with epoch time 67.3674 s
+
+EPOCH ###### 920 ######
+epoch 920.0000 with epoch time 67.2154 s
+
+EPOCH ###### 763 ######
+epoch 763.0000 with epoch time 67.6633 s
+
+EPOCH ###### 836 ######
+epoch 836.0000 with epoch time 67.6402 s
+
+EPOCH ###### 898 ######
+epoch 898.0000 with epoch time 67.7631 s
+
+EPOCH ###### 955 ######
+epoch 955.0000 with epoch time 68.1063 s
+
+EPOCH ###### 588 ######
+epoch 588.0000 with epoch time 67.4735 s
+
+EPOCH ###### 839 ######
+epoch 839.0000 with epoch time 67.6213 s
+
+EPOCH ###### 783 ######
+epoch 783.0000 with epoch time 67.6709 s
+
+EPOCH ###### 967 ######
+epoch 967.0000 with epoch time 67.4818 s
+
+EPOCH ###### 862 ######
+epoch 862.0000 with epoch time 67.6610 s
+
+EPOCH ###### 762 ######
+epoch 762.0000 with epoch time 67.6056 s
+
+EPOCH ###### 956 ######
+epoch 956.0000 with epoch time 67.8487 s
+
+EPOCH ###### 869 ######
+epoch 869.0000 with epoch time 68.3382 s
+
+EPOCH ###### 829 ######
+epoch 829.0000 with epoch time 67.5895 s
+
+EPOCH ###### 773 ######
+epoch 773.0000 with epoch time 67.6194 s
+
+EPOCH ###### 944 ######
+epoch 944.0000 with epoch time 67.0974 s
+
+EPOCH ###### 739 ######
+epoch 739.0000 with epoch time 67.6630 s
+
+EPOCH ###### 860 ######
+epoch 860.0000 with epoch time 67.6232 s
+
+EPOCH ###### 941 ######
+epoch 941.0000 with epoch time 68.7153 s
+
+EPOCH ###### 972 ######
+epoch 972.0000 with epoch time 67.8729 s
+
+EPOCH ###### 715 ######
+epoch 715.0000 with epoch time 67.5995 s
+
+EPOCH ###### 679 ######
+epoch 679.0000 with epoch time 67.4439 s
+
+EPOCH ###### 873 ######
+epoch 873.0000 with epoch time 67.5157 s
+
+EPOCH ###### 924 ######
+epoch 924.0000 with epoch time 67.5911 s
+
+EPOCH ###### 789 ######
+epoch 789.0000 with epoch time 67.7300 s
+
+EPOCH ###### 881 ######
+epoch 881.0000 with epoch time 67.3528 s
+
+EPOCH ###### 999 ######
+epoch 999.0000 with epoch time 67.7647 s
+
+EPOCH ###### 691 ######
+epoch 691.0000 with epoch time 67.5947 s
+
+EPOCH ###### 771 ######
+epoch 771.0000 with epoch time 68.5823 s
+
+EPOCH ###### 945 ######
+epoch 945.0000 with epoch time 67.2507 s
+
+EPOCH ###### 857 ######
+epoch 857.0000 with epoch time 67.5799 s
+
+EPOCH ###### 791 ######
+epoch 791.0000 with epoch time 67.5739 s
+
+EPOCH ###### 813 ######
+epoch 813.0000 with epoch time 68.1646 s
+
+EPOCH ###### 844 ######
+epoch 844.0000 with epoch time 67.9912 s
+===============================fold num is : 4, family type is : GTA================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTA_fold4', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTA')
+================================================加载数据================================================
+Fold_num is 4==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 570 ######
+epoch 570.0000 with epoch time 67.4261 s
+
+EPOCH ###### 895 ######
+epoch 895.0000 with epoch time 67.5512 s
+
+EPOCH ###### 999 ######
+epoch 999.0000 with epoch time 67.1694 s
+
+EPOCH ###### 754 ######
+epoch 754.0000 with epoch time 67.2769 s
+
+EPOCH ###### 728 ######
+epoch 728.0000 with epoch time 67.5840 s
+
+EPOCH ###### 690 ######
+epoch 690.0000 with epoch time 67.2777 s
+
+EPOCH ###### 940 ######
+epoch 940.0000 with epoch time 67.3710 s
+
+EPOCH ###### 814 ######
+epoch 814.0000 with epoch time 67.2104 s
+
+EPOCH ###### 794 ######
+epoch 794.0000 with epoch time 67.5942 s
+
+EPOCH ###### 804 ######
+epoch 804.0000 with epoch time 67.7501 s
+
+EPOCH ###### 964 ######
+epoch 964.0000 with epoch time 67.6952 s
+
+EPOCH ###### 741 ######
+epoch 741.0000 with epoch time 67.4531 s
+
+EPOCH ###### 942 ######
+epoch 942.0000 with epoch time 67.9696 s
+
+EPOCH ###### 929 ######
+epoch 929.0000 with epoch time 67.3575 s
+
+EPOCH ###### 777 ######
+epoch 777.0000 with epoch time 67.2814 s
+
+EPOCH ###### 909 ######
+epoch 909.0000 with epoch time 67.3588 s
+
+EPOCH ###### 904 ######
+epoch 904.0000 with epoch time 67.5175 s
+
+EPOCH ###### 778 ######
+epoch 778.0000 with epoch time 67.6207 s
+
+EPOCH ###### 914 ######
+epoch 914.0000 with epoch time 67.3957 s
+
+EPOCH ###### 632 ######
+epoch 632.0000 with epoch time 67.6393 s
+
+EPOCH ###### 949 ######
+epoch 949.0000 with epoch time 67.7694 s
+
+EPOCH ###### 941 ######
+epoch 941.0000 with epoch time 68.3752 s
+
+EPOCH ###### 636 ######
+epoch 636.0000 with epoch time 67.5972 s
+
+EPOCH ###### 871 ######
+epoch 871.0000 with epoch time 67.6927 s
+
+EPOCH ###### 699 ######
+epoch 699.0000 with epoch time 67.3558 s
+
+EPOCH ###### 771 ######
+epoch 771.0000 with epoch time 67.5403 s
+
+EPOCH ###### 894 ######
+epoch 894.0000 with epoch time 67.3677 s
+
+EPOCH ###### 698 ######
+epoch 698.0000 with epoch time 67.3327 s
+
+EPOCH ###### 974 ######
+epoch 974.0000 with epoch time 67.4819 s
+
+EPOCH ###### 878 ######
+epoch 878.0000 with epoch time 67.7834 s
+
+EPOCH ###### 864 ######
+epoch 864.0000 with epoch time 67.6394 s
+
+EPOCH ###### 617 ######
+epoch 617.0000 with epoch time 67.5012 s
+
+EPOCH ###### 838 ######
+epoch 838.0000 with epoch time 67.4409 s
+
+EPOCH ###### 962 ######
+epoch 962.0000 with epoch time 67.7030 s
+
+EPOCH ###### 801 ######
+epoch 801.0000 with epoch time 67.1672 s
+
+EPOCH ###### 905 ######
+epoch 905.0000 with epoch time 67.2788 s
+
+EPOCH ###### 880 ######
+epoch 880.0000 with epoch time 67.6716 s
+
+EPOCH ###### 889 ######
+epoch 889.0000 with epoch time 67.6500 s
+
+EPOCH ###### 891 ######
+epoch 891.0000 with epoch time 67.3447 s
+
+EPOCH ###### 993 ######
+epoch 993.0000 with epoch time 67.5647 s
+
+EPOCH ###### 665 ######
+epoch 665.0000 with epoch time 67.2501 s
+
+EPOCH ###### 590 ######
+epoch 590.0000 with epoch time 67.6524 s
+
+EPOCH ###### 642 ######
+epoch 642.0000 with epoch time 68.0958 s
+
+EPOCH ###### 855 ######
+epoch 855.0000 with epoch time 67.3352 s
+
+EPOCH ###### 958 ######
+epoch 958.0000 with epoch time 67.3495 s
+
+EPOCH ###### 874 ######
+epoch 874.0000 with epoch time 67.6655 s
+
+EPOCH ###### 758 ######
+epoch 758.0000 with epoch time 67.5633 s
+
+EPOCH ###### 825 ######
+epoch 825.0000 with epoch time 67.8167 s
+
+EPOCH ###### 836 ######
+epoch 836.0000 with epoch time 67.6206 s
+
+EPOCH ###### 898 ######
+epoch 898.0000 with epoch time 67.4859 s
+
+EPOCH ###### 553 ######
+epoch 553.0000 with epoch time 66.9948 s
+
+EPOCH ###### 647 ######
+epoch 647.0000 with epoch time 67.2630 s
+
+EPOCH ###### 961 ######
+epoch 961.0000 with epoch time 67.0279 s
+
+EPOCH ###### 763 ######
+epoch 763.0000 with epoch time 67.7183 s
+
+EPOCH ###### 963 ######
+epoch 963.0000 with epoch time 67.4688 s
+
+EPOCH ###### 987 ######
+epoch 987.0000 with epoch time 67.4755 s
+
+EPOCH ###### 812 ######
+epoch 812.0000 with epoch time 67.4430 s
+
+EPOCH ###### 800 ######
+epoch 800.0000 with epoch time 68.0507 s
+
+EPOCH ###### 723 ######
+epoch 723.0000 with epoch time 67.7757 s
+
+EPOCH ###### 684 ######
+epoch 684.0000 with epoch time 67.6943 s
+
+EPOCH ###### 765 ######
+epoch 765.0000 with epoch time 67.4481 s
+
+EPOCH ###### 603 ######
+epoch 603.0000 with epoch time 67.2623 s
+
+EPOCH ###### 873 ######
+epoch 873.0000 with epoch time 67.4989 s
+
+EPOCH ###### 735 ######
+epoch 735.0000 with epoch time 67.2356 s
+
+EPOCH ###### 757 ######
+epoch 757.0000 with epoch time 67.6099 s
+
+EPOCH ###### 821 ######
+epoch 821.0000 with epoch time 67.5054 s
+
+EPOCH ###### 734 ######
+epoch 734.0000 with epoch time 67.9442 s
+
+EPOCH ###### 827 ######
+epoch 827.0000 with epoch time 67.3095 s
+
+EPOCH ###### 654 ######
+epoch 654.0000 with epoch time 67.5542 s
+
+EPOCH ###### 970 ######
+epoch 970.0000 with epoch time 67.0490 s
+
+EPOCH ###### 948 ######
+epoch 948.0000 with epoch time 67.5030 s
+
+EPOCH ###### 580 ######
+epoch 580.0000 with epoch time 67.9921 s
+
+EPOCH ###### 972 ######
+epoch 972.0000 with epoch time 67.4629 s
+
+EPOCH ###### 783 ######
+epoch 783.0000 with epoch time 67.1385 s
+
+EPOCH ###### 749 ######
+epoch 749.0000 with epoch time 67.3580 s
+
+EPOCH ###### 997 ######
+epoch 997.0000 with epoch time 67.3599 s
+
+EPOCH ###### 621 ######
+epoch 621.0000 with epoch time 67.3701 s
+
+EPOCH ###### 955 ######
+epoch 955.0000 with epoch time 68.2981 s
+
+EPOCH ###### 900 ######
+epoch 900.0000 with epoch time 68.4901 s
+
+EPOCH ###### 822 ######
+epoch 822.0000 with epoch time 70.0097 s
+
+EPOCH ###### 540 ######
+epoch 540.0000 with epoch time 67.6875 s
+
+EPOCH ###### 919 ######
+epoch 919.0000 with epoch time 67.2541 s
+
+EPOCH ###### 730 ######
+epoch 730.0000 with epoch time 68.0360 s
+
+EPOCH ###### 742 ######
+epoch 742.0000 with epoch time 67.4416 s
+
+EPOCH ###### 811 ######
+epoch 811.0000 with epoch time 67.7309 s
+
+EPOCH ###### 708 ######
+epoch 708.0000 with epoch time 67.7024 s
+
+EPOCH ###### 789 ######
+epoch 789.0000 with epoch time 67.0965 s
+
+EPOCH ###### 944 ######
+epoch 944.0000 with epoch time 67.4153 s
+
+EPOCH ###### 883 ######
+epoch 883.0000 with epoch time 67.5794 s
+
+EPOCH ###### 756 ######
+epoch 756.0000 with epoch time 67.5756 s
+
+EPOCH ###### 692 ######
+epoch 692.0000 with epoch time 67.4475 s
+
+EPOCH ###### 848 ######
+epoch 848.0000 with epoch time 68.3577 s
+
+EPOCH ###### 862 ######
+epoch 862.0000 with epoch time 67.5976 s
+
+EPOCH ###### 809 ######
+epoch 809.0000 with epoch time 67.4419 s
+
+EPOCH ###### 953 ######
+epoch 953.0000 with epoch time 67.2617 s
+
+EPOCH ###### 978 ######
+epoch 978.0000 with epoch time 67.4636 s
+
+EPOCH ###### 946 ######
+epoch 946.0000 with epoch time 68.3180 s
+
+EPOCH ###### 770 ######
+epoch 770.0000 with epoch time 68.7579 s
+
+EPOCH ###### 733 ######
+epoch 733.0000 with epoch time 67.5682 s
+
+EPOCH ###### 785 ######
+epoch 785.0000 with epoch time 67.6076 s
+===============================fold num is : 5, family type is : GTA================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTA_fold5', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTA')
+================================================加载数据================================================
+Fold_num is 5==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 721 ######
+epoch 721.0000 with epoch time 67.3555 s
+
+EPOCH ###### 788 ######
+epoch 788.0000 with epoch time 67.4401 s
+
+EPOCH ###### 717 ######
+epoch 717.0000 with epoch time 67.3124 s
+
+EPOCH ###### 910 ######
+epoch 910.0000 with epoch time 67.6656 s
+
+EPOCH ###### 451 ######
+epoch 451.0000 with epoch time 67.4208 s
+
+EPOCH ###### 494 ######
+epoch 494.0000 with epoch time 67.5031 s
+
+EPOCH ###### 791 ######
+epoch 791.0000 with epoch time 67.5771 s
+
+EPOCH ###### 437 ######
+epoch 437.0000 with epoch time 67.6246 s
+
+EPOCH ###### 787 ######
+epoch 787.0000 with epoch time 68.0206 s
+
+EPOCH ###### 388 ######
+epoch 388.0000 with epoch time 84.9936 s
+
+EPOCH ###### 573 ######
+epoch 573.0000 with epoch time 81.3710 s
+
+EPOCH ###### 392 ######
+epoch 392.0000 with epoch time 81.8452 s
+
+EPOCH ###### 907 ######
+epoch 907.0000 with epoch time 82.6511 s
+
+EPOCH ###### 946 ######
+epoch 946.0000 with epoch time 81.5094 s
+
+EPOCH ###### 633 ######
+epoch 633.0000 with epoch time 84.2995 s
+
+EPOCH ###### 620 ######
+epoch 620.0000 with epoch time 81.1371 s
+
+EPOCH ###### 840 ######
+epoch 840.0000 with epoch time 83.8987 s
+
+EPOCH ###### 601 ######
+epoch 601.0000 with epoch time 80.8248 s
+
+EPOCH ###### 969 ######
+epoch 969.0000 with epoch time 83.1734 s
+
+EPOCH ###### 570 ######
+epoch 570.0000 with epoch time 81.3551 s
+
+EPOCH ###### 505 ######
+epoch 505.0000 with epoch time 81.2346 s
+
+EPOCH ###### 535 ######
+epoch 535.0000 with epoch time 75.2091 s
+
+EPOCH ###### 724 ######
+epoch 724.0000 with epoch time 71.2381 s
+
+EPOCH ###### 358 ######
+epoch 358.0000 with epoch time 68.6430 s
+
+EPOCH ###### 837 ######
+epoch 837.0000 with epoch time 68.4681 s
+
+EPOCH ###### 461 ######
+epoch 461.0000 with epoch time 67.9273 s
+
+EPOCH ###### 830 ######
+epoch 830.0000 with epoch time 67.8145 s
+
+EPOCH ###### 821 ######
+epoch 821.0000 with epoch time 67.6650 s
+
+EPOCH ###### 771 ######
+epoch 771.0000 with epoch time 67.3726 s
+
+EPOCH ###### 577 ######
+epoch 577.0000 with epoch time 67.5643 s
+
+EPOCH ###### 947 ######
+epoch 947.0000 with epoch time 86.9227 s
+
+EPOCH ###### 720 ######
+epoch 720.0000 with epoch time 73.7681 s
+
+EPOCH ###### 474 ######
+epoch 474.0000 with epoch time 66.9618 s
+
+EPOCH ###### 950 ######
+epoch 950.0000 with epoch time 66.7649 s
+
+EPOCH ###### 719 ######
+epoch 719.0000 with epoch time 67.0038 s
+
+EPOCH ###### 611 ######
+epoch 611.0000 with epoch time 67.0369 s
+
+EPOCH ###### 763 ######
+epoch 763.0000 with epoch time 66.9585 s
+
+EPOCH ###### 981 ######
+epoch 981.0000 with epoch time 66.9687 s
+
+EPOCH ###### 472 ######
+epoch 472.0000 with epoch time 67.0968 s
+
+EPOCH ###### 809 ######
+epoch 809.0000 with epoch time 66.7910 s
+
+EPOCH ###### 928 ######
+epoch 928.0000 with epoch time 65.3110 s
+
+EPOCH ###### 622 ######
+epoch 622.0000 with epoch time 65.8331 s
+
+EPOCH ###### 512 ######
+epoch 512.0000 with epoch time 65.8881 s
+
+EPOCH ###### 543 ######
+epoch 543.0000 with epoch time 65.9276 s
+
+EPOCH ###### 987 ######
+epoch 987.0000 with epoch time 66.0861 s
+
+EPOCH ###### 686 ######
+epoch 686.0000 with epoch time 66.9730 s
+
+EPOCH ###### 371 ######
+epoch 371.0000 with epoch time 65.7695 s
+
+EPOCH ###### 533 ######
+epoch 533.0000 with epoch time 65.4145 s
+
+EPOCH ###### 417 ######
+epoch 417.0000 with epoch time 65.4022 s
+
+EPOCH ###### 541 ######
+epoch 541.0000 with epoch time 65.4242 s
+
+EPOCH ###### 672 ######
+epoch 672.0000 with epoch time 65.5557 s
+
+EPOCH ###### 416 ######
+epoch 416.0000 with epoch time 66.0390 s
+
+EPOCH ###### 780 ######
+epoch 780.0000 with epoch time 65.7409 s
+
+EPOCH ###### 310 ######
+epoch 310.0000 with epoch time 65.7849 s
+
+EPOCH ###### 710 ######
+epoch 710.0000 with epoch time 65.4444 s
+
+EPOCH ###### 696 ######
+epoch 696.0000 with epoch time 65.6127 s
+
+EPOCH ###### 519 ######
+epoch 519.0000 with epoch time 66.1145 s
+
+EPOCH ###### 395 ######
+epoch 395.0000 with epoch time 66.0733 s
+
+EPOCH ###### 448 ######
+epoch 448.0000 with epoch time 65.6678 s
+
+EPOCH ###### 589 ######
+epoch 589.0000 with epoch time 65.3346 s
+
+EPOCH ###### 663 ######
+epoch 663.0000 with epoch time 65.5349 s
+
+EPOCH ###### 479 ######
+epoch 479.0000 with epoch time 66.2565 s
+
+EPOCH ###### 297 ######
+epoch 297.0000 with epoch time 65.5819 s
+
+EPOCH ###### 503 ######
+epoch 503.0000 with epoch time 65.7689 s
+
+EPOCH ###### 870 ######
+epoch 870.0000 with epoch time 65.4173 s
+
+EPOCH ###### 715 ######
+epoch 715.0000 with epoch time 65.4606 s
+
+EPOCH ###### 986 ######
+epoch 986.0000 with epoch time 65.5688 s
+
+EPOCH ###### 772 ######
+epoch 772.0000 with epoch time 65.1151 s
+
+EPOCH ###### 569 ######
+epoch 569.0000 with epoch time 65.4607 s
+
+EPOCH ###### 706 ######
+epoch 706.0000 with epoch time 65.4708 s
+
+EPOCH ###### 940 ######
+epoch 940.0000 with epoch time 66.1003 s
+
+EPOCH ###### 742 ######
+epoch 742.0000 with epoch time 65.6911 s
+
+EPOCH ###### 776 ######
+epoch 776.0000 with epoch time 66.2316 s
+
+EPOCH ###### 838 ######
+epoch 838.0000 with epoch time 65.9220 s
+
+EPOCH ###### 698 ######
+epoch 698.0000 with epoch time 65.5706 s
+
+EPOCH ###### 865 ######
+epoch 865.0000 with epoch time 66.1941 s
+
+EPOCH ###### 526 ######
+epoch 526.0000 with epoch time 65.7150 s
+
+EPOCH ###### 978 ######
+epoch 978.0000 with epoch time 65.7860 s
+
+EPOCH ###### 799 ######
+epoch 799.0000 with epoch time 66.1226 s
+
+EPOCH ###### 457 ######
+epoch 457.0000 with epoch time 66.1043 s
+
+EPOCH ###### 428 ######
+epoch 428.0000 with epoch time 65.7049 s
+
+EPOCH ###### 883 ######
+epoch 883.0000 with epoch time 65.6316 s
+
+EPOCH ###### 566 ######
+epoch 566.0000 with epoch time 65.8102 s
+
+EPOCH ###### 312 ######
+epoch 312.0000 with epoch time 65.5423 s
+
+EPOCH ###### 890 ######
+epoch 890.0000 with epoch time 65.6751 s
+
+EPOCH ###### 727 ######
+epoch 727.0000 with epoch time 65.9531 s
+
+EPOCH ###### 884 ######
+epoch 884.0000 with epoch time 67.0523 s
+
+EPOCH ###### 418 ######
+epoch 418.0000 with epoch time 66.6587 s
+
+EPOCH ###### 613 ######
+epoch 613.0000 with epoch time 66.3632 s
+
+EPOCH ###### 389 ######
+epoch 389.0000 with epoch time 65.6404 s
+
+EPOCH ###### 989 ######
+epoch 989.0000 with epoch time 65.3852 s
+
+EPOCH ###### 581 ######
+epoch 581.0000 with epoch time 65.3488 s
+
+EPOCH ###### 588 ######
+epoch 588.0000 with epoch time 65.4254 s
+
+EPOCH ###### 964 ######
+epoch 964.0000 with epoch time 65.6759 s
+
+EPOCH ###### 586 ######
+epoch 586.0000 with epoch time 65.5927 s
+
+EPOCH ###### 429 ######
+epoch 429.0000 with epoch time 65.3156 s
+
+EPOCH ###### 484 ######
+epoch 484.0000 with epoch time 66.2695 s
+
+EPOCH ###### 583 ######
+epoch 583.0000 with epoch time 65.9366 s
+
+EPOCH ###### 832 ######
+epoch 832.0000 with epoch time 66.3924 s
+
+EPOCH ###### 885 ######
+epoch 885.0000 with epoch time 65.7402 s
+===============================fold num is : 6, family type is : GTA================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTA_fold6', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTA')
+================================================加载数据================================================
+Fold_num is 6==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 823 ######
+epoch 823.0000 with epoch time 66.0136 s
+
+EPOCH ###### 950 ######
+epoch 950.0000 with epoch time 64.7200 s
+
+EPOCH ###### 951 ######
+epoch 951.0000 with epoch time 65.6062 s
+
+EPOCH ###### 947 ######
+epoch 947.0000 with epoch time 65.2223 s
+
+EPOCH ###### 915 ######
+epoch 915.0000 with epoch time 65.3756 s
+
+EPOCH ###### 949 ######
+epoch 949.0000 with epoch time 66.6518 s
+
+EPOCH ###### 948 ######
+epoch 948.0000 with epoch time 65.8707 s
+
+EPOCH ###### 706 ######
+epoch 706.0000 with epoch time 65.4329 s
+
+EPOCH ###### 825 ######
+epoch 825.0000 with epoch time 65.5063 s
+
+EPOCH ###### 953 ######
+epoch 953.0000 with epoch time 65.5499 s
+
+EPOCH ###### 786 ######
+epoch 786.0000 with epoch time 65.8031 s
+
+EPOCH ###### 833 ######
+epoch 833.0000 with epoch time 65.6058 s
+
+EPOCH ###### 965 ######
+epoch 965.0000 with epoch time 65.6216 s
+
+EPOCH ###### 824 ######
+epoch 824.0000 with epoch time 65.6780 s
+
+EPOCH ###### 909 ######
+epoch 909.0000 with epoch time 65.7898 s
+
+EPOCH ###### 918 ######
+epoch 918.0000 with epoch time 65.3728 s
+
+EPOCH ###### 912 ######
+epoch 912.0000 with epoch time 65.0618 s
+
+EPOCH ###### 957 ######
+epoch 957.0000 with epoch time 65.4560 s
+
+EPOCH ###### 954 ######
+epoch 954.0000 with epoch time 66.2336 s
+
+EPOCH ###### 961 ######
+epoch 961.0000 with epoch time 66.1566 s
+
+EPOCH ###### 919 ######
+epoch 919.0000 with epoch time 65.5757 s
+
+EPOCH ###### 807 ######
+epoch 807.0000 with epoch time 65.5659 s
+
+EPOCH ###### 920 ######
+epoch 920.0000 with epoch time 65.6497 s
+
+EPOCH ###### 838 ######
+epoch 838.0000 with epoch time 65.4472 s
+
+EPOCH ###### 567 ######
+epoch 567.0000 with epoch time 65.7834 s
+
+EPOCH ###### 834 ######
+epoch 834.0000 with epoch time 65.8315 s
+
+EPOCH ###### 473 ######
+epoch 473.0000 with epoch time 65.7978 s
+
+EPOCH ###### 668 ######
+epoch 668.0000 with epoch time 65.2411 s
+
+EPOCH ###### 835 ######
+epoch 835.0000 with epoch time 66.4265 s
+
+EPOCH ###### 910 ######
+epoch 910.0000 with epoch time 66.0385 s
+
+EPOCH ###### 974 ######
+epoch 974.0000 with epoch time 66.1281 s
+
+EPOCH ###### 708 ######
+epoch 708.0000 with epoch time 65.2144 s
+
+EPOCH ###### 642 ######
+epoch 642.0000 with epoch time 65.6074 s
+
+EPOCH ###### 977 ######
+epoch 977.0000 with epoch time 65.4625 s
+
+EPOCH ###### 546 ######
+epoch 546.0000 with epoch time 65.3669 s
+
+EPOCH ###### 964 ######
+epoch 964.0000 with epoch time 65.1412 s
+
+EPOCH ###### 822 ######
+epoch 822.0000 with epoch time 65.5127 s
+
+EPOCH ###### 694 ######
+epoch 694.0000 with epoch time 66.1134 s
+
+EPOCH ###### 903 ######
+epoch 903.0000 with epoch time 65.7822 s
+
+EPOCH ###### 449 ######
+epoch 449.0000 with epoch time 65.4316 s
+
+EPOCH ###### 678 ######
+epoch 678.0000 with epoch time 65.6216 s
+
+EPOCH ###### 468 ######
+epoch 468.0000 with epoch time 66.1044 s
+
+EPOCH ###### 685 ######
+epoch 685.0000 with epoch time 65.8795 s
+
+EPOCH ###### 409 ######
+epoch 409.0000 with epoch time 66.3413 s
+
+EPOCH ###### 952 ######
+epoch 952.0000 with epoch time 66.0966 s
+
+EPOCH ###### 687 ######
+epoch 687.0000 with epoch time 65.5138 s
+
+EPOCH ###### 529 ######
+epoch 529.0000 with epoch time 65.7273 s
+
+EPOCH ###### 844 ######
+epoch 844.0000 with epoch time 65.8603 s
+
+EPOCH ###### 426 ######
+epoch 426.0000 with epoch time 66.7298 s
+
+EPOCH ###### 809 ######
+epoch 809.0000 with epoch time 65.9011 s
+
+EPOCH ###### 972 ######
+epoch 972.0000 with epoch time 66.3708 s
+
+EPOCH ###### 526 ######
+epoch 526.0000 with epoch time 65.2530 s
+
+EPOCH ###### 555 ######
+epoch 555.0000 with epoch time 66.4124 s
+
+EPOCH ###### 797 ######
+epoch 797.0000 with epoch time 65.4085 s
+
+EPOCH ###### 780 ######
+epoch 780.0000 with epoch time 66.9466 s
+
+EPOCH ###### 925 ######
+epoch 925.0000 with epoch time 65.4621 s
+
+EPOCH ###### 966 ######
+epoch 966.0000 with epoch time 65.4603 s
+
+EPOCH ###### 686 ######
+epoch 686.0000 with epoch time 66.1196 s
+
+EPOCH ###### 793 ######
+epoch 793.0000 with epoch time 67.0204 s
+
+EPOCH ###### 724 ######
+epoch 724.0000 with epoch time 66.0656 s
+
+EPOCH ###### 648 ######
+epoch 648.0000 with epoch time 65.5268 s
+
+EPOCH ###### 795 ######
+epoch 795.0000 with epoch time 65.1298 s
+
+EPOCH ###### 510 ######
+epoch 510.0000 with epoch time 65.6846 s
+
+EPOCH ###### 923 ######
+epoch 923.0000 with epoch time 66.2912 s
+
+EPOCH ###### 675 ######
+epoch 675.0000 with epoch time 65.9337 s
+
+EPOCH ###### 765 ######
+epoch 765.0000 with epoch time 65.6072 s
+
+EPOCH ###### 759 ######
+epoch 759.0000 with epoch time 66.2817 s
+
+EPOCH ###### 514 ######
+epoch 514.0000 with epoch time 65.8848 s
+
+EPOCH ###### 689 ######
+epoch 689.0000 with epoch time 65.6313 s
+
+EPOCH ###### 879 ######
+epoch 879.0000 with epoch time 65.6866 s
+
+EPOCH ###### 971 ######
+epoch 971.0000 with epoch time 65.8299 s
+
+EPOCH ###### 622 ######
+epoch 622.0000 with epoch time 65.5873 s
+
+EPOCH ###### 906 ######
+epoch 906.0000 with epoch time 65.8495 s
+
+EPOCH ###### 927 ######
+epoch 927.0000 with epoch time 65.2998 s
+
+EPOCH ###### 629 ######
+epoch 629.0000 with epoch time 65.6689 s
+
+EPOCH ###### 429 ######
+epoch 429.0000 with epoch time 65.4100 s
+
+EPOCH ###### 673 ######
+epoch 673.0000 with epoch time 65.7441 s
+
+EPOCH ###### 541 ######
+epoch 541.0000 with epoch time 66.1424 s
+
+EPOCH ###### 631 ######
+epoch 631.0000 with epoch time 65.8173 s
+
+EPOCH ###### 880 ######
+epoch 880.0000 with epoch time 65.6523 s
+
+EPOCH ###### 841 ######
+epoch 841.0000 with epoch time 66.4125 s
+
+EPOCH ###### 967 ######
+epoch 967.0000 with epoch time 65.8555 s
+
+EPOCH ###### 956 ######
+epoch 956.0000 with epoch time 65.7690 s
+
+EPOCH ###### 969 ######
+epoch 969.0000 with epoch time 65.5229 s
+
+EPOCH ###### 719 ######
+epoch 719.0000 with epoch time 65.6138 s
+
+EPOCH ###### 349 ######
+epoch 349.0000 with epoch time 65.6155 s
+
+EPOCH ###### 680 ######
+epoch 680.0000 with epoch time 65.5339 s
+
+EPOCH ###### 744 ######
+epoch 744.0000 with epoch time 66.2012 s
+
+EPOCH ###### 988 ######
+epoch 988.0000 with epoch time 66.0522 s
+
+EPOCH ###### 960 ######
+epoch 960.0000 with epoch time 65.4872 s
+
+EPOCH ###### 848 ######
+epoch 848.0000 with epoch time 65.7995 s
+
+EPOCH ###### 970 ######
+epoch 970.0000 with epoch time 66.0452 s
+
+EPOCH ###### 811 ######
+epoch 811.0000 with epoch time 65.6494 s
+
+EPOCH ###### 837 ######
+epoch 837.0000 with epoch time 65.2578 s
+
+EPOCH ###### 878 ######
+epoch 878.0000 with epoch time 65.7974 s
+
+EPOCH ###### 475 ######
+epoch 475.0000 with epoch time 65.2947 s
+
+EPOCH ###### 761 ######
+epoch 761.0000 with epoch time 65.5423 s
+
+EPOCH ###### 904 ######
+epoch 904.0000 with epoch time 65.7666 s
+
+EPOCH ###### 462 ######
+epoch 462.0000 with epoch time 65.9417 s
+
+EPOCH ###### 789 ######
+epoch 789.0000 with epoch time 65.5010 s
+===============================fold num is : 7, family type is : GTA================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTA_fold7', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTA')
+================================================加载数据================================================
+Fold_num is 7==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 964 ######
+epoch 964.0000 with epoch time 65.7612 s
+
+EPOCH ###### 885 ######
+epoch 885.0000 with epoch time 65.7828 s
+
+EPOCH ###### 929 ######
+epoch 929.0000 with epoch time 65.5263 s
+
+EPOCH ###### 975 ######
+epoch 975.0000 with epoch time 65.6388 s
+
+EPOCH ###### 915 ######
+epoch 915.0000 with epoch time 65.6946 s
+
+EPOCH ###### 862 ######
+epoch 862.0000 with epoch time 65.2851 s
+
+EPOCH ###### 965 ######
+epoch 965.0000 with epoch time 65.2224 s
+
+EPOCH ###### 953 ######
+epoch 953.0000 with epoch time 65.5599 s
+
+EPOCH ###### 978 ######
+epoch 978.0000 with epoch time 65.9881 s
+
+EPOCH ###### 875 ######
+epoch 875.0000 with epoch time 66.2686 s
+
+EPOCH ###### 930 ######
+epoch 930.0000 with epoch time 66.2603 s
+
+EPOCH ###### 982 ######
+epoch 982.0000 with epoch time 66.3637 s
+
+EPOCH ###### 908 ######
+epoch 908.0000 with epoch time 65.7458 s
+
+EPOCH ###### 934 ######
+epoch 934.0000 with epoch time 65.5924 s
+
+EPOCH ###### 704 ######
+epoch 704.0000 with epoch time 65.4549 s
+
+EPOCH ###### 922 ######
+epoch 922.0000 with epoch time 65.5964 s
+
+EPOCH ###### 903 ######
+epoch 903.0000 with epoch time 65.8996 s
+
+EPOCH ###### 824 ######
+epoch 824.0000 with epoch time 65.7860 s
+
+EPOCH ###### 935 ######
+epoch 935.0000 with epoch time 66.2959 s
+
+EPOCH ###### 983 ######
+epoch 983.0000 with epoch time 66.7464 s
+
+EPOCH ###### 961 ######
+epoch 961.0000 with epoch time 65.4654 s
+
+EPOCH ###### 950 ######
+epoch 950.0000 with epoch time 65.6305 s
+
+EPOCH ###### 907 ######
+epoch 907.0000 with epoch time 66.0011 s
+
+EPOCH ###### 956 ######
+epoch 956.0000 with epoch time 65.6835 s
+
+EPOCH ###### 843 ######
+epoch 843.0000 with epoch time 65.4164 s
+
+EPOCH ###### 967 ######
+epoch 967.0000 with epoch time 65.1149 s
+
+EPOCH ###### 808 ######
+epoch 808.0000 with epoch time 65.6353 s
+
+EPOCH ###### 901 ######
+epoch 901.0000 with epoch time 66.0997 s
+
+EPOCH ###### 952 ######
+epoch 952.0000 with epoch time 65.5744 s
+
+EPOCH ###### 949 ######
+epoch 949.0000 with epoch time 65.4557 s
+
+EPOCH ###### 979 ######
+epoch 979.0000 with epoch time 65.6864 s
+
+EPOCH ###### 898 ######
+epoch 898.0000 with epoch time 66.3462 s
+
+EPOCH ###### 994 ######
+epoch 994.0000 with epoch time 65.6467 s
+
+EPOCH ###### 837 ######
+epoch 837.0000 with epoch time 65.5922 s
+
+EPOCH ###### 853 ######
+epoch 853.0000 with epoch time 65.6672 s
+
+EPOCH ###### 802 ######
+epoch 802.0000 with epoch time 65.6029 s
+
+EPOCH ###### 996 ######
+epoch 996.0000 with epoch time 65.7971 s
+
+EPOCH ###### 948 ######
+epoch 948.0000 with epoch time 65.7382 s
+
+EPOCH ###### 857 ######
+epoch 857.0000 with epoch time 65.5684 s
+
+EPOCH ###### 840 ######
+epoch 840.0000 with epoch time 65.4277 s
+
+EPOCH ###### 768 ######
+epoch 768.0000 with epoch time 66.2717 s
+
+EPOCH ###### 910 ######
+epoch 910.0000 with epoch time 65.6105 s
+
+EPOCH ###### 715 ######
+epoch 715.0000 with epoch time 65.3817 s
+
+EPOCH ###### 728 ######
+epoch 728.0000 with epoch time 65.1853 s
+
+EPOCH ###### 890 ######
+epoch 890.0000 with epoch time 65.2805 s
+
+EPOCH ###### 998 ######
+epoch 998.0000 with epoch time 66.3634 s
+
+EPOCH ###### 939 ######
+epoch 939.0000 with epoch time 66.1254 s
+
+EPOCH ###### 747 ######
+epoch 747.0000 with epoch time 65.8443 s
+
+EPOCH ###### 697 ######
+epoch 697.0000 with epoch time 65.6675 s
+
+EPOCH ###### 936 ######
+epoch 936.0000 with epoch time 65.2345 s
+
+EPOCH ###### 995 ######
+epoch 995.0000 with epoch time 66.0878 s
+
+EPOCH ###### 886 ######
+epoch 886.0000 with epoch time 66.1777 s
+
+EPOCH ###### 836 ######
+epoch 836.0000 with epoch time 65.3278 s
+
+EPOCH ###### 938 ######
+epoch 938.0000 with epoch time 65.3159 s
+
+EPOCH ###### 970 ######
+epoch 970.0000 with epoch time 65.3824 s
+
+EPOCH ###### 718 ######
+epoch 718.0000 with epoch time 65.2847 s
+
+EPOCH ###### 712 ######
+epoch 712.0000 with epoch time 65.8321 s
+
+EPOCH ###### 918 ######
+epoch 918.0000 with epoch time 65.8459 s
+
+EPOCH ###### 795 ######
+epoch 795.0000 with epoch time 65.9817 s
+
+EPOCH ###### 735 ######
+epoch 735.0000 with epoch time 66.5051 s
+
+EPOCH ###### 866 ######
+epoch 866.0000 with epoch time 65.3438 s
+
+EPOCH ###### 977 ######
+epoch 977.0000 with epoch time 65.2334 s
+
+EPOCH ###### 833 ######
+epoch 833.0000 with epoch time 65.4879 s
+
+EPOCH ###### 829 ######
+epoch 829.0000 with epoch time 65.3220 s
+
+EPOCH ###### 969 ######
+epoch 969.0000 with epoch time 65.5759 s
+
+EPOCH ###### 823 ######
+epoch 823.0000 with epoch time 65.3424 s
+
+EPOCH ###### 725 ######
+epoch 725.0000 with epoch time 65.4622 s
+
+EPOCH ###### 810 ######
+epoch 810.0000 with epoch time 65.6315 s
+
+EPOCH ###### 754 ######
+epoch 754.0000 with epoch time 65.8432 s
+
+EPOCH ###### 780 ######
+epoch 780.0000 with epoch time 65.9486 s
+
+EPOCH ###### 940 ######
+epoch 940.0000 with epoch time 65.4059 s
+
+EPOCH ###### 745 ######
+epoch 745.0000 with epoch time 65.3838 s
+
+EPOCH ###### 676 ######
+epoch 676.0000 with epoch time 65.5103 s
+
+EPOCH ###### 848 ######
+epoch 848.0000 with epoch time 65.3304 s
+
+EPOCH ###### 988 ######
+epoch 988.0000 with epoch time 65.5567 s
+
+EPOCH ###### 733 ######
+epoch 733.0000 with epoch time 65.3413 s
+
+EPOCH ###### 807 ######
+epoch 807.0000 with epoch time 65.9887 s
+
+EPOCH ###### 835 ######
+epoch 835.0000 with epoch time 65.6463 s
+
+EPOCH ###### 992 ######
+epoch 992.0000 with epoch time 65.3295 s
+
+EPOCH ###### 955 ######
+epoch 955.0000 with epoch time 65.4104 s
+
+EPOCH ###### 615 ######
+epoch 615.0000 with epoch time 65.7833 s
+
+EPOCH ###### 799 ######
+epoch 799.0000 with epoch time 66.0198 s
+
+EPOCH ###### 874 ######
+epoch 874.0000 with epoch time 65.7627 s
+
+EPOCH ###### 960 ######
+epoch 960.0000 with epoch time 65.3957 s
+
+EPOCH ###### 801 ######
+epoch 801.0000 with epoch time 65.6991 s
+
+EPOCH ###### 895 ######
+epoch 895.0000 with epoch time 65.9261 s
+
+EPOCH ###### 878 ######
+epoch 878.0000 with epoch time 65.6414 s
+
+EPOCH ###### 740 ######
+epoch 740.0000 with epoch time 66.3679 s
+
+EPOCH ###### 786 ######
+epoch 786.0000 with epoch time 65.7667 s
+
+EPOCH ###### 944 ######
+epoch 944.0000 with epoch time 65.3356 s
+
+EPOCH ###### 826 ######
+epoch 826.0000 with epoch time 65.2175 s
+
+EPOCH ###### 714 ######
+epoch 714.0000 with epoch time 65.4209 s
+
+EPOCH ###### 821 ######
+epoch 821.0000 with epoch time 65.4716 s
+
+EPOCH ###### 859 ######
+epoch 859.0000 with epoch time 65.9012 s
+
+EPOCH ###### 783 ######
+epoch 783.0000 with epoch time 65.6075 s
+
+EPOCH ###### 744 ######
+epoch 744.0000 with epoch time 66.0073 s
+
+EPOCH ###### 986 ######
+epoch 986.0000 with epoch time 65.4398 s
+
+EPOCH ###### 925 ######
+epoch 925.0000 with epoch time 65.6191 s
+
+EPOCH ###### 719 ######
+epoch 719.0000 with epoch time 65.4220 s
+
+EPOCH ###### 779 ######
+epoch 779.0000 with epoch time 65.9255 s
+===============================fold num is : 8, family type is : GTA================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTA_fold8', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTA')
+================================================加载数据================================================
+Fold_num is 8==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 882 ######
+epoch 882.0000 with epoch time 66.3723 s
+
+EPOCH ###### 650 ######
+epoch 650.0000 with epoch time 65.4012 s
+
+EPOCH ###### 430 ######
+epoch 430.0000 with epoch time 65.6973 s
+
+EPOCH ###### 595 ######
+epoch 595.0000 with epoch time 65.7595 s
+
+EPOCH ###### 834 ######
+epoch 834.0000 with epoch time 65.6974 s
+
+EPOCH ###### 740 ######
+epoch 740.0000 with epoch time 65.9304 s
+
+EPOCH ###### 661 ######
+epoch 661.0000 with epoch time 65.6875 s
+
+EPOCH ###### 958 ######
+epoch 958.0000 with epoch time 65.3485 s
+
+EPOCH ###### 689 ######
+epoch 689.0000 with epoch time 65.9951 s
+
+EPOCH ###### 842 ######
+epoch 842.0000 with epoch time 65.3990 s
+
+EPOCH ###### 675 ######
+epoch 675.0000 with epoch time 65.2934 s
+
+EPOCH ###### 736 ######
+epoch 736.0000 with epoch time 65.3980 s
+
+EPOCH ###### 705 ######
+epoch 705.0000 with epoch time 65.5832 s
+
+EPOCH ###### 845 ######
+epoch 845.0000 with epoch time 66.0998 s
+
+EPOCH ###### 712 ######
+epoch 712.0000 with epoch time 65.5092 s
+
+EPOCH ###### 467 ######
+epoch 467.0000 with epoch time 65.5788 s
+
+EPOCH ###### 881 ######
+epoch 881.0000 with epoch time 65.3558 s
+
+EPOCH ###### 833 ######
+epoch 833.0000 with epoch time 65.5498 s
+
+EPOCH ###### 686 ######
+epoch 686.0000 with epoch time 65.5012 s
+
+EPOCH ###### 726 ######
+epoch 726.0000 with epoch time 65.4478 s
+
+EPOCH ###### 662 ######
+epoch 662.0000 with epoch time 65.1920 s
+
+EPOCH ###### 511 ######
+epoch 511.0000 with epoch time 66.0108 s
+
+EPOCH ###### 407 ######
+epoch 407.0000 with epoch time 65.3333 s
+
+EPOCH ###### 396 ######
+epoch 396.0000 with epoch time 65.5308 s
+
+EPOCH ###### 997 ######
+epoch 997.0000 with epoch time 65.7489 s
+
+EPOCH ###### 439 ######
+epoch 439.0000 with epoch time 65.3600 s
+
+EPOCH ###### 676 ######
+epoch 676.0000 with epoch time 66.8557 s
+
+EPOCH ###### 719 ######
+epoch 719.0000 with epoch time 66.1964 s
+
+EPOCH ###### 531 ######
+epoch 531.0000 with epoch time 65.8500 s
+
+EPOCH ###### 752 ######
+epoch 752.0000 with epoch time 65.3541 s
+
+EPOCH ###### 647 ######
+epoch 647.0000 with epoch time 65.3395 s
+
+EPOCH ###### 518 ######
+epoch 518.0000 with epoch time 65.3248 s
+
+EPOCH ###### 835 ######
+epoch 835.0000 with epoch time 65.4208 s
+
+EPOCH ###### 713 ######
+epoch 713.0000 with epoch time 65.8921 s
+
+EPOCH ###### 729 ######
+epoch 729.0000 with epoch time 65.4548 s
+
+EPOCH ###### 660 ######
+epoch 660.0000 with epoch time 65.8214 s
+
+EPOCH ###### 735 ######
+epoch 735.0000 with epoch time 65.6619 s
+
+EPOCH ###### 459 ######
+epoch 459.0000 with epoch time 66.2017 s
+
+EPOCH ###### 734 ######
+epoch 734.0000 with epoch time 65.6557 s
+
+EPOCH ###### 561 ######
+epoch 561.0000 with epoch time 65.8523 s
+
+EPOCH ###### 486 ######
+epoch 486.0000 with epoch time 66.4071 s
+
+EPOCH ###### 477 ######
+epoch 477.0000 with epoch time 65.7067 s
+
+EPOCH ###### 837 ######
+epoch 837.0000 with epoch time 65.1306 s
+
+EPOCH ###### 962 ######
+epoch 962.0000 with epoch time 66.1174 s
+
+EPOCH ###### 702 ######
+epoch 702.0000 with epoch time 66.0178 s
+
+EPOCH ###### 922 ######
+epoch 922.0000 with epoch time 65.8232 s
+
+EPOCH ###### 963 ######
+epoch 963.0000 with epoch time 65.2100 s
+
+EPOCH ###### 902 ######
+epoch 902.0000 with epoch time 65.7839 s
+
+EPOCH ###### 366 ######
+epoch 366.0000 with epoch time 66.5824 s
+
+EPOCH ###### 693 ######
+epoch 693.0000 with epoch time 65.8655 s
+
+EPOCH ###### 711 ######
+epoch 711.0000 with epoch time 65.3365 s
+
+EPOCH ###### 532 ######
+epoch 532.0000 with epoch time 66.2777 s
+
+EPOCH ###### 536 ######
+epoch 536.0000 with epoch time 66.0234 s
+
+EPOCH ###### 633 ######
+epoch 633.0000 with epoch time 65.6067 s
+
+EPOCH ###### 975 ######
+epoch 975.0000 with epoch time 66.5355 s
+
+EPOCH ###### 981 ######
+epoch 981.0000 with epoch time 65.5126 s
+
+EPOCH ###### 960 ######
+epoch 960.0000 with epoch time 65.2398 s
+
+EPOCH ###### 471 ######
+epoch 471.0000 with epoch time 64.8455 s
+
+EPOCH ###### 947 ######
+epoch 947.0000 with epoch time 65.7282 s
+
+EPOCH ###### 646 ######
+epoch 646.0000 with epoch time 65.2978 s
+
+EPOCH ###### 700 ######
+epoch 700.0000 with epoch time 65.8859 s
+
+EPOCH ###### 358 ######
+epoch 358.0000 with epoch time 65.9695 s
+
+EPOCH ###### 542 ######
+epoch 542.0000 with epoch time 65.6475 s
+
+EPOCH ###### 507 ######
+epoch 507.0000 with epoch time 65.5962 s
+
+EPOCH ###### 566 ######
+epoch 566.0000 with epoch time 65.3917 s
+
+EPOCH ###### 502 ######
+epoch 502.0000 with epoch time 66.1096 s
+
+EPOCH ###### 683 ######
+epoch 683.0000 with epoch time 66.7512 s
+
+EPOCH ###### 456 ######
+epoch 456.0000 with epoch time 65.6711 s
+
+EPOCH ###### 526 ######
+epoch 526.0000 with epoch time 65.4496 s
+
+EPOCH ###### 896 ######
+epoch 896.0000 with epoch time 65.3341 s
+
+EPOCH ###### 838 ######
+epoch 838.0000 with epoch time 65.3602 s
+
+EPOCH ###### 652 ######
+epoch 652.0000 with epoch time 65.4769 s
+
+EPOCH ###### 728 ######
+epoch 728.0000 with epoch time 66.1886 s
+
+EPOCH ###### 716 ######
+epoch 716.0000 with epoch time 65.6856 s
+
+EPOCH ###### 474 ######
+epoch 474.0000 with epoch time 65.4876 s
+
+EPOCH ###### 434 ######
+epoch 434.0000 with epoch time 65.4693 s
+
+EPOCH ###### 830 ######
+epoch 830.0000 with epoch time 65.7657 s
+
+EPOCH ###### 419 ######
+epoch 419.0000 with epoch time 65.3095 s
+
+EPOCH ###### 732 ######
+epoch 732.0000 with epoch time 65.4872 s
+
+EPOCH ###### 479 ######
+epoch 479.0000 with epoch time 65.1556 s
+
+EPOCH ###### 950 ######
+epoch 950.0000 with epoch time 65.4964 s
+
+EPOCH ###### 753 ######
+epoch 753.0000 with epoch time 65.2952 s
+
+EPOCH ###### 410 ######
+epoch 410.0000 with epoch time 65.4957 s
+
+EPOCH ###### 437 ######
+epoch 437.0000 with epoch time 65.4460 s
+
+EPOCH ###### 292 ######
+epoch 292.0000 with epoch time 65.8540 s
+
+EPOCH ###### 562 ######
+epoch 562.0000 with epoch time 65.9186 s
+
+EPOCH ###### 651 ######
+epoch 651.0000 with epoch time 65.6872 s
+
+EPOCH ###### 438 ######
+epoch 438.0000 with epoch time 65.3987 s
+
+EPOCH ###### 534 ######
+epoch 534.0000 with epoch time 65.2471 s
+
+EPOCH ###### 901 ######
+epoch 901.0000 with epoch time 65.3402 s
+
+EPOCH ###### 519 ######
+epoch 519.0000 with epoch time 65.6453 s
+
+EPOCH ###### 826 ######
+epoch 826.0000 with epoch time 65.7387 s
+
+EPOCH ###### 853 ######
+epoch 853.0000 with epoch time 65.5357 s
+
+EPOCH ###### 634 ######
+epoch 634.0000 with epoch time 65.4684 s
+
+EPOCH ###### 957 ######
+epoch 957.0000 with epoch time 65.8388 s
+
+EPOCH ###### 991 ######
+epoch 991.0000 with epoch time 65.4766 s
+
+EPOCH ###### 703 ######
+epoch 703.0000 with epoch time 65.4129 s
+
+EPOCH ###### 772 ######
+epoch 772.0000 with epoch time 65.5688 s
+
+EPOCH ###### 415 ######
+epoch 415.0000 with epoch time 65.5574 s
+
+EPOCH ###### 829 ######
+epoch 829.0000 with epoch time 65.7262 s
+===============================fold num is : 9, family type is : GTA================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTA_fold9', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTA')
+================================================加载数据================================================
+Fold_num is 9==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 482 ######
+epoch 482.0000 with epoch time 65.8741 s
+
+EPOCH ###### 969 ######
+epoch 969.0000 with epoch time 65.5868 s
+
+EPOCH ###### 442 ######
+epoch 442.0000 with epoch time 65.3973 s
+
+EPOCH ###### 364 ######
+epoch 364.0000 with epoch time 65.8661 s
+
+EPOCH ###### 454 ######
+epoch 454.0000 with epoch time 66.2000 s
+
+EPOCH ###### 612 ######
+epoch 612.0000 with epoch time 65.6262 s
+
+EPOCH ###### 539 ######
+epoch 539.0000 with epoch time 65.5349 s
+
+EPOCH ###### 763 ######
+epoch 763.0000 with epoch time 65.3990 s
+
+EPOCH ###### 869 ######
+epoch 869.0000 with epoch time 65.4226 s
+
+EPOCH ###### 818 ######
+epoch 818.0000 with epoch time 65.5431 s
+
+EPOCH ###### 710 ######
+epoch 710.0000 with epoch time 65.4234 s
+
+EPOCH ###### 719 ######
+epoch 719.0000 with epoch time 65.8919 s
+
+EPOCH ###### 978 ######
+epoch 978.0000 with epoch time 65.9409 s
+
+EPOCH ###### 828 ######
+epoch 828.0000 with epoch time 65.8725 s
+
+EPOCH ###### 666 ######
+epoch 666.0000 with epoch time 65.2782 s
+
+EPOCH ###### 354 ######
+epoch 354.0000 with epoch time 66.2490 s
+
+EPOCH ###### 547 ######
+epoch 547.0000 with epoch time 65.5510 s
+
+EPOCH ###### 607 ######
+epoch 607.0000 with epoch time 65.7584 s
+
+EPOCH ###### 947 ######
+epoch 947.0000 with epoch time 65.5285 s
+
+EPOCH ###### 722 ######
+epoch 722.0000 with epoch time 65.6055 s
+
+EPOCH ###### 686 ######
+epoch 686.0000 with epoch time 66.2502 s
+
+EPOCH ###### 822 ######
+epoch 822.0000 with epoch time 65.9632 s
+
+EPOCH ###### 540 ######
+epoch 540.0000 with epoch time 65.4545 s
+
+EPOCH ###### 657 ######
+epoch 657.0000 with epoch time 65.9811 s
+
+EPOCH ###### 871 ######
+epoch 871.0000 with epoch time 66.3202 s
+
+EPOCH ###### 298 ######
+epoch 298.0000 with epoch time 65.8890 s
+
+EPOCH ###### 940 ######
+epoch 940.0000 with epoch time 65.9424 s
+
+EPOCH ###### 751 ######
+epoch 751.0000 with epoch time 65.6719 s
+
+EPOCH ###### 721 ######
+epoch 721.0000 with epoch time 65.9418 s
+
+EPOCH ###### 405 ######
+epoch 405.0000 with epoch time 66.3676 s
+
+EPOCH ###### 879 ######
+epoch 879.0000 with epoch time 65.7933 s
+
+EPOCH ###### 956 ######
+epoch 956.0000 with epoch time 65.6851 s
+
+EPOCH ###### 935 ######
+epoch 935.0000 with epoch time 66.5208 s
+
+EPOCH ###### 608 ######
+epoch 608.0000 with epoch time 65.5725 s
+
+EPOCH ###### 903 ######
+epoch 903.0000 with epoch time 65.2768 s
+
+EPOCH ###### 813 ######
+epoch 813.0000 with epoch time 65.3586 s
+
+EPOCH ###### 423 ######
+epoch 423.0000 with epoch time 65.5302 s
+
+EPOCH ###### 839 ######
+epoch 839.0000 with epoch time 65.9625 s
+
+EPOCH ###### 959 ######
+epoch 959.0000 with epoch time 66.3001 s
+
+EPOCH ###### 913 ######
+epoch 913.0000 with epoch time 65.4121 s
+
+EPOCH ###### 933 ######
+epoch 933.0000 with epoch time 66.0106 s
+
+EPOCH ###### 342 ######
+epoch 342.0000 with epoch time 65.2001 s
+
+EPOCH ###### 982 ######
+epoch 982.0000 with epoch time 65.7834 s
+
+EPOCH ###### 663 ######
+epoch 663.0000 with epoch time 65.4113 s
+
+EPOCH ###### 441 ######
+epoch 441.0000 with epoch time 65.1598 s
+
+EPOCH ###### 777 ######
+epoch 777.0000 with epoch time 65.2716 s
+
+EPOCH ###### 344 ######
+epoch 344.0000 with epoch time 66.3553 s
+
+EPOCH ###### 749 ######
+epoch 749.0000 with epoch time 65.5221 s
+
+EPOCH ###### 769 ######
+epoch 769.0000 with epoch time 65.2900 s
+
+EPOCH ###### 742 ######
+epoch 742.0000 with epoch time 64.9274 s
+
+EPOCH ###### 967 ######
+epoch 967.0000 with epoch time 65.2631 s
+
+EPOCH ###### 555 ######
+epoch 555.0000 with epoch time 65.8320 s
+
+EPOCH ###### 456 ######
+epoch 456.0000 with epoch time 66.1770 s
+
+EPOCH ###### 308 ######
+epoch 308.0000 with epoch time 65.9082 s
+
+EPOCH ###### 815 ######
+epoch 815.0000 with epoch time 65.8289 s
+
+EPOCH ###### 846 ######
+epoch 846.0000 with epoch time 65.6974 s
+
+EPOCH ###### 411 ######
+epoch 411.0000 with epoch time 65.8855 s
+
+EPOCH ###### 375 ######
+epoch 375.0000 with epoch time 65.2698 s
+
+EPOCH ###### 759 ######
+epoch 759.0000 with epoch time 65.3737 s
+
+EPOCH ###### 426 ######
+epoch 426.0000 with epoch time 65.8878 s
+
+EPOCH ###### 747 ######
+epoch 747.0000 with epoch time 66.2776 s
+
+EPOCH ###### 299 ######
+epoch 299.0000 with epoch time 65.6775 s
+
+EPOCH ###### 934 ######
+epoch 934.0000 with epoch time 65.7158 s
+
+EPOCH ###### 816 ######
+epoch 816.0000 with epoch time 66.1220 s
+
+EPOCH ###### 485 ######
+epoch 485.0000 with epoch time 66.0160 s
+
+EPOCH ###### 945 ######
+epoch 945.0000 with epoch time 65.3687 s
+
+EPOCH ###### 370 ######
+epoch 370.0000 with epoch time 67.3358 s
+
+EPOCH ###### 439 ######
+epoch 439.0000 with epoch time 65.8932 s
+
+EPOCH ###### 962 ######
+epoch 962.0000 with epoch time 65.4807 s
+
+EPOCH ###### 944 ######
+epoch 944.0000 with epoch time 65.2157 s
+
+EPOCH ###### 976 ######
+epoch 976.0000 with epoch time 65.0604 s
+
+EPOCH ###### 807 ######
+epoch 807.0000 with epoch time 65.2819 s
+
+EPOCH ###### 667 ######
+epoch 667.0000 with epoch time 65.7954 s
+
+EPOCH ###### 983 ######
+epoch 983.0000 with epoch time 65.7288 s
+
+EPOCH ###### 385 ######
+epoch 385.0000 with epoch time 65.7902 s
+
+EPOCH ###### 314 ######
+epoch 314.0000 with epoch time 65.2897 s
+
+EPOCH ###### 628 ######
+epoch 628.0000 with epoch time 66.0424 s
+
+EPOCH ###### 752 ######
+epoch 752.0000 with epoch time 65.4896 s
+
+EPOCH ###### 416 ######
+epoch 416.0000 with epoch time 65.6248 s
+
+EPOCH ###### 891 ######
+epoch 891.0000 with epoch time 65.9451 s
+
+EPOCH ###### 840 ######
+epoch 840.0000 with epoch time 65.4799 s
+
+EPOCH ###### 736 ######
+epoch 736.0000 with epoch time 65.1818 s
+
+EPOCH ###### 748 ######
+epoch 748.0000 with epoch time 65.2694 s
+
+EPOCH ###### 394 ######
+epoch 394.0000 with epoch time 65.3877 s
+
+EPOCH ###### 501 ######
+epoch 501.0000 with epoch time 65.9857 s
+
+EPOCH ###### 841 ######
+epoch 841.0000 with epoch time 65.8249 s
+
+EPOCH ###### 767 ######
+epoch 767.0000 with epoch time 65.5928 s
+
+EPOCH ###### 823 ######
+epoch 823.0000 with epoch time 65.3649 s
+
+EPOCH ###### 820 ######
+epoch 820.0000 with epoch time 65.4264 s
+
+EPOCH ###### 843 ######
+epoch 843.0000 with epoch time 65.3758 s
+
+EPOCH ###### 508 ######
+epoch 508.0000 with epoch time 65.5026 s
+
+EPOCH ###### 475 ######
+epoch 475.0000 with epoch time 65.7195 s
+
+EPOCH ###### 378 ######
+epoch 378.0000 with epoch time 66.1445 s
+
+EPOCH ###### 723 ######
+epoch 723.0000 with epoch time 65.8496 s
+
+EPOCH ###### 377 ######
+epoch 377.0000 with epoch time 65.3785 s
+
+EPOCH ###### 546 ######
+epoch 546.0000 with epoch time 65.2015 s
+
+EPOCH ###### 990 ######
+epoch 990.0000 with epoch time 65.3262 s
+
+EPOCH ###### 761 ######
+epoch 761.0000 with epoch time 66.2599 s
+
+EPOCH ###### 637 ######
+epoch 637.0000 with epoch time 65.4786 s
+
+EPOCH ###### 984 ######
+epoch 984.0000 with epoch time 65.3996 s
+===============================fold num is : 10, family type is : GTA===============================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTA_fold10', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTA')
+================================================加载数据================================================
+Fold_num is 10==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 426 ######
+epoch 426.0000 with epoch time 65.4992 s
+
+EPOCH ###### 473 ######
+epoch 473.0000 with epoch time 65.5444 s
+
+EPOCH ###### 353 ######
+epoch 353.0000 with epoch time 66.2105 s
+
+EPOCH ###### 683 ######
+epoch 683.0000 with epoch time 66.2550 s
+
+EPOCH ###### 802 ######
+epoch 802.0000 with epoch time 65.6157 s
+
+EPOCH ###### 563 ######
+epoch 563.0000 with epoch time 65.8388 s
+
+EPOCH ###### 926 ######
+epoch 926.0000 with epoch time 65.5775 s
+
+EPOCH ###### 842 ######
+epoch 842.0000 with epoch time 66.0583 s
+
+EPOCH ###### 644 ######
+epoch 644.0000 with epoch time 65.8308 s
+
+EPOCH ###### 692 ######
+epoch 692.0000 with epoch time 65.7204 s
+
+EPOCH ###### 878 ######
+epoch 878.0000 with epoch time 65.3773 s
+
+EPOCH ###### 730 ######
+epoch 730.0000 with epoch time 65.6070 s
+
+EPOCH ###### 515 ######
+epoch 515.0000 with epoch time 65.4366 s
+
+EPOCH ###### 789 ######
+epoch 789.0000 with epoch time 65.2854 s
+
+EPOCH ###### 635 ######
+epoch 635.0000 with epoch time 66.2372 s
+
+EPOCH ###### 737 ######
+epoch 737.0000 with epoch time 65.9485 s
+
+EPOCH ###### 755 ######
+epoch 755.0000 with epoch time 65.4758 s
+
+EPOCH ###### 962 ######
+epoch 962.0000 with epoch time 65.3786 s
+
+EPOCH ###### 679 ######
+epoch 679.0000 with epoch time 65.5564 s
+
+EPOCH ###### 839 ######
+epoch 839.0000 with epoch time 65.8351 s
+
+EPOCH ###### 616 ######
+epoch 616.0000 with epoch time 66.0715 s
+
+EPOCH ###### 780 ######
+epoch 780.0000 with epoch time 65.4023 s
+
+EPOCH ###### 753 ######
+epoch 753.0000 with epoch time 65.6234 s
+
+EPOCH ###### 637 ######
+epoch 637.0000 with epoch time 66.2367 s
+
+EPOCH ###### 892 ######
+epoch 892.0000 with epoch time 65.8910 s
+
+EPOCH ###### 836 ######
+epoch 836.0000 with epoch time 65.2975 s
+
+EPOCH ###### 830 ######
+epoch 830.0000 with epoch time 65.7849 s
+
+EPOCH ###### 548 ######
+epoch 548.0000 with epoch time 65.3113 s
+
+EPOCH ###### 841 ######
+epoch 841.0000 with epoch time 65.4594 s
+
+EPOCH ###### 481 ######
+epoch 481.0000 with epoch time 65.7363 s
+
+EPOCH ###### 745 ######
+epoch 745.0000 with epoch time 65.9573 s
+
+EPOCH ###### 723 ######
+epoch 723.0000 with epoch time 66.0124 s
+
+EPOCH ###### 636 ######
+epoch 636.0000 with epoch time 65.6712 s
+
+EPOCH ###### 630 ######
+epoch 630.0000 with epoch time 65.3452 s
+
+EPOCH ###### 765 ######
+epoch 765.0000 with epoch time 66.6518 s
+
+EPOCH ###### 840 ######
+epoch 840.0000 with epoch time 67.0856 s
+
+EPOCH ###### 761 ######
+epoch 761.0000 with epoch time 65.5972 s
+
+EPOCH ###### 874 ######
+epoch 874.0000 with epoch time 66.2400 s
+
+EPOCH ###### 696 ######
+epoch 696.0000 with epoch time 66.1228 s
+
+EPOCH ###### 560 ######
+epoch 560.0000 with epoch time 65.3363 s
+
+EPOCH ###### 493 ######
+epoch 493.0000 with epoch time 65.6618 s
+
+EPOCH ###### 678 ######
+epoch 678.0000 with epoch time 65.1971 s
+
+EPOCH ###### 694 ######
+epoch 694.0000 with epoch time 65.5372 s
+
+EPOCH ###### 735 ######
+epoch 735.0000 with epoch time 65.3070 s
+
+EPOCH ###### 559 ######
+epoch 559.0000 with epoch time 65.6737 s
+
+EPOCH ###### 322 ######
+epoch 322.0000 with epoch time 65.7134 s
+
+EPOCH ###### 763 ######
+epoch 763.0000 with epoch time 66.2459 s
+
+EPOCH ###### 445 ######
+epoch 445.0000 with epoch time 65.5554 s
+
+EPOCH ###### 428 ######
+epoch 428.0000 with epoch time 65.7175 s
+
+EPOCH ###### 938 ######
+epoch 938.0000 with epoch time 65.8012 s
+
+EPOCH ###### 581 ######
+epoch 581.0000 with epoch time 65.9740 s
+
+EPOCH ###### 886 ######
+epoch 886.0000 with epoch time 65.9164 s
+
+EPOCH ###### 582 ######
+epoch 582.0000 with epoch time 65.1527 s
+
+EPOCH ###### 758 ######
+epoch 758.0000 with epoch time 65.3811 s
+
+EPOCH ###### 388 ######
+epoch 388.0000 with epoch time 65.8925 s
+
+EPOCH ###### 656 ######
+epoch 656.0000 with epoch time 66.1387 s
+
+EPOCH ###### 743 ######
+epoch 743.0000 with epoch time 65.8958 s
+
+EPOCH ###### 438 ######
+epoch 438.0000 with epoch time 65.4798 s
+
+EPOCH ###### 742 ######
+epoch 742.0000 with epoch time 66.3599 s
+
+EPOCH ###### 976 ######
+epoch 976.0000 with epoch time 67.1502 s
+
+EPOCH ###### 602 ######
+epoch 602.0000 with epoch time 66.4181 s
+
+EPOCH ###### 772 ######
+epoch 772.0000 with epoch time 66.2296 s
+
+EPOCH ###### 707 ######
+epoch 707.0000 with epoch time 65.6236 s
+
+EPOCH ###### 601 ######
+epoch 601.0000 with epoch time 65.2917 s
+
+EPOCH ###### 384 ######
+epoch 384.0000 with epoch time 65.3800 s
+
+EPOCH ###### 752 ######
+epoch 752.0000 with epoch time 65.3192 s
+
+EPOCH ###### 619 ######
+epoch 619.0000 with epoch time 66.0886 s
+
+EPOCH ###### 468 ######
+epoch 468.0000 with epoch time 65.7945 s
+
+EPOCH ###### 495 ######
+epoch 495.0000 with epoch time 65.8420 s
+
+EPOCH ###### 915 ######
+epoch 915.0000 with epoch time 65.9221 s
+
+EPOCH ###### 771 ######
+epoch 771.0000 with epoch time 65.6419 s
+
+EPOCH ###### 914 ######
+epoch 914.0000 with epoch time 65.3835 s
+
+EPOCH ###### 877 ######
+epoch 877.0000 with epoch time 65.6514 s
+
+EPOCH ###### 782 ######
+epoch 782.0000 with epoch time 65.9280 s
+
+EPOCH ###### 453 ######
+epoch 453.0000 with epoch time 65.4459 s
+
+EPOCH ###### 626 ######
+epoch 626.0000 with epoch time 65.5073 s
+
+EPOCH ###### 505 ######
+epoch 505.0000 with epoch time 65.2978 s
+
+EPOCH ###### 597 ######
+epoch 597.0000 with epoch time 65.6144 s
+
+EPOCH ###### 585 ######
+epoch 585.0000 with epoch time 65.4382 s
+
+EPOCH ###### 909 ######
+epoch 909.0000 with epoch time 65.4123 s
+
+EPOCH ###### 757 ######
+epoch 757.0000 with epoch time 65.1769 s
+
+EPOCH ###### 569 ######
+epoch 569.0000 with epoch time 65.5514 s
+
+EPOCH ###### 777 ######
+epoch 777.0000 with epoch time 66.1081 s
+
+EPOCH ###### 614 ######
+epoch 614.0000 with epoch time 65.6584 s
+
+EPOCH ###### 570 ######
+epoch 570.0000 with epoch time 65.2694 s
+
+EPOCH ###### 621 ######
+epoch 621.0000 with epoch time 65.3683 s
+
+EPOCH ###### 859 ######
+epoch 859.0000 with epoch time 65.4064 s
+
+EPOCH ###### 872 ######
+epoch 872.0000 with epoch time 65.6072 s
+
+EPOCH ###### 521 ######
+epoch 521.0000 with epoch time 65.3038 s
+
+EPOCH ###### 624 ######
+epoch 624.0000 with epoch time 65.2181 s
+
+EPOCH ###### 715 ######
+epoch 715.0000 with epoch time 65.2633 s
+
+EPOCH ###### 571 ######
+epoch 571.0000 with epoch time 65.4563 s
+
+EPOCH ###### 556 ######
+epoch 556.0000 with epoch time 65.3619 s
+
+EPOCH ###### 888 ######
+epoch 888.0000 with epoch time 66.1660 s
+
+EPOCH ###### 967 ######
+epoch 967.0000 with epoch time 66.2926 s
+
+EPOCH ###### 883 ######
+epoch 883.0000 with epoch time 66.0759 s
+
+EPOCH ###### 921 ######
+epoch 921.0000 with epoch time 66.0568 s
+
+EPOCH ###### 860 ######
+epoch 860.0000 with epoch time 65.5420 s
+
+EPOCH ###### 971 ######
+epoch 971.0000 with epoch time 65.7069 s
+
+EPOCH ###### 399 ######
+epoch 399.0000 with epoch time 66.2256 s
+Fold type GTB, Fold: 1, Top 50 Epochs: [483, 477, 440, 468, 320, 458, 429, 316, 486, 459, 357, 470, 445, 482, 489, 338, 311, 312, 421, 232, 301, 334, 343, 447, 310, 206, 411, 393, 355, 408, 456, 436, 469, 496, 235, 369, 227, 462, 326, 321, 418, 484, 416, 205, 272, 267, 442, 273, 478, 262]
+Fold type GTB, Fold: 2, Top 50 Epochs: [404, 360, 285, 429, 412, 376, 305, 417, 302, 403, 440, 486, 369, 471, 380, 361, 393, 479, 320, 364, 277, 359, 476, 439, 312, 295, 384, 389, 355, 245, 407, 497, 441, 395, 482, 352, 470, 264, 363, 372, 420, 336, 472, 498, 423, 401, 314, 331, 367, 400]
+Fold type GTB, Fold: 3, Top 50 Epochs: [462, 418, 295, 438, 372, 408, 420, 477, 388, 289, 239, 288, 457, 338, 358, 365, 422, 456, 437, 430, 331, 464, 463, 328, 341, 387, 472, 454, 480, 376, 258, 465, 441, 413, 152, 485, 439, 442, 432, 355, 210, 253, 261, 452, 343, 419, 499, 382, 498, 494]
+Fold type GTB, Fold: 4, Top 50 Epochs: [483, 452, 439, 394, 381, 459, 484, 496, 497, 277, 211, 488, 474, 409, 378, 366, 310, 314, 399, 325, 465, 220, 427, 469, 445, 364, 367, 430, 480, 478, 403, 467, 292, 499, 259, 241, 386, 423, 458, 298, 438, 308, 477, 442, 464, 485, 340, 447, 491, 471]
+Fold type GTB, Fold: 5, Top 50 Epochs: [428, 382, 406, 498, 371, 481, 469, 378, 286, 453, 492, 300, 281, 408, 369, 486, 361, 462, 487, 376, 393, 374, 370, 484, 395, 265, 384, 280, 422, 490, 225, 451, 321, 431, 277, 314, 497, 278, 311, 318, 437, 441, 450, 496, 394, 459, 472, 285, 275, 399]
+Fold type GTB, Fold: 6, Top 50 Epochs: [427, 330, 429, 418, 348, 485, 254, 469, 409, 433, 425, 408, 431, 228, 250, 137, 441, 462, 489, 486, 394, 434, 393, 498, 278, 274, 426, 275, 296, 428, 377, 413, 325, 370, 456, 171, 416, 365, 343, 447, 495, 267, 258, 403, 205, 218, 284, 420, 260, 497]
+Fold type GTB, Fold: 7, Top 50 Epochs: [393, 342, 436, 458, 455, 422, 420, 499, 368, 413, 332, 459, 496, 461, 360, 347, 423, 494, 344, 497, 246, 292, 498, 369, 493, 446, 381, 437, 337, 374, 319, 181, 477, 451, 445, 447, 350, 119, 462, 345, 299, 412, 468, 482, 399, 492, 338, 417, 349, 327]
+Fold type GTB, Fold: 8, Top 50 Epochs: [302, 350, 287, 487, 460, 435, 492, 497, 429, 394, 307, 452, 396, 441, 298, 489, 284, 493, 216, 404, 361, 397, 262, 454, 275, 295, 279, 368, 440, 473, 373, 319, 470, 410, 438, 354, 387, 496, 421, 346, 274, 388, 436, 395, 222, 331, 366, 318, 485, 308]
+Fold type GTB, Fold: 9, Top 50 Epochs: [345, 475, 445, 469, 377, 489, 484, 324, 429, 380, 330, 360, 349, 431, 340, 378, 328, 317, 319, 205, 385, 498, 440, 413, 480, 352, 252, 216, 487, 474, 477, 386, 408, 473, 406, 190, 235, 347, 416, 499, 338, 351, 267, 323, 334, 482, 428, 472, 284, 312]
+Fold type GTB, Fold: 10, Top 50 Epochs: [315, 143, 329, 276, 475, 410, 206, 426, 175, 142, 495, 292, 436, 153, 247, 210, 365, 258, 363, 446, 231, 491, 243, 325, 311, 201, 327, 299, 389, 167, 421, 493, 398, 302, 245, 496, 163, 422, 373, 383, 397, 405, 371, 354, 384, 328, 275, 313, 240, 203]
+===============================fold num is : 1, family type is : GTB================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTB_fold1', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
 method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
 data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTB')
 ================================================加载数据================================================
@@ -16,109 +3248,1583 @@ model embedding dim for graph instance embedding 64
 initial batched pool graph dim is 65
 model init finished
 MODEL::::::: diffpool
+===============================fold num is : 1, family type is : GTB================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTB_fold1', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTB')
+================================================加载数据================================================
+Fold_num is 1==========================================开始选择最佳epoch进行验证===========================================
 
-EPOCH ###### 0 ######
-train accuracy for this epoch 0 is 10.36%
-loss 215199.4844 with epoch time 93.1238 s & computation time 86.6171 s 
+EPOCH ###### 483 ######
+epoch 483.0000 with epoch time 116.0742 s
 
-EPOCH ###### 1 ######
-train accuracy for this epoch 1 is 9.99%
-loss 218854.3438 with epoch time 92.3552 s & computation time 85.8826 s 
+EPOCH ###### 477 ######
+epoch 477.0000 with epoch time 116.7794 s
 
-EPOCH ###### 2 ######
-train accuracy for this epoch 2 is 10.80%
-loss 209765.6875 with epoch time 92.1742 s & computation time 85.6586 s 
+EPOCH ###### 440 ######
+epoch 440.0000 with epoch time 116.3331 s
 
-EPOCH ###### 3 ######
-train accuracy for this epoch 3 is 10.46%
-loss 213209.5000 with epoch time 92.4588 s & computation time 85.9351 s 
+EPOCH ###### 468 ######
+epoch 468.0000 with epoch time 114.4202 s
 
-EPOCH ###### 4 ######
-train accuracy for this epoch 4 is 12.10%
-loss 216263.5000 with epoch time 92.6827 s & computation time 86.2025 s 
+EPOCH ###### 320 ######
+epoch 320.0000 with epoch time 115.6397 s
 
-EPOCH ###### 5 ######
-train accuracy for this epoch 5 is 14.47%
-loss 210212.1250 with epoch time 93.1754 s & computation time 86.7076 s 
+EPOCH ###### 458 ######
+epoch 458.0000 with epoch time 117.8110 s
 
-EPOCH ###### 6 ######
-train accuracy for this epoch 6 is 17.30%
-loss 216206.2812 with epoch time 92.5492 s & computation time 86.0916 s 
+EPOCH ###### 429 ######
+epoch 429.0000 with epoch time 119.1003 s
 
-EPOCH ###### 7 ######
-train accuracy for this epoch 7 is 19.66%
-loss 213867.6719 with epoch time 92.2610 s & computation time 85.7095 s 
+EPOCH ###### 316 ######
+epoch 316.0000 with epoch time 118.5779 s
 
-EPOCH ###### 8 ######
-train accuracy for this epoch 8 is 23.07%
-loss 218224.8125 with epoch time 92.2794 s & computation time 85.8424 s 
+EPOCH ###### 486 ######
+epoch 486.0000 with epoch time 118.0956 s
 
-EPOCH ###### 9 ######
-train accuracy for this epoch 9 is 25.66%
-loss 212025.4844 with epoch time 92.1066 s & computation time 85.6323 s 
+EPOCH ###### 459 ######
+epoch 459.0000 with epoch time 117.9908 s
 
-EPOCH ###### 10 ######
-train accuracy for this epoch 10 is 29.87%
-loss 215723.2969 with epoch time 92.4583 s & computation time 85.9942 s 
+EPOCH ###### 357 ######
+epoch 357.0000 with epoch time 118.0192 s
 
-EPOCH ###### 11 ######
-train accuracy for this epoch 11 is 31.16%
-loss 213940.5938 with epoch time 92.4569 s & computation time 85.9509 s 
+EPOCH ###### 470 ######
+epoch 470.0000 with epoch time 118.3396 s
 
-EPOCH ###### 12 ######
-train accuracy for this epoch 12 is 34.37%
-loss 211302.5469 with epoch time 92.5224 s & computation time 85.9855 s 
+EPOCH ###### 445 ######
+epoch 445.0000 with epoch time 118.0487 s
 
-EPOCH ###### 13 ######
-train accuracy for this epoch 13 is 35.46%
-loss 217358.2969 with epoch time 93.1386 s & computation time 86.6138 s 
+EPOCH ###### 482 ######
+epoch 482.0000 with epoch time 118.9479 s
 
-EPOCH ###### 14 ######
-train accuracy for this epoch 14 is 38.79%
-loss 213489.5312 with epoch time 92.9815 s & computation time 86.4187 s 
+EPOCH ###### 489 ######
+epoch 489.0000 with epoch time 117.8408 s
 
-EPOCH ###### 15 ######
-train accuracy for this epoch 15 is 41.13%
-loss 208155.1719 with epoch time 93.0001 s & computation time 86.5510 s 
+EPOCH ###### 338 ######
+epoch 338.0000 with epoch time 118.6493 s
 
-EPOCH ###### 16 ######
-train accuracy for this epoch 16 is 43.93%
-loss 210322.9844 with epoch time 92.7697 s & computation time 86.2920 s 
+EPOCH ###### 311 ######
+epoch 311.0000 with epoch time 118.0866 s
 
-EPOCH ###### 17 ######
-train accuracy for this epoch 17 is 48.56%
-loss 208176.0156 with epoch time 93.5176 s & computation time 87.0419 s 
+EPOCH ###### 312 ######
+epoch 312.0000 with epoch time 118.2263 s
 
-EPOCH ###### 18 ######
-train accuracy for this epoch 18 is 49.72%
-loss 211857.8438 with epoch time 92.0218 s & computation time 85.5306 s 
+EPOCH ###### 421 ######
+epoch 421.0000 with epoch time 118.3100 s
 
-EPOCH ###### 19 ######
-train accuracy for this epoch 19 is 53.94%
-loss 215834.1719 with epoch time 92.5946 s & computation time 86.0787 s 
+EPOCH ###### 232 ######
+epoch 232.0000 with epoch time 119.8662 s
 
-EPOCH ###### 20 ######
-train accuracy for this epoch 20 is 54.28%
-loss 217548.2188 with epoch time 92.7192 s & computation time 86.2898 s 
+EPOCH ###### 301 ######
+epoch 301.0000 with epoch time 118.6230 s
 
-EPOCH ###### 21 ######
-train accuracy for this epoch 21 is 58.58%
-loss 211495.3438 with epoch time 92.6593 s & computation time 86.1624 s 
+EPOCH ###### 334 ######
+epoch 334.0000 with epoch time 118.0025 s
 
-EPOCH ###### 22 ######
-train accuracy for this epoch 22 is 58.62%
-loss 214526.5156 with epoch time 93.2507 s & computation time 86.7752 s 
+EPOCH ###### 343 ######
+epoch 343.0000 with epoch time 117.8092 s
 
-EPOCH ###### 23 ######
-train accuracy for this epoch 23 is 61.02%
-loss 218241.9531 with epoch time 93.1635 s & computation time 86.6765 s 
+EPOCH ###### 447 ######
+epoch 447.0000 with epoch time 118.1703 s
 
-EPOCH ###### 24 ######
-train accuracy for this epoch 24 is 64.99%
-loss 208187.9688 with epoch time 92.2187 s & computation time 85.6965 s 
+EPOCH ###### 310 ######
+epoch 310.0000 with epoch time 118.4365 s
 
-EPOCH ###### 25 ######
-train accuracy for this epoch 25 is 64.55%
-loss 211170.5312 with epoch time 92.2523 s & computation time 85.6994 s 
+EPOCH ###### 206 ######
+epoch 206.0000 with epoch time 118.3072 s
 
-EPOCH ###### 26 ######
+EPOCH ###### 411 ######
+epoch 411.0000 with epoch time 118.4569 s
+
+EPOCH ###### 393 ######
+epoch 393.0000 with epoch time 118.2847 s
+
+EPOCH ###### 355 ######
+epoch 355.0000 with epoch time 119.0867 s
+
+EPOCH ###### 408 ######
+epoch 408.0000 with epoch time 117.8148 s
+
+EPOCH ###### 456 ######
+epoch 456.0000 with epoch time 117.6719 s
+
+EPOCH ###### 436 ######
+epoch 436.0000 with epoch time 118.2533 s
+
+EPOCH ###### 469 ######
+epoch 469.0000 with epoch time 118.2000 s
+
+EPOCH ###### 496 ######
+epoch 496.0000 with epoch time 119.2179 s
+
+EPOCH ###### 235 ######
+epoch 235.0000 with epoch time 118.9571 s
+
+EPOCH ###### 369 ######
+epoch 369.0000 with epoch time 118.1486 s
+
+EPOCH ###### 227 ######
+epoch 227.0000 with epoch time 118.0893 s
+
+EPOCH ###### 462 ######
+epoch 462.0000 with epoch time 118.5026 s
+
+EPOCH ###### 326 ######
+epoch 326.0000 with epoch time 118.1346 s
+
+EPOCH ###### 321 ######
+epoch 321.0000 with epoch time 118.4331 s
+
+EPOCH ###### 418 ######
+epoch 418.0000 with epoch time 117.8377 s
+
+EPOCH ###### 484 ######
+epoch 484.0000 with epoch time 117.7143 s
+
+EPOCH ###### 416 ######
+epoch 416.0000 with epoch time 118.9494 s
+
+EPOCH ###### 205 ######
+epoch 205.0000 with epoch time 118.8446 s
+
+EPOCH ###### 272 ######
+epoch 272.0000 with epoch time 118.0305 s
+
+EPOCH ###### 267 ######
+epoch 267.0000 with epoch time 118.4885 s
+
+EPOCH ###### 442 ######
+epoch 442.0000 with epoch time 118.4925 s
+
+EPOCH ###### 273 ######
+epoch 273.0000 with epoch time 118.4669 s
+
+EPOCH ###### 478 ######
+epoch 478.0000 with epoch time 118.2702 s
+
+EPOCH ###### 262 ######
+epoch 262.0000 with epoch time 117.6977 s
+===============================fold num is : 2, family type is : GTB================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTB_fold2', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTB')
+================================================加载数据================================================
+Fold_num is 2==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 404 ######
+epoch 404.0000 with epoch time 117.9316 s
+
+EPOCH ###### 360 ######
+epoch 360.0000 with epoch time 118.1091 s
+
+EPOCH ###### 285 ######
+epoch 285.0000 with epoch time 117.7066 s
+
+EPOCH ###### 429 ######
+epoch 429.0000 with epoch time 118.3382 s
+
+EPOCH ###### 412 ######
+epoch 412.0000 with epoch time 118.4662 s
+
+EPOCH ###### 376 ######
+epoch 376.0000 with epoch time 118.3965 s
+
+EPOCH ###### 305 ######
+epoch 305.0000 with epoch time 118.0553 s
+
+EPOCH ###### 417 ######
+epoch 417.0000 with epoch time 118.0223 s
+
+EPOCH ###### 302 ######
+epoch 302.0000 with epoch time 118.3353 s
+
+EPOCH ###### 403 ######
+epoch 403.0000 with epoch time 119.0866 s
+
+EPOCH ###### 440 ######
+epoch 440.0000 with epoch time 120.2050 s
+
+EPOCH ###### 486 ######
+epoch 486.0000 with epoch time 118.5473 s
+
+EPOCH ###### 369 ######
+epoch 369.0000 with epoch time 118.5049 s
+
+EPOCH ###### 471 ######
+epoch 471.0000 with epoch time 118.5955 s
+
+EPOCH ###### 380 ######
+epoch 380.0000 with epoch time 117.8037 s
+
+EPOCH ###### 361 ######
+epoch 361.0000 with epoch time 118.1269 s
+
+EPOCH ###### 393 ######
+epoch 393.0000 with epoch time 118.3920 s
+
+EPOCH ###### 479 ######
+epoch 479.0000 with epoch time 118.1941 s
+
+EPOCH ###### 320 ######
+epoch 320.0000 with epoch time 117.6836 s
+
+EPOCH ###### 364 ######
+epoch 364.0000 with epoch time 118.0935 s
+
+EPOCH ###### 277 ######
+epoch 277.0000 with epoch time 118.1133 s
+
+EPOCH ###### 359 ######
+epoch 359.0000 with epoch time 118.0724 s
+
+EPOCH ###### 476 ######
+epoch 476.0000 with epoch time 117.9300 s
+
+EPOCH ###### 439 ######
+epoch 439.0000 with epoch time 118.3680 s
+
+EPOCH ###### 312 ######
+epoch 312.0000 with epoch time 118.4601 s
+
+EPOCH ###### 295 ######
+epoch 295.0000 with epoch time 118.0643 s
+
+EPOCH ###### 384 ######
+epoch 384.0000 with epoch time 118.3371 s
+
+EPOCH ###### 389 ######
+epoch 389.0000 with epoch time 117.9287 s
+
+EPOCH ###### 355 ######
+epoch 355.0000 with epoch time 118.0520 s
+
+EPOCH ###### 245 ######
+epoch 245.0000 with epoch time 118.7117 s
+
+EPOCH ###### 407 ######
+epoch 407.0000 with epoch time 119.4631 s
+
+EPOCH ###### 497 ######
+epoch 497.0000 with epoch time 118.9405 s
+
+EPOCH ###### 441 ######
+epoch 441.0000 with epoch time 119.1071 s
+
+EPOCH ###### 395 ######
+epoch 395.0000 with epoch time 118.3542 s
+
+EPOCH ###### 482 ######
+epoch 482.0000 with epoch time 118.4114 s
+
+EPOCH ###### 352 ######
+epoch 352.0000 with epoch time 118.4259 s
+
+EPOCH ###### 470 ######
+epoch 470.0000 with epoch time 117.8465 s
+
+EPOCH ###### 264 ######
+epoch 264.0000 with epoch time 118.0661 s
+
+EPOCH ###### 363 ######
+epoch 363.0000 with epoch time 117.6581 s
+
+EPOCH ###### 372 ######
+epoch 372.0000 with epoch time 118.0281 s
+
+EPOCH ###### 420 ######
+epoch 420.0000 with epoch time 118.2539 s
+
+EPOCH ###### 336 ######
+epoch 336.0000 with epoch time 118.2433 s
+
+EPOCH ###### 472 ######
+epoch 472.0000 with epoch time 117.8693 s
+
+EPOCH ###### 498 ######
+epoch 498.0000 with epoch time 117.8451 s
+
+EPOCH ###### 423 ######
+epoch 423.0000 with epoch time 117.5359 s
+
+EPOCH ###### 401 ######
+epoch 401.0000 with epoch time 118.0926 s
+
+EPOCH ###### 314 ######
+epoch 314.0000 with epoch time 117.6789 s
+
+EPOCH ###### 331 ######
+epoch 331.0000 with epoch time 118.2552 s
+
+EPOCH ###### 367 ######
+epoch 367.0000 with epoch time 118.1302 s
+
+EPOCH ###### 400 ######
+epoch 400.0000 with epoch time 117.9518 s
+===============================fold num is : 3, family type is : GTB================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTB_fold3', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTB')
+================================================加载数据================================================
+Fold_num is 3==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 462 ######
+epoch 462.0000 with epoch time 118.4658 s
+
+EPOCH ###### 418 ######
+epoch 418.0000 with epoch time 117.6810 s
+
+EPOCH ###### 295 ######
+epoch 295.0000 with epoch time 118.7980 s
+
+EPOCH ###### 438 ######
+epoch 438.0000 with epoch time 118.1171 s
+
+EPOCH ###### 372 ######
+epoch 372.0000 with epoch time 118.2455 s
+
+EPOCH ###### 408 ######
+epoch 408.0000 with epoch time 118.7932 s
+
+EPOCH ###### 420 ######
+epoch 420.0000 with epoch time 118.0495 s
+
+EPOCH ###### 477 ######
+epoch 477.0000 with epoch time 118.2587 s
+
+EPOCH ###### 388 ######
+epoch 388.0000 with epoch time 117.8663 s
+
+EPOCH ###### 289 ######
+epoch 289.0000 with epoch time 117.8871 s
+
+EPOCH ###### 239 ######
+epoch 239.0000 with epoch time 118.0175 s
+
+EPOCH ###### 288 ######
+epoch 288.0000 with epoch time 119.2791 s
+
+EPOCH ###### 457 ######
+epoch 457.0000 with epoch time 119.1957 s
+
+EPOCH ###### 338 ######
+epoch 338.0000 with epoch time 118.0582 s
+
+EPOCH ###### 358 ######
+epoch 358.0000 with epoch time 118.1247 s
+
+EPOCH ###### 365 ######
+epoch 365.0000 with epoch time 118.2625 s
+
+EPOCH ###### 422 ######
+epoch 422.0000 with epoch time 118.2158 s
+
+EPOCH ###### 456 ######
+epoch 456.0000 with epoch time 118.5708 s
+
+EPOCH ###### 437 ######
+epoch 437.0000 with epoch time 118.7474 s
+
+EPOCH ###### 430 ######
+epoch 430.0000 with epoch time 117.8194 s
+
+EPOCH ###### 331 ######
+epoch 331.0000 with epoch time 118.0468 s
+
+EPOCH ###### 464 ######
+epoch 464.0000 with epoch time 118.2081 s
+
+EPOCH ###### 463 ######
+epoch 463.0000 with epoch time 119.2162 s
+
+EPOCH ###### 328 ######
+epoch 328.0000 with epoch time 118.2199 s
+
+EPOCH ###### 341 ######
+epoch 341.0000 with epoch time 118.7331 s
+
+EPOCH ###### 387 ######
+epoch 387.0000 with epoch time 118.7906 s
+
+EPOCH ###### 472 ######
+epoch 472.0000 with epoch time 118.4399 s
+
+EPOCH ###### 454 ######
+epoch 454.0000 with epoch time 118.6599 s
+
+EPOCH ###### 480 ######
+epoch 480.0000 with epoch time 117.6314 s
+
+EPOCH ###### 376 ######
+epoch 376.0000 with epoch time 118.0603 s
+
+EPOCH ###### 258 ######
+epoch 258.0000 with epoch time 118.3153 s
+
+EPOCH ###### 465 ######
+epoch 465.0000 with epoch time 117.7483 s
+
+EPOCH ###### 441 ######
+epoch 441.0000 with epoch time 118.1741 s
+
+EPOCH ###### 413 ######
+epoch 413.0000 with epoch time 117.8672 s
+
+EPOCH ###### 152 ######
+epoch 152.0000 with epoch time 118.4327 s
+
+EPOCH ###### 485 ######
+epoch 485.0000 with epoch time 118.0362 s
+
+EPOCH ###### 439 ######
+epoch 439.0000 with epoch time 117.9164 s
+
+EPOCH ###### 442 ######
+epoch 442.0000 with epoch time 118.8174 s
+
+EPOCH ###### 432 ######
+epoch 432.0000 with epoch time 119.7482 s
+
+EPOCH ###### 355 ######
+epoch 355.0000 with epoch time 118.1208 s
+
+EPOCH ###### 210 ######
+epoch 210.0000 with epoch time 118.2201 s
+
+EPOCH ###### 253 ######
+epoch 253.0000 with epoch time 118.0747 s
+
+EPOCH ###### 261 ######
+epoch 261.0000 with epoch time 118.1347 s
+
+EPOCH ###### 452 ######
+epoch 452.0000 with epoch time 118.0123 s
+
+EPOCH ###### 343 ######
+epoch 343.0000 with epoch time 118.3641 s
+
+EPOCH ###### 419 ######
+epoch 419.0000 with epoch time 118.0923 s
+
+EPOCH ###### 499 ######
+epoch 499.0000 with epoch time 118.8028 s
+
+EPOCH ###### 382 ######
+epoch 382.0000 with epoch time 118.3137 s
+
+EPOCH ###### 498 ######
+epoch 498.0000 with epoch time 118.2939 s
+
+EPOCH ###### 494 ######
+epoch 494.0000 with epoch time 118.0964 s
+===============================fold num is : 4, family type is : GTB================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTB_fold4', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTB')
+================================================加载数据================================================
+Fold_num is 4==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 483 ######
+epoch 483.0000 with epoch time 118.5966 s
+
+EPOCH ###### 452 ######
+epoch 452.0000 with epoch time 119.0965 s
+
+EPOCH ###### 439 ######
+epoch 439.0000 with epoch time 118.1712 s
+
+EPOCH ###### 394 ######
+epoch 394.0000 with epoch time 119.7347 s
+
+EPOCH ###### 381 ######
+epoch 381.0000 with epoch time 117.8025 s
+
+EPOCH ###### 459 ######
+epoch 459.0000 with epoch time 118.7833 s
+
+EPOCH ###### 484 ######
+epoch 484.0000 with epoch time 118.5813 s
+
+EPOCH ###### 496 ######
+epoch 496.0000 with epoch time 117.3037 s
+
+EPOCH ###### 497 ######
+epoch 497.0000 with epoch time 118.0506 s
+
+EPOCH ###### 277 ######
+epoch 277.0000 with epoch time 118.3787 s
+
+EPOCH ###### 211 ######
+epoch 211.0000 with epoch time 118.0311 s
+
+EPOCH ###### 488 ######
+epoch 488.0000 with epoch time 117.8934 s
+
+EPOCH ###### 474 ######
+epoch 474.0000 with epoch time 118.3268 s
+
+EPOCH ###### 409 ######
+epoch 409.0000 with epoch time 119.3039 s
+
+EPOCH ###### 378 ######
+epoch 378.0000 with epoch time 118.2673 s
+
+EPOCH ###### 366 ######
+epoch 366.0000 with epoch time 118.2374 s
+
+EPOCH ###### 310 ######
+epoch 310.0000 with epoch time 118.8163 s
+
+EPOCH ###### 314 ######
+epoch 314.0000 with epoch time 116.7886 s
+
+EPOCH ###### 399 ######
+epoch 399.0000 with epoch time 118.9801 s
+
+EPOCH ###### 325 ######
+epoch 325.0000 with epoch time 119.0470 s
+
+EPOCH ###### 465 ######
+epoch 465.0000 with epoch time 117.8460 s
+
+EPOCH ###### 220 ######
+epoch 220.0000 with epoch time 118.1570 s
+
+EPOCH ###### 427 ######
+epoch 427.0000 with epoch time 118.2995 s
+
+EPOCH ###### 469 ######
+epoch 469.0000 with epoch time 118.0618 s
+
+EPOCH ###### 445 ######
+epoch 445.0000 with epoch time 118.0897 s
+
+EPOCH ###### 364 ######
+epoch 364.0000 with epoch time 117.5242 s
+
+EPOCH ###### 367 ######
+epoch 367.0000 with epoch time 117.7296 s
+
+EPOCH ###### 430 ######
+epoch 430.0000 with epoch time 119.1480 s
+
+EPOCH ###### 480 ######
+epoch 480.0000 with epoch time 117.6356 s
+
+EPOCH ###### 478 ######
+epoch 478.0000 with epoch time 117.8078 s
+
+EPOCH ###### 403 ######
+epoch 403.0000 with epoch time 117.9949 s
+
+EPOCH ###### 467 ######
+epoch 467.0000 with epoch time 117.6184 s
+
+EPOCH ###### 292 ######
+epoch 292.0000 with epoch time 118.1389 s
+
+EPOCH ###### 499 ######
+epoch 499.0000 with epoch time 118.0070 s
+
+EPOCH ###### 259 ######
+epoch 259.0000 with epoch time 118.0378 s
+
+EPOCH ###### 241 ######
+epoch 241.0000 with epoch time 118.1470 s
+
+EPOCH ###### 386 ######
+epoch 386.0000 with epoch time 118.7623 s
+
+EPOCH ###### 423 ######
+epoch 423.0000 with epoch time 117.8328 s
+
+EPOCH ###### 458 ######
+epoch 458.0000 with epoch time 117.9664 s
+
+EPOCH ###### 298 ######
+epoch 298.0000 with epoch time 118.1583 s
+
+EPOCH ###### 438 ######
+epoch 438.0000 with epoch time 118.6426 s
+
+EPOCH ###### 308 ######
+epoch 308.0000 with epoch time 117.7953 s
+
+EPOCH ###### 477 ######
+epoch 477.0000 with epoch time 119.1575 s
+
+EPOCH ###### 442 ######
+epoch 442.0000 with epoch time 117.7659 s
+
+EPOCH ###### 464 ######
+epoch 464.0000 with epoch time 117.7718 s
+
+EPOCH ###### 485 ######
+epoch 485.0000 with epoch time 118.1361 s
+
+EPOCH ###### 340 ######
+epoch 340.0000 with epoch time 117.7799 s
+
+EPOCH ###### 447 ######
+epoch 447.0000 with epoch time 117.6297 s
+
+EPOCH ###### 491 ######
+epoch 491.0000 with epoch time 118.1027 s
+
+EPOCH ###### 471 ######
+epoch 471.0000 with epoch time 117.6451 s
+===============================fold num is : 5, family type is : GTB================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTB_fold5', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTB')
+================================================加载数据================================================
+Fold_num is 5==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 428 ######
+epoch 428.0000 with epoch time 117.4289 s
+
+EPOCH ###### 382 ######
+epoch 382.0000 with epoch time 118.0290 s
+
+EPOCH ###### 406 ######
+epoch 406.0000 with epoch time 118.3099 s
+
+EPOCH ###### 498 ######
+epoch 498.0000 with epoch time 116.5491 s
+
+EPOCH ###### 371 ######
+epoch 371.0000 with epoch time 118.2688 s
+
+EPOCH ###### 481 ######
+epoch 481.0000 with epoch time 118.3543 s
+
+EPOCH ###### 469 ######
+epoch 469.0000 with epoch time 118.5442 s
+
+EPOCH ###### 378 ######
+epoch 378.0000 with epoch time 117.9531 s
+
+EPOCH ###### 286 ######
+epoch 286.0000 with epoch time 117.8763 s
+
+EPOCH ###### 453 ######
+epoch 453.0000 with epoch time 118.8535 s
+
+EPOCH ###### 492 ######
+epoch 492.0000 with epoch time 117.7733 s
+
+EPOCH ###### 300 ######
+epoch 300.0000 with epoch time 118.0160 s
+
+EPOCH ###### 281 ######
+epoch 281.0000 with epoch time 118.6161 s
+
+EPOCH ###### 408 ######
+epoch 408.0000 with epoch time 117.7113 s
+
+EPOCH ###### 369 ######
+epoch 369.0000 with epoch time 117.9399 s
+
+EPOCH ###### 486 ######
+epoch 486.0000 with epoch time 117.9345 s
+
+EPOCH ###### 361 ######
+epoch 361.0000 with epoch time 118.1257 s
+
+EPOCH ###### 462 ######
+epoch 462.0000 with epoch time 118.0733 s
+
+EPOCH ###### 487 ######
+epoch 487.0000 with epoch time 118.1323 s
+
+EPOCH ###### 376 ######
+epoch 376.0000 with epoch time 117.5449 s
+
+EPOCH ###### 393 ######
+epoch 393.0000 with epoch time 117.9216 s
+
+EPOCH ###### 374 ######
+epoch 374.0000 with epoch time 117.9547 s
+
+EPOCH ###### 370 ######
+epoch 370.0000 with epoch time 117.7752 s
+
+EPOCH ###### 484 ######
+epoch 484.0000 with epoch time 117.5146 s
+
+EPOCH ###### 395 ######
+epoch 395.0000 with epoch time 117.8469 s
+
+EPOCH ###### 265 ######
+epoch 265.0000 with epoch time 118.2650 s
+
+EPOCH ###### 384 ######
+epoch 384.0000 with epoch time 118.1949 s
+
+EPOCH ###### 280 ######
+epoch 280.0000 with epoch time 117.9639 s
+
+EPOCH ###### 422 ######
+epoch 422.0000 with epoch time 117.9102 s
+
+EPOCH ###### 490 ######
+epoch 490.0000 with epoch time 117.7089 s
+
+EPOCH ###### 225 ######
+epoch 225.0000 with epoch time 118.9224 s
+
+EPOCH ###### 451 ######
+epoch 451.0000 with epoch time 117.6976 s
+
+EPOCH ###### 321 ######
+epoch 321.0000 with epoch time 117.9730 s
+
+EPOCH ###### 431 ######
+epoch 431.0000 with epoch time 118.0222 s
+
+EPOCH ###### 277 ######
+epoch 277.0000 with epoch time 118.0130 s
+
+EPOCH ###### 314 ######
+epoch 314.0000 with epoch time 117.6176 s
+
+EPOCH ###### 497 ######
+epoch 497.0000 with epoch time 117.9566 s
+
+EPOCH ###### 278 ######
+epoch 278.0000 with epoch time 117.5956 s
+
+EPOCH ###### 311 ######
+epoch 311.0000 with epoch time 117.6979 s
+
+EPOCH ###### 318 ######
+epoch 318.0000 with epoch time 118.0063 s
+
+EPOCH ###### 437 ######
+epoch 437.0000 with epoch time 117.7189 s
+
+EPOCH ###### 441 ######
+epoch 441.0000 with epoch time 118.0037 s
+
+EPOCH ###### 450 ######
+epoch 450.0000 with epoch time 117.9246 s
+
+EPOCH ###### 496 ######
+epoch 496.0000 with epoch time 117.8211 s
+
+EPOCH ###### 394 ######
+epoch 394.0000 with epoch time 118.0056 s
+
+EPOCH ###### 459 ######
+epoch 459.0000 with epoch time 118.0822 s
+
+EPOCH ###### 472 ######
+epoch 472.0000 with epoch time 117.9473 s
+
+EPOCH ###### 285 ######
+epoch 285.0000 with epoch time 118.1129 s
+
+EPOCH ###### 275 ######
+epoch 275.0000 with epoch time 118.2187 s
+
+EPOCH ###### 399 ######
+epoch 399.0000 with epoch time 118.4717 s
+===============================fold num is : 6, family type is : GTB================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTB_fold6', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTB')
+================================================加载数据================================================
+Fold_num is 6==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 427 ######
+epoch 427.0000 with epoch time 117.8613 s
+
+EPOCH ###### 330 ######
+epoch 330.0000 with epoch time 118.0729 s
+
+EPOCH ###### 429 ######
+epoch 429.0000 with epoch time 117.8234 s
+
+EPOCH ###### 418 ######
+epoch 418.0000 with epoch time 118.1247 s
+
+EPOCH ###### 348 ######
+epoch 348.0000 with epoch time 118.2742 s
+
+EPOCH ###### 485 ######
+epoch 485.0000 with epoch time 117.8982 s
+
+EPOCH ###### 254 ######
+epoch 254.0000 with epoch time 118.3013 s
+
+EPOCH ###### 469 ######
+epoch 469.0000 with epoch time 118.6873 s
+
+EPOCH ###### 409 ######
+epoch 409.0000 with epoch time 117.1485 s
+
+EPOCH ###### 433 ######
+epoch 433.0000 with epoch time 118.1370 s
+
+EPOCH ###### 425 ######
+epoch 425.0000 with epoch time 117.8762 s
+
+EPOCH ###### 408 ######
+epoch 408.0000 with epoch time 118.0875 s
+
+EPOCH ###### 431 ######
+epoch 431.0000 with epoch time 117.6559 s
+
+EPOCH ###### 228 ######
+epoch 228.0000 with epoch time 117.9725 s
+
+EPOCH ###### 250 ######
+epoch 250.0000 with epoch time 119.3299 s
+
+EPOCH ###### 137 ######
+epoch 137.0000 with epoch time 118.5964 s
+
+EPOCH ###### 441 ######
+epoch 441.0000 with epoch time 117.9417 s
+
+EPOCH ###### 462 ######
+epoch 462.0000 with epoch time 118.3732 s
+
+EPOCH ###### 489 ######
+epoch 489.0000 with epoch time 117.7491 s
+
+EPOCH ###### 486 ######
+epoch 486.0000 with epoch time 117.9982 s
+
+EPOCH ###### 394 ######
+epoch 394.0000 with epoch time 117.9476 s
+
+EPOCH ###### 434 ######
+epoch 434.0000 with epoch time 117.6157 s
+
+EPOCH ###### 393 ######
+epoch 393.0000 with epoch time 117.5157 s
+
+EPOCH ###### 498 ######
+epoch 498.0000 with epoch time 118.6494 s
+
+EPOCH ###### 278 ######
+epoch 278.0000 with epoch time 118.4367 s
+
+EPOCH ###### 274 ######
+epoch 274.0000 with epoch time 118.1009 s
+
+EPOCH ###### 426 ######
+epoch 426.0000 with epoch time 118.0900 s
+
+EPOCH ###### 275 ######
+epoch 275.0000 with epoch time 117.8607 s
+
+EPOCH ###### 296 ######
+epoch 296.0000 with epoch time 117.7838 s
+
+EPOCH ###### 428 ######
+epoch 428.0000 with epoch time 117.5641 s
+
+EPOCH ###### 377 ######
+epoch 377.0000 with epoch time 118.0719 s
+
+EPOCH ###### 413 ######
+epoch 413.0000 with epoch time 119.8927 s
+
+EPOCH ###### 325 ######
+epoch 325.0000 with epoch time 118.8571 s
+
+EPOCH ###### 370 ######
+epoch 370.0000 with epoch time 117.6387 s
+
+EPOCH ###### 456 ######
+epoch 456.0000 with epoch time 117.7093 s
+
+EPOCH ###### 171 ######
+epoch 171.0000 with epoch time 117.5955 s
+
+EPOCH ###### 416 ######
+epoch 416.0000 with epoch time 118.0142 s
+
+EPOCH ###### 365 ######
+epoch 365.0000 with epoch time 118.4275 s
+
+EPOCH ###### 343 ######
+epoch 343.0000 with epoch time 117.7834 s
+
+EPOCH ###### 447 ######
+epoch 447.0000 with epoch time 117.4409 s
+
+EPOCH ###### 495 ######
+epoch 495.0000 with epoch time 118.1965 s
+
+EPOCH ###### 267 ######
+epoch 267.0000 with epoch time 117.5277 s
+
+EPOCH ###### 258 ######
+epoch 258.0000 with epoch time 117.6191 s
+
+EPOCH ###### 403 ######
+epoch 403.0000 with epoch time 117.1613 s
+
+EPOCH ###### 205 ######
+epoch 205.0000 with epoch time 117.8478 s
+
+EPOCH ###### 218 ######
+epoch 218.0000 with epoch time 117.9125 s
+
+EPOCH ###### 284 ######
+epoch 284.0000 with epoch time 118.5191 s
+
+EPOCH ###### 420 ######
+epoch 420.0000 with epoch time 117.9913 s
+
+EPOCH ###### 260 ######
+epoch 260.0000 with epoch time 117.9154 s
+
+EPOCH ###### 497 ######
+epoch 497.0000 with epoch time 117.8666 s
+===============================fold num is : 7, family type is : GTB================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTB_fold7', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTB')
+================================================加载数据================================================
+Fold_num is 7==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 393 ######
+epoch 393.0000 with epoch time 117.8385 s
+
+EPOCH ###### 342 ######
+epoch 342.0000 with epoch time 119.5355 s
+
+EPOCH ###### 436 ######
+epoch 436.0000 with epoch time 118.2445 s
+
+EPOCH ###### 458 ######
+epoch 458.0000 with epoch time 117.9900 s
+
+EPOCH ###### 455 ######
+epoch 455.0000 with epoch time 117.5355 s
+
+EPOCH ###### 422 ######
+epoch 422.0000 with epoch time 117.6329 s
+
+EPOCH ###### 420 ######
+epoch 420.0000 with epoch time 117.6505 s
+
+EPOCH ###### 499 ######
+epoch 499.0000 with epoch time 117.9182 s
+
+EPOCH ###### 368 ######
+epoch 368.0000 with epoch time 118.1532 s
+
+EPOCH ###### 413 ######
+epoch 413.0000 with epoch time 117.7319 s
+
+EPOCH ###### 332 ######
+epoch 332.0000 with epoch time 117.8036 s
+
+EPOCH ###### 459 ######
+epoch 459.0000 with epoch time 118.9854 s
+
+EPOCH ###### 496 ######
+epoch 496.0000 with epoch time 117.9666 s
+
+EPOCH ###### 461 ######
+epoch 461.0000 with epoch time 119.0039 s
+
+EPOCH ###### 360 ######
+epoch 360.0000 with epoch time 118.7517 s
+
+EPOCH ###### 347 ######
+epoch 347.0000 with epoch time 118.0215 s
+
+EPOCH ###### 423 ######
+epoch 423.0000 with epoch time 117.1616 s
+
+EPOCH ###### 494 ######
+epoch 494.0000 with epoch time 118.2403 s
+
+EPOCH ###### 344 ######
+epoch 344.0000 with epoch time 117.8298 s
+
+EPOCH ###### 497 ######
+epoch 497.0000 with epoch time 118.6985 s
+
+EPOCH ###### 246 ######
+epoch 246.0000 with epoch time 119.1864 s
+
+EPOCH ###### 292 ######
+epoch 292.0000 with epoch time 118.8718 s
+
+EPOCH ###### 498 ######
+epoch 498.0000 with epoch time 117.8001 s
+
+EPOCH ###### 369 ######
+epoch 369.0000 with epoch time 117.8322 s
+
+EPOCH ###### 493 ######
+epoch 493.0000 with epoch time 117.8673 s
+
+EPOCH ###### 446 ######
+epoch 446.0000 with epoch time 118.0443 s
+
+EPOCH ###### 381 ######
+epoch 381.0000 with epoch time 118.2708 s
+
+EPOCH ###### 437 ######
+epoch 437.0000 with epoch time 118.2430 s
+
+EPOCH ###### 337 ######
+epoch 337.0000 with epoch time 117.8888 s
+
+EPOCH ###### 374 ######
+epoch 374.0000 with epoch time 118.0056 s
+
+EPOCH ###### 319 ######
+epoch 319.0000 with epoch time 118.6544 s
+
+EPOCH ###### 181 ######
+epoch 181.0000 with epoch time 117.8775 s
+
+EPOCH ###### 477 ######
+epoch 477.0000 with epoch time 117.9348 s
+
+EPOCH ###### 451 ######
+epoch 451.0000 with epoch time 118.0218 s
+
+EPOCH ###### 445 ######
+epoch 445.0000 with epoch time 118.2151 s
+
+EPOCH ###### 447 ######
+epoch 447.0000 with epoch time 118.2262 s
+
+EPOCH ###### 350 ######
+epoch 350.0000 with epoch time 118.6286 s
+
+EPOCH ###### 119 ######
+epoch 119.0000 with epoch time 119.0655 s
+
+EPOCH ###### 462 ######
+epoch 462.0000 with epoch time 118.2202 s
+
+EPOCH ###### 345 ######
+epoch 345.0000 with epoch time 117.3440 s
+
+EPOCH ###### 299 ######
+epoch 299.0000 with epoch time 117.9862 s
+
+EPOCH ###### 412 ######
+epoch 412.0000 with epoch time 118.1148 s
+
+EPOCH ###### 468 ######
+epoch 468.0000 with epoch time 117.5600 s
+
+EPOCH ###### 482 ######
+epoch 482.0000 with epoch time 117.7076 s
+
+EPOCH ###### 399 ######
+epoch 399.0000 with epoch time 118.1290 s
+
+EPOCH ###### 492 ######
+epoch 492.0000 with epoch time 117.5031 s
+
+EPOCH ###### 338 ######
+epoch 338.0000 with epoch time 118.2203 s
+
+EPOCH ###### 417 ######
+epoch 417.0000 with epoch time 116.7196 s
+
+EPOCH ###### 349 ######
+epoch 349.0000 with epoch time 117.7437 s
+
+EPOCH ###### 327 ######
+epoch 327.0000 with epoch time 117.7999 s
+===============================fold num is : 8, family type is : GTB================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTB_fold8', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTB')
+================================================加载数据================================================
+Fold_num is 8==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 302 ######
+epoch 302.0000 with epoch time 117.7677 s
+
+EPOCH ###### 350 ######
+epoch 350.0000 with epoch time 119.1259 s
+
+EPOCH ###### 287 ######
+epoch 287.0000 with epoch time 117.5451 s
+
+EPOCH ###### 487 ######
+epoch 487.0000 with epoch time 117.5947 s
+
+EPOCH ###### 460 ######
+epoch 460.0000 with epoch time 118.1768 s
+
+EPOCH ###### 435 ######
+epoch 435.0000 with epoch time 117.8326 s
+
+EPOCH ###### 492 ######
+epoch 492.0000 with epoch time 117.2360 s
+
+EPOCH ###### 497 ######
+epoch 497.0000 with epoch time 118.2581 s
+
+EPOCH ###### 429 ######
+epoch 429.0000 with epoch time 117.4167 s
+
+EPOCH ###### 394 ######
+epoch 394.0000 with epoch time 118.4507 s
+
+EPOCH ###### 307 ######
+epoch 307.0000 with epoch time 119.2123 s
+
+EPOCH ###### 452 ######
+epoch 452.0000 with epoch time 119.8925 s
+
+EPOCH ###### 396 ######
+epoch 396.0000 with epoch time 117.9798 s
+
+EPOCH ###### 441 ######
+epoch 441.0000 with epoch time 117.8533 s
+
+EPOCH ###### 298 ######
+epoch 298.0000 with epoch time 118.4203 s
+
+EPOCH ###### 489 ######
+epoch 489.0000 with epoch time 117.9174 s
+
+EPOCH ###### 284 ######
+epoch 284.0000 with epoch time 117.8977 s
+
+EPOCH ###### 493 ######
+epoch 493.0000 with epoch time 118.1224 s
+
+EPOCH ###### 216 ######
+epoch 216.0000 with epoch time 118.8431 s
+
+EPOCH ###### 404 ######
+epoch 404.0000 with epoch time 119.9866 s
+
+EPOCH ###### 361 ######
+epoch 361.0000 with epoch time 118.6991 s
+
+EPOCH ###### 397 ######
+epoch 397.0000 with epoch time 117.8019 s
+
+EPOCH ###### 262 ######
+epoch 262.0000 with epoch time 117.6089 s
+
+EPOCH ###### 454 ######
+epoch 454.0000 with epoch time 117.9131 s
+
+EPOCH ###### 275 ######
+epoch 275.0000 with epoch time 118.2479 s
+
+EPOCH ###### 295 ######
+epoch 295.0000 with epoch time 117.9965 s
+
+EPOCH ###### 279 ######
+epoch 279.0000 with epoch time 117.3489 s
+
+EPOCH ###### 368 ######
+epoch 368.0000 with epoch time 117.7369 s
+
+EPOCH ###### 440 ######
+epoch 440.0000 with epoch time 118.2609 s
+
+EPOCH ###### 473 ######
+epoch 473.0000 with epoch time 117.9917 s
+
+EPOCH ###### 373 ######
+epoch 373.0000 with epoch time 117.8567 s
+
+EPOCH ###### 319 ######
+epoch 319.0000 with epoch time 117.5575 s
+
+EPOCH ###### 470 ######
+epoch 470.0000 with epoch time 117.4590 s
+
+EPOCH ###### 410 ######
+epoch 410.0000 with epoch time 118.1817 s
+
+EPOCH ###### 438 ######
+epoch 438.0000 with epoch time 118.2653 s
+
+EPOCH ###### 354 ######
+epoch 354.0000 with epoch time 118.2481 s
+
+EPOCH ###### 387 ######
+epoch 387.0000 with epoch time 119.3874 s
+
+EPOCH ###### 496 ######
+epoch 496.0000 with epoch time 118.5274 s
+
+EPOCH ###### 421 ######
+epoch 421.0000 with epoch time 118.7116 s
+
+EPOCH ###### 346 ######
+epoch 346.0000 with epoch time 117.9777 s
+
+EPOCH ###### 274 ######
+epoch 274.0000 with epoch time 119.0277 s
+
+EPOCH ###### 388 ######
+epoch 388.0000 with epoch time 116.9455 s
+
+EPOCH ###### 436 ######
+epoch 436.0000 with epoch time 117.9244 s
+
+EPOCH ###### 395 ######
+epoch 395.0000 with epoch time 117.6776 s
+
+EPOCH ###### 222 ######
+epoch 222.0000 with epoch time 118.0678 s
+
+EPOCH ###### 331 ######
+epoch 331.0000 with epoch time 118.1851 s
+
+EPOCH ###### 366 ######
+epoch 366.0000 with epoch time 117.9887 s
+
+EPOCH ###### 318 ######
+epoch 318.0000 with epoch time 117.4535 s
+
+EPOCH ###### 485 ######
+epoch 485.0000 with epoch time 118.1394 s
+
+EPOCH ###### 308 ######
+epoch 308.0000 with epoch time 117.8786 s
+===============================fold num is : 9, family type is : GTB================================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTB_fold9', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTB')
+================================================加载数据================================================
+Fold_num is 9==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 345 ######
+epoch 345.0000 with epoch time 118.3589 s
+
+EPOCH ###### 475 ######
+epoch 475.0000 with epoch time 118.1530 s
+
+EPOCH ###### 445 ######
+epoch 445.0000 with epoch time 117.6736 s
+
+EPOCH ###### 469 ######
+epoch 469.0000 with epoch time 118.3661 s
+
+EPOCH ###### 377 ######
+epoch 377.0000 with epoch time 117.7897 s
+
+EPOCH ###### 489 ######
+epoch 489.0000 with epoch time 117.8533 s
+
+EPOCH ###### 484 ######
+epoch 484.0000 with epoch time 117.0258 s
+
+EPOCH ###### 324 ######
+epoch 324.0000 with epoch time 117.9044 s
+
+EPOCH ###### 429 ######
+epoch 429.0000 with epoch time 119.1830 s
+
+EPOCH ###### 380 ######
+epoch 380.0000 with epoch time 118.1659 s
+
+EPOCH ###### 330 ######
+epoch 330.0000 with epoch time 117.6380 s
+
+EPOCH ###### 360 ######
+epoch 360.0000 with epoch time 117.8156 s
+
+EPOCH ###### 349 ######
+epoch 349.0000 with epoch time 118.3162 s
+
+EPOCH ###### 431 ######
+epoch 431.0000 with epoch time 117.4413 s
+
+EPOCH ###### 340 ######
+epoch 340.0000 with epoch time 120.5256 s
+
+EPOCH ###### 378 ######
+epoch 378.0000 with epoch time 118.8800 s
+
+EPOCH ###### 328 ######
+epoch 328.0000 with epoch time 117.9750 s
+
+EPOCH ###### 317 ######
+epoch 317.0000 with epoch time 117.8742 s
+
+EPOCH ###### 319 ######
+epoch 319.0000 with epoch time 117.7668 s
+
+EPOCH ###### 205 ######
+epoch 205.0000 with epoch time 117.9124 s
+
+EPOCH ###### 385 ######
+epoch 385.0000 with epoch time 118.5524 s
+
+EPOCH ###### 498 ######
+epoch 498.0000 with epoch time 118.2183 s
+
+EPOCH ###### 440 ######
+epoch 440.0000 with epoch time 117.4719 s
+
+EPOCH ###### 413 ######
+epoch 413.0000 with epoch time 117.7201 s
+
+EPOCH ###### 480 ######
+epoch 480.0000 with epoch time 117.5817 s
+
+EPOCH ###### 352 ######
+epoch 352.0000 with epoch time 117.9599 s
+
+EPOCH ###### 252 ######
+epoch 252.0000 with epoch time 117.6853 s
+
+EPOCH ###### 216 ######
+epoch 216.0000 with epoch time 117.9332 s
+
+EPOCH ###### 487 ######
+epoch 487.0000 with epoch time 117.9472 s
+
+EPOCH ###### 474 ######
+epoch 474.0000 with epoch time 117.8507 s
+
+EPOCH ###### 477 ######
+epoch 477.0000 with epoch time 118.3741 s
+
+EPOCH ###### 386 ######
+epoch 386.0000 with epoch time 118.4105 s
+
+EPOCH ###### 408 ######
+epoch 408.0000 with epoch time 118.3772 s
+
+EPOCH ###### 473 ######
+epoch 473.0000 with epoch time 117.7202 s
+
+EPOCH ###### 406 ######
+epoch 406.0000 with epoch time 117.5973 s
+
+EPOCH ###### 190 ######
+epoch 190.0000 with epoch time 118.4425 s
+
+EPOCH ###### 235 ######
+epoch 235.0000 with epoch time 119.7366 s
+
+EPOCH ###### 347 ######
+epoch 347.0000 with epoch time 118.0766 s
+
+EPOCH ###### 416 ######
+epoch 416.0000 with epoch time 118.1516 s
+
+EPOCH ###### 499 ######
+epoch 499.0000 with epoch time 118.1713 s
+
+EPOCH ###### 338 ######
+epoch 338.0000 with epoch time 117.7097 s
+
+EPOCH ###### 351 ######
+epoch 351.0000 with epoch time 118.2107 s
+
+EPOCH ###### 267 ######
+epoch 267.0000 with epoch time 118.4024 s
+
+EPOCH ###### 323 ######
+epoch 323.0000 with epoch time 118.1789 s
+
+EPOCH ###### 334 ######
+epoch 334.0000 with epoch time 118.1275 s
+
+EPOCH ###### 482 ######
+epoch 482.0000 with epoch time 118.2380 s
+
+EPOCH ###### 428 ######
+epoch 428.0000 with epoch time 118.5046 s
+
+EPOCH ###### 472 ######
+epoch 472.0000 with epoch time 117.6760 s
+
+EPOCH ###### 284 ######
+epoch 284.0000 with epoch time 118.0046 s
+
+EPOCH ###### 312 ######
+epoch 312.0000 with epoch time 117.7270 s
+===============================fold num is : 10, family type is : GTB===============================
+=============================================prog_args==============================================
+Namespace(dataset='GTmining_6_6_GTB_fold10', pool_ratio=0.1, num_pool=1, cuda=1, lr=1.0, clip=inf,
+batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type='meanpool', dropout=0.0,
+method='diffpool', bn=True, bias=True, save_dir='./model_param_alldata', load_epoch=-1,
+data_mode='default', linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type='GTB')
+================================================加载数据================================================
+Fold_num is 10==========================================开始选择最佳epoch进行验证===========================================
+
+EPOCH ###### 315 ######
+epoch 315.0000 with epoch time 118.0493 s
+
+EPOCH ###### 143 ######
+epoch 143.0000 with epoch time 117.8501 s
+
+EPOCH ###### 329 ######
+epoch 329.0000 with epoch time 118.2745 s
+
+EPOCH ###### 276 ######
+epoch 276.0000 with epoch time 117.7452 s
+
+EPOCH ###### 475 ######
+epoch 475.0000 with epoch time 117.9179 s
+
+EPOCH ###### 410 ######
+epoch 410.0000 with epoch time 118.9829 s
+
+EPOCH ###### 206 ######
+epoch 206.0000 with epoch time 118.0120 s
+
+EPOCH ###### 426 ######
+epoch 426.0000 with epoch time 117.7125 s
+
+EPOCH ###### 175 ######
+epoch 175.0000 with epoch time 118.2748 s
+
+EPOCH ###### 142 ######
+epoch 142.0000 with epoch time 118.2119 s
+
+EPOCH ###### 495 ######
+epoch 495.0000 with epoch time 119.3435 s
+
+EPOCH ###### 292 ######
+epoch 292.0000 with epoch time 118.2829 s
+
+EPOCH ###### 436 ######
+epoch 436.0000 with epoch time 117.7968 s
+
+EPOCH ###### 153 ######
+epoch 153.0000 with epoch time 118.0752 s
+
+EPOCH ###### 247 ######
+epoch 247.0000 with epoch time 118.6562 s
+
+EPOCH ###### 210 ######
+epoch 210.0000 with epoch time 117.8485 s
+
+EPOCH ###### 365 ######
+epoch 365.0000 with epoch time 117.6509 s
+
+EPOCH ###### 258 ######
+epoch 258.0000 with epoch time 117.8584 s
+
+EPOCH ###### 363 ######
+epoch 363.0000 with epoch time 117.8684 s
+
+EPOCH ###### 446 ######
+epoch 446.0000 with epoch time 118.6322 s
+
+EPOCH ###### 231 ######
+epoch 231.0000 with epoch time 117.9373 s
+
+EPOCH ###### 491 ######
+epoch 491.0000 with epoch time 118.1305 s
+
+EPOCH ###### 243 ######
+epoch 243.0000 with epoch time 117.7731 s
+
+EPOCH ###### 325 ######
+epoch 325.0000 with epoch time 119.0969 s
+
+EPOCH ###### 311 ######
+epoch 311.0000 with epoch time 117.9314 s
+
+EPOCH ###### 201 ######
+epoch 201.0000 with epoch time 117.2878 s
+
+EPOCH ###### 327 ######
+epoch 327.0000 with epoch time 118.1216 s
+
+EPOCH ###### 299 ######
+epoch 299.0000 with epoch time 117.4677 s
+
+EPOCH ###### 389 ######
+epoch 389.0000 with epoch time 117.0940 s
+
+EPOCH ###### 167 ######
+epoch 167.0000 with epoch time 117.6685 s
+
+EPOCH ###### 421 ######
+epoch 421.0000 with epoch time 118.5433 s
+
+EPOCH ###### 493 ######
+epoch 493.0000 with epoch time 119.1097 s
+
+EPOCH ###### 398 ######
+epoch 398.0000 with epoch time 117.9558 s
+
+EPOCH ###### 302 ######
+epoch 302.0000 with epoch time 117.8001 s
+
+EPOCH ###### 245 ######
+epoch 245.0000 with epoch time 117.6719 s
+
+EPOCH ###### 496 ######
+epoch 496.0000 with epoch time 118.6537 s
+
+EPOCH ###### 163 ######
+epoch 163.0000 with epoch time 118.3513 s
+
+EPOCH ###### 422 ######
+epoch 422.0000 with epoch time 118.2341 s
+
+EPOCH ###### 373 ######
+epoch 373.0000 with epoch time 117.6856 s
+
+EPOCH ###### 383 ######
+epoch 383.0000 with epoch time 118.1209 s
+
+EPOCH ###### 397 ######
+epoch 397.0000 with epoch time 117.8663 s
+
+EPOCH ###### 405 ######
+epoch 405.0000 with epoch time 117.3998 s
+
+EPOCH ###### 371 ######
+epoch 371.0000 with epoch time 118.2811 s
+
+EPOCH ###### 354 ######
+epoch 354.0000 with epoch time 117.9317 s
+
+EPOCH ###### 384 ######
+epoch 384.0000 with epoch time 117.9689 s
+
+EPOCH ###### 328 ######
+epoch 328.0000 with epoch time 117.6757 s
+
+EPOCH ###### 275 ######
+epoch 275.0000 with epoch time 118.0814 s
+
+EPOCH ###### 313 ######
+epoch 313.0000 with epoch time 118.1469 s
+
+EPOCH ###### 240 ######
+epoch 240.0000 with epoch time 118.1184 s
+
+EPOCH ###### 203 ######
+epoch 203.0000 with epoch time 118.8069 s

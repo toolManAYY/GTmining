@@ -7,6 +7,9 @@ diffpool/model_param_*/
 diffpool/try_param/
 diffpool/bk/
 diffpool/predict_data/
+diffpool/predict_data*/
+diffpool/predict_data_bk/
+temp/
 
 bk/
 GT_B_part/
@@ -14,3 +17,8 @@ GT_B_part/data/
 GT_B_part/diffpool/model_param/
 GT_B_part/diffpool/model_param_*/
 GT_B_part/diffpool/try_param/
+
+GraphCBAM/ImprovedStruct2Go_main/
+GraphCBAM/log/
+GraphCBAM/data/
+
