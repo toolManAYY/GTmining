@@ -14,6 +14,8 @@ diffpool/predict_data_bk/
 temp/
 writing.txt
 
+
+
 bk/
 GT_B_part/
 GT_B_part/data/
@@ -24,4 +26,5 @@ GT_B_part/diffpool/try_param/
 GraphCBAM/ImprovedStruct2Go_main/
 GraphCBAM/log/
 GraphCBAM/data/
+GraphCBAM/
 
