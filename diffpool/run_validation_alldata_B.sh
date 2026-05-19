@@ -1,11 +1,8 @@
-python -u validation_custom_alldata_B.py 1 GTB
-python -u validation_custom_alldata_B.py 2 GTB
-python -u validation_custom_alldata_B.py 3 GTB
-python -u validation_custom_alldata_B.py 4 GTB
-python -u validation_custom_alldata_B.py 5 GTB
-python -u validation_custom_alldata_B.py 6 GTB
-python -u validation_custom_alldata_B.py 7 GTB
-python -u validation_custom_alldata_B.py 8 GTB
-python -u validation_custom_alldata_B.py 9 GTB
-python -u validation_custom_alldata_B.py 10 GTB
+python -u validation_custom_alldata_B_abl.py 5 GTB xyz
+python -u validation_custom_alldata_B_abl.py 5 GTB si
+python -u validation_custom_alldata_B_abl.py 5 GTB hbond
+python -u validation_custom_alldata_B_abl.py 5 GTB charge
+python -u validation_custom_alldata_B_abl.py 5 GTB hphob
+
+
 

@@ -16,19 +16,18 @@ import os
 
 import sys
 
-masif_opts['mesh_res'] = 1.0
-
 # 获取命令行参数
 args = sys.argv[1:]
 pdb_filename = str(args[0].strip())
-sample_redies_udp = int(args[1].strip())
-sample_redies_sugar = int(args[2].strip())
-collapse_type = str(args[3].strip())
+folder_name = str(args[1].strip())
+sample_redies_udp = int(args[2].strip())
+sample_redies_sugar = int(args[3].strip())
+collapse_type = str(args[4].strip())
 
 # 构建基础路径和文件夹
-pdb_path = f'/home/admin123/work/GTmining/diffpool/predict_data/structure_align/'
-temp_path = f'/home/admin123/work/GTmining/diffpool/predict_data/temp/'
-storage_path = f'/home/admin123/work/GTmining/diffpool/predict_data/local_feature/'
+pdb_path = f'/home/admin123/work/GTmining/data/structures/{collapse_type}/{folder_name}/'
+temp_path = f'/home/admin123/work/GTmining/data2/global_features/{collapse_type}/{folder_name}/'
+storage_path = f'/home/admin123/work/GTmining/data2/local_features/{collapse_type}/{folder_name}/'
 
 if not os.path.isdir(temp_path):
     os.makedirs(temp_path, exist_ok=True)
@@ -66,7 +65,7 @@ vertex_normal = compute_normal(regular_mesh.vertices, regular_mesh.faces)
 vertex_hbond = assignChargesToNewMesh(regular_mesh.vertices, vertices1, vertex_hbond, masif_opts)
 vertex_hphobicity = assignChargesToNewMesh(regular_mesh.vertices, vertices1, vertex_hphobicity, masif_opts)
 
-vertex_charges = computeAPBS(regular_mesh.vertices, protonate_file, protonate_file.split('.pdb')[0])
+vertex_charges = computeAPBS(regular_mesh.vertices, protonate_file, protonate_file.rstrip('.pdb'))
 
 iface = np.zeros(len(regular_mesh.vertices))
 # Compute the surface of the entire complex and from that compute the interface.
@@ -89,7 +88,7 @@ save_ply(ply_filename, regular_mesh.vertices, regular_mesh.faces, normals=vertex
         charges=vertex_charges, normalize_charges=True, hbond=vertex_hbond, \
             hphob=vertex_hphobicity, iface=iface)
 
-print(f"Finished extract features from the strucutr {pdb_filename.split('.pdb')[0]}. Thanks for your using!")
+print(f"Finished extract features from the strucutr {pdb_filename.rstrip('.pdb')}. Thanks for your using!")
 
 
 

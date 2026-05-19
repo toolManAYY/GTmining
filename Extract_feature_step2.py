@@ -16,6 +16,8 @@ import os
 
 import sys
 
+# masif_opts['mesh_res'] = 1.0
+
 # 获取命令行参数
 args = sys.argv[1:]
 pdb_filename = str(args[0].strip())

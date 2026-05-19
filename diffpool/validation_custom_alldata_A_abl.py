@@ -28,7 +28,6 @@ def prepare_data(dataset, shuffle=False, prog_args=None):
         num_workers=prog_args.n_worker,
     )
 
-
 class customreaddata:
     """
     A custom dataset class to read graph data from specified text files for prediction.
@@ -271,6 +270,7 @@ class customreaddata:
 
 
 
+
 def train(dataset, model, prog_args, val_dataset=None):
     """
     training function
@@ -319,7 +319,7 @@ def train(dataset, model, prog_args, val_dataset=None):
         total = 0
         print("\nEPOCH ###### {} ######".format(epoch))
         computation_time = 0.0
-        for batch_idx, (batch_graph, graph_labels, item_ids) in enumerate(dataloader):
+        for batch_idx, (batch_graph, graph_labels) in enumerate(dataloader):
             for key, value in batch_graph.ndata.items():
                 batch_graph.ndata[key] = value.float()
             graph_labels = graph_labels.long()
@@ -391,23 +391,24 @@ def train(dataset, model, prog_args, val_dataset=None):
 args = sys.argv[1:]
 fold_num = int(args[0].strip())
 family_fold_type = str(args[1].strip())
+abl_feature = str(args[2].strip())
 
 print("{:=^100}".format(f'fold num is : {fold_num}, family type is : {family_fold_type}'))
 
 print("{:=^100}".format('prog_args'))
-prog_args = argparse.Namespace(dataset=f'GTmining_6_6_{family_fold_type}_fold{fold_num}', pool_ratio=0.10, num_pool=1, cuda=1, lr=1.0, clip=float("inf"),
+prog_args = argparse.Namespace(dataset=f'GTmining_6_6_{family_fold_type}_fold{fold_num}_{abl_feature}', pool_ratio=0.10, num_pool=1, cuda=1, lr=1.0, clip=float("inf"),
                                batch_size=128, epoch=1000, n_worker=10, gc_per_block=3, aggregator_type="meanpool",
-                               dropout=0.00, method="diffpool", bn=True, bias=True, save_dir=f"./model_param_alldata",
+                               dropout=0.00, method="diffpool", bn=True, bias=True, save_dir=f"./model_param_alldata_abl",
                                load_epoch=-1, data_mode="default", linkpred=False, hidden_dim=64, embedding_dim=64, family_fold_type=family_fold_type)
 print( textwrap.fill(str(prog_args), width=100))
 
 print("{:=^100}".format('加载数据'))
 dataset_train = customreaddata(name="GTmining",
-                                    raw_dir=f'../data/dl_data/{family_fold_type}_alldata/fold{fold_num}/train/')
+                                    raw_dir=f'../data/dl_data/{family_fold_type}_alldata_id_abl_{abl_feature}/fold{fold_num}/train/')
 dataset_validation = customreaddata(name="GTmining",
-                                   raw_dir=f'../data/dl_data/{family_fold_type}_alldata/fold{fold_num}/validation/')
+                                   raw_dir=f'../data/dl_data/{family_fold_type}_alldata_id_abl_{abl_feature}/fold{fold_num}/validation/')
 dataset_test = customreaddata(name="GTmining",
-                                   raw_dir=f'../data/dl_data/{family_fold_type}_alldata/fold{fold_num}/test/')
+                                   raw_dir=f'../data/dl_data/{family_fold_type}_alldata_id_abl_{abl_feature}/fold{fold_num}/test/')
 train_dataloader = prepare_data(dataset_train, shuffle=True, prog_args=prog_args)
 validation_dataloader = prepare_data(dataset_validation, shuffle=False, prog_args=prog_args)
 test_dataloader = prepare_data(dataset_test, shuffle=False, prog_args=prog_args)

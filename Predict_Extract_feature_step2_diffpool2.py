@@ -16,7 +16,7 @@ import os
 
 import sys
 
-masif_opts['mesh_res'] = 1.0
+masif_opts['mesh_res'] = 0.6
 
 # 获取命令行参数
 args = sys.argv[1:]
@@ -26,9 +26,9 @@ sample_redies_sugar = int(args[2].strip())
 collapse_type = str(args[3].strip())
 
 # 构建基础路径和文件夹
-pdb_path = f'/home/admin123/work/GTmining/diffpool/predict_data/structure_align/'
-temp_path = f'/home/admin123/work/GTmining/diffpool/predict_data/temp/'
-storage_path = f'/home/admin123/work/GTmining/diffpool/predict_data/local_feature/'
+pdb_path = f'/home/admin123/work/GTmining/diffpool_2/predict_data/structure_align/'
+temp_path = f'/home/admin123/work/GTmining/diffpool_2/predict_data/temp/'
+storage_path = f'/home/admin123/work/GTmining/diffpool_2/predict_data/local_feature/'
 
 if not os.path.isdir(temp_path):
     os.makedirs(temp_path, exist_ok=True)

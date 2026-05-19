@@ -16,19 +16,18 @@ import os
 
 import sys
 
-masif_opts['mesh_res'] = 1.0
-
 # 获取命令行参数
 args = sys.argv[1:]
 pdb_filename = str(args[0].strip())
-sample_redies_udp = int(args[1].strip())
-sample_redies_sugar = int(args[2].strip())
-collapse_type = str(args[3].strip())
+folder_name = str(args[1].strip())
+sample_redies_udp = int(args[2].strip())
+sample_redies_sugar = int(args[3].strip())
+collapse_type = str(args[4].strip())
 
 # 构建基础路径和文件夹
-pdb_path = f'/home/admin123/work/GTmining/diffpool/predict_data/structure_align/'
-temp_path = f'/home/admin123/work/GTmining/diffpool/predict_data/temp/'
-storage_path = f'/home/admin123/work/GTmining/diffpool/predict_data/local_feature/'
+pdb_path = f'/home/admin123/work/GTmining/data/structures/{collapse_type}/{folder_name}/'
+temp_path = f'/home/admin123/work/GTmining/data2/global_features/{collapse_type}/{folder_name}/'
+storage_path = f'/home/admin123/work/GTmining/data2/local_features/{collapse_type}/{folder_name}/'
 
 if not os.path.isdir(temp_path):
     os.makedirs(temp_path, exist_ok=True)
@@ -59,6 +58,9 @@ iface_labels = {}
 verts = {}
 
 input_feat, rho, theta, mask, neigh_indices, iface_labels, verts, faces = read_data_from_surface(ply_filename, params)
+# del rho, theta, mask, neigh_indices, iface_labels  # 释放内存
+# verts = verts.astype(np.float32)  # 坐标降精度
+# input_feat = input_feat.astype(np.float32)  # 特征降精度
 
 if collapse_type == 'GTA':
     NDP_points = np.array([[ 1.603, 19.007, 10.355], [-0.716, 19.148, 10.857], [ 4.897, 18.192, 11.585], [ 3.434, 18.433, 11.889],
@@ -87,14 +89,36 @@ elif collapse_type == 'GTB':
                             [-3.642,  1.071,  1.926], [-4.888, -1.150, -1.576], [-0.922, -2.091,  1.736]])
 
 distances = np.full((verts.shape[0],), False, dtype=bool)
+sample_redies_udp_2 = sample_redies_udp*sample_redies_udp
 for point in NDP_points:
-   distances_temp = np.sqrt(np.sum((verts - point) ** 2, axis=1))
-   distances_temp = distances_temp < sample_redies_udp
+   distances_temp = np.sum((verts - point) ** 2, axis=1)
+   distances_temp = distances_temp < sample_redies_udp_2
    distances = distances | distances_temp
 for point in SUGAR_points:
-   distances_temp = np.sqrt(np.sum((verts - point) ** 2, axis=1))
-   distances_temp = distances_temp < sample_redies_sugar
+   distances_temp = np.sum((verts - point) ** 2, axis=1)
+   distances_temp = distances_temp < sample_redies_udp_2
    distances = distances | distances_temp
+
+# ========== 距离计算加速：KDTree 方案 ==========
+#from sklearn.neighbors import KDTree
+
+# 1. 构建 KDTree (只需构建一次)
+#kdtree = KDTree(verts)
+
+# 2. 搜索 NDP_points 半径内的点
+# query_radius 返回每个中心点对应的邻居索引列表
+#indices_udp = kdtree.query_radius(NDP_points, r=sample_redies_udp)
+# 合并所有索引并去重
+#indices_udp = np.unique(np.concatenate(indices_udp))
+
+# 3. 搜索 SUGAR_points 半径内的点
+#indices_sugar = kdtree.query_radius(SUGAR_points, r=sample_redies_sugar)
+#indices_sugar = np.unique(np.concatenate(indices_sugar))
+
+# 4. 合并两个点集的结果，生成最终的 mask
+#all_indices = np.unique(np.concatenate([indices_udp, indices_sugar]))
+#distances = np.zeros(verts.shape[0], dtype=bool)
+#distances[all_indices] = True
 
 def clean_mesh(vertices, edges, component_threshold=3):
     """清洗孤立点和小组件"""
@@ -210,7 +234,7 @@ for key in ['si', 'hbond', 'charge', 'hphob']:
 
 # Save data only if everything went well. 
 np.save(storage_filename, output_dict)
-print(f"Finished extract features from the strucutr {pdb_filename.split('.pdb')[0]}. Thanks for your using!")
+print(f"Finished extract features from the strucutr {pdb_filename.rstrip('.pdb')}. Thanks for your using!")
 
 
 
