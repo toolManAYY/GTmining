@@ -3,7 +3,8 @@
 :face_with_head_bandage: Detailed inference scripts and model checkpoints are being organized and will be released within one to two weeks.
 
 :face_with_head_bandage: 详细的推理脚本和模型checkpoints正在整理中，将会在1~2周内发布，敬请期待
-2026-05-19
+
+writing in 2026-05-19
 
 ## 安装依赖教程
 ```
