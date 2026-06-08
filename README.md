@@ -1,11 +1,5 @@
 # GTmining
 
-:face_with_head_bandage: Detailed inference scripts and model checkpoints are being organized and will be released within one to two weeks.
-
-:face_with_head_bandage: 详细的推理脚本和模型checkpoints正在整理中，将会在1~2周内发布，敬请期待
-
-writing in 2026-05-19
-
 ## Installation dependency tutorial (安装依赖教程)
 ```
 conda create -n GTmining_env python=3.10
@@ -108,7 +102,7 @@ Note: the program currently does not support the prediction of one structure. Pl
 - 尽量保证文件名中不包含特殊字符，目前测试兼容的字符有：字母、数字、下划线和点。
 - 例如：结构放置在./diffpool/NGTLYQ/文件夹中，结构名称为CM127523.1_61_BtNGT.pdb
 
-note: 程序目前暂不支持一个结构的预测，请确保文件夹中至少有2个结构。
+Note: 程序目前暂不支持一个结构的预测，请确保文件夹中至少有2个结构。
 
 ```
 python predict_donor_specificity.py --input_path ./NGTLYQ/ --type GTB --output_prefix NGT_results
