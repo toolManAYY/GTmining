@@ -5,7 +5,7 @@ masif_opts = {}
 # masif_opts["raw_pdb_dir"] = "data_preparation/00-raw_pdbs/"
 # masif_opts["pdb_chain_dir"] = "data_preparation/01-benchmark_pdbs/"
 # masif_opts["ply_chain_dir"] = "data_preparation/01-benchmark_surfaces/"
-masif_opts["tmp_dir"] = "/home/admin123/work/GTmining/temp/"
+# masif_opts["tmp_dir"] = "/home/admin123/work/GTmining/temp/"
 # masif_opts["ply_file_template"] = masif_opts["ply_chain_dir"] + "/{}_{}.ply"
 # 
 # # Surface features
@@ -15,7 +15,7 @@ masif_opts["tmp_dir"] = "/home/admin123/work/GTmining/temp/"
 masif_opts["compute_iface"] = True
 # Mesh resolution. Everything gets very slow if it is lower than 1.0
 # masif_opts["mesh_res"] = 1.0
-masif_opts["mesh_res"] = 0.6
+masif_opts["mesh_res"] = 1.0
 masif_opts["feature_interpolation"] = True
 # 
 # 

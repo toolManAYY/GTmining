@@ -16,7 +16,7 @@ import os
 
 import sys
 
-masif_opts['mesh_res'] = 1.0
+# masif_opts['mesh_res'] = 1.0
 
 # 获取命令行参数
 args = sys.argv[1:]

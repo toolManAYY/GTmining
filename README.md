@@ -83,7 +83,17 @@ https://ccsb.scripps.edu/msms/downloads/
 
 ```
 
+## 使用教程
 
+结构文件应放置在diffpool下的子文件夹中，命名格式为：protein_name.pdb.
+尽量保证文件名中不包含特殊字符，目前测试兼容的字符有：字母、数字、下划线和点。
+例如：结构放置在./diffpool/NGTLYQ/文件夹中，结构名称为CM127523.1_61_BtNGT.pdb
+
+note: 程序目前暂不支持一个结构的预测，请确保文件夹中至少有2个结构。
+
+```
+python predict_donor_specificity.py --input_path ./NGTLYQ/ --type GTB --output_prefix NGT_results
+```
 
 
 
