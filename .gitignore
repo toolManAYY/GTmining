@@ -5,7 +5,6 @@ ref/
 diffpool_2/
 diffpool/model_param/
 diffpool/result/
-diffpool/model_param_*/
 diffpool/try_param/
 diffpool/bk/
 diffpool/predict_data/
