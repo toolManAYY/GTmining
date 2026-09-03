@@ -7,39 +7,41 @@ Successfully installed and tested on Ubuntu 22.04.5 LTS.
 已在Ubuntu 22.04.5 LTS上成功安装并测试。
 
 ```
-# Create a conda environment (创建conda环境)
+# Create a conda environment
 conda create -n GTmining_env python=3.10
 conda activate GTmining_env
 
-# Install pytorch, torchvision, torchaudio and pytorch-cuda (安装pytorch、torchvision、torchaudio和pytorch-cuda)
+# Install pytorch, torchvision, torchaudio and pytorch-cuda 
 conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=11.8 -c pytorch -c nvidia
 pip install mkl==2024.0.0
 pip install numpy==1.26.4
 
-# Install dgl (安装dgl)
+# Install dgl 
 conda install -c dglteam/label/th21_cu118 dgl
 
-# Install other dependencies (安装其他依赖)
+# Install other dependencies
 pip install pandas==2.1.4
 pip install livelossplot==0.5.5
 pip install scikit-learn==1.3.2
 pip install openpyxl
 pip install numba
 pip install biopython
+```
 
-# MaSIF related dependence (MaSIF相关依赖)
+## MaSIF related dependence (MaSIF相关依赖)
 
 The independently installed software in this tutorial is installed under/home/username/software/, and can be configured in authorized places according to the situation during actual use.
 
 本次教程中独立安装的软件安装在/home/username/software/下面，实际使用时可以根据情况自行配置在有权限的地方。
 
-## downloading APBS-3.4.1.Linux.zip from following link, and unzip it to /home/username/software/APBS-3.4.1.Linux/, and then set the environment variable APBS_BIN to /home/username/software/APBS-3.4.1.Linux/bin/apbs
+### Downloading APBS-3.4.1.Linux.zip from following link, and unzip it to /home/username/software/APBS-3.4.1.Linux/, and then set the environment variable APBS_BIN to /home/username/software/APBS-3.4.1.Linux/bin/apbs
 
+```
 cd /home/username/software/
 wget https://github.com/Electrostatics/apbs/releases/download/v3.4.1/APBS-3.4.1.Linux.zip
 unzip APBS-3.4.1.Linux.zip
 export APBS_BIN=/home/username/software/APBS-3.4.1.Linux/bin/apbs
-
+```
 
 
 
