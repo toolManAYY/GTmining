@@ -79,7 +79,7 @@ export REDUCE_HET_DICT=/usr/loacl/reduce_wwPDB_het_dict.txt
 ### Download pymesh from following link, and then build it.
 
 <details>
-<summary>reference prorocal</summary>
+<summary>reference protocol</summary>
 
 https://www.cnblogs.com/crpfs/p/16180307.html#2-%E4%B8%8B%E8%BD%BD%E7%BC%96%E8%AF%91%E5%B9%B6%E5%AE%89%E8%A3%85-pymesh-%E5%BA%93
 https://github.com/PyMesh/PyMesh
@@ -180,6 +180,7 @@ Note: the program currently does not support the prediction of one structure. Pl
 Note: 程序目前暂不支持一个结构的预测，请确保文件夹中至少有2个结构。
 
 ```
+conda activate GTmining_env
 cd diffpool
 python predict_donor_specificity.py --input_path ./NGTLYQ/ --type GTB --output_prefix NGT_results
 ```
