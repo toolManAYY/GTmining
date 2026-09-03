@@ -2,9 +2,16 @@
 
 ## Installation dependency(安装依赖)
 
-Successfully installed and tested on Ubuntu 22.04.5 LTS.
+Successfully installed and tested on Ubuntu 22.04.5 LTS. The C and CXX compilers used were both GNU 9.5.0.
 
-已在Ubuntu 22.04.5 LTS上成功安装并测试。
+已在Ubuntu 22.04.5 LTS上成功安装并测试。使用的C和CXX编译器都是GNU 9.5.0。
+
+```
+# Install system dependency libraries (安装系统依赖库)
+sudo apt-get install \
+libeigen3-dev libgmp-dev libgmpxx4ldbl libmpfr-dev \
+libboost-dev libboost-thread-dev libtbb-dev
+```
 
 ```
 # Create a conda environment
@@ -34,75 +41,92 @@ The independently installed software in this tutorial is installed under/home/us
 
 本次教程中独立安装的软件安装在/home/username/software/下面，实际使用时可以根据情况自行配置在有权限的地方。
 
-### Downloading APBS-3.4.1.Linux.zip from following link, and unzip it to /home/username/software/APBS-3.4.1.Linux/, and then set the environment variable APBS_BIN to /home/username/software/APBS-3.4.1.Linux/bin/apbs
+### Download APBS from following link, unzip it, and then set the environment variable APBS_BIN and MULTIVALUE_BIN.
 
 ```
 cd /home/username/software/
 wget https://github.com/Electrostatics/apbs/releases/download/v3.4.1/APBS-3.4.1.Linux.zip
 unzip APBS-3.4.1.Linux.zip
 export APBS_BIN=/home/username/software/APBS-3.4.1.Linux/bin/apbs
+export MULTIVALUE_BIN=/home/username/software/APBS-3.4.1.Linux/share/apbs/tools/bin/multivalue
 ```
 
+### Download pdb2pqr from following link, unzip it, and then set the environment variable PDB2PQR_BIN.
 
+```
+cd /home/username/software/
+wget https://github.com/Electrostatics/pdb2pqr/releases/download/v2.1.1/pdb2pqr-linux-bin64-2.1.1.tar.gz
+tar -xvf pdb2pqr-linux-bin64-2.1.1.tar.gz
+export PDB2PQR_BIN=/home/username/software/pdb2pqr-linux-bin64-2.1.1/pdb2pqr
+```
 
+### Download reduce from following link, build it, and then set the environment variable PATH and REDUCE_HET_DICT.
 
-## Make sure to set following environment variables in your ~/.bashrc file, and then run source ~/.bashrc to make the changes take effect.
-
-export APBS_BIN=/home/admin123/software/APBS-3.4.1.Linux/bin/apbs
-export MULTIVALUE_BIN=/home/admin123/software/APBS-3.4.1.Linux/share/apbs/tools/bin/multivalue
-export PDB2PQR_BIN=/home/admin123/software/pdb2pqr-linux-bin64-2.1.1/pdb2pqr
-export PATH=$PATH:/home/admin123/software/reduce_install/bin
-export REDUCE_HET_DICT=/home/admin123/software/reduce_install/reduce_wwPDB_het_dict.txt
-export PYMESH_PATH=/path/to/PyMesh
-export MSMS_BIN=/home/admin123/software/msms/msms.x86_64Linux2.2.6.1
-export PDB2XYZRN=/home/admin123/software/msms/pdb_to_xyzrn
-
-## APBS=3.4.1
-https://github.com/Electrostatics/apbs/releases/tag/v3.4.1
-
-## PDB2PQR=2.1.1
-https://github.com/Electrostatics/pdb2pqr/releases/tag/v2.1.1
-
-## reduce
-https://github.com/rlabduke/reduce
+```
+cd /home/username/software/
+mkdir reduce_install
+git clone https://github.com/rlabduke/reduce
+cd reduce
 mkdir -p ./build/reduce
 cd ./build/reduce
-cmake -DCMAKE_INSTALL_PREFIX=/home/admin123/software/reduce_install ../../
+cmake -DCMAKE_INSTALL_PREFIX=/home/username/software/reduce_install ../../
 make
-make install
+sudo make install
+export PATH=$PATH:/home/username/software/reduce_install/bin
+export REDUCE_HET_DICT=/usr/loacl/reduce_wwPDB_het_dict.txt
+```
 
-## pymesh
-### reference protocol
+### Download pymesh from following link, and then build it.
+
+<details>
+<summary>reference prorocal</summary>
+
 https://www.cnblogs.com/crpfs/p/16180307.html#2-%E4%B8%8B%E8%BD%BD%E7%BC%96%E8%AF%91%E5%B9%B6%E5%AE%89%E8%A3%85-pymesh-%E5%BA%93
 https://github.com/PyMesh/PyMesh
-### git clone
+
+</details>
+
+```
+cd /home/username/software/
 git clone https://github.com/PyMesh/PyMesh.git
-### Third party source code repository in recursive cloning repository (递归克隆仓库中的第三方源码仓库)
+
 cd PyMesh
-git submodule update --init --recursive
-### System dependency libraries required for pymesh installation (安装 PyMesh 需要的系统依赖库)
-sudo apt-get install \
-libeigen3-dev \
-libgmp-dev \
-libgmpxx4ldbl \
-libmpfr-dev \
-libboost-dev \
-libboost-thread-dev \
-libtbb-dev
-### Python dependency libraries required for pymesh installation (安装 PyMesh 需要的 Python 依赖库)
+# it will take several minutes
+git submodule update --init --recursive 
+
 pip install -r ./python/requirements.txt
-### Compile and install pymesh Libraries (编译并安装 PyMesh 库)
+
 ./setup.py build
 ./setup.py install
 mkdir build
 cd build
 cmake ..
-make
+make -j 10
 pip install numpy==1.23.5
+```
 
-### msms
-https://ccsb.scripps.edu/msms/downloads/
+### Download msms from following link, unzip it, and then set the environment variable MSMS_BIN and PDB2XYZRN.
 
+```
+cd /home/username/software/
+
+wget -O msms_i86_64Linux2_2.6.1.tar.gz "https://ccsb.scripps.edu/msms/download/933/?tmstv=1783466363"
+mkdir msms
+tar -xvf msms_i86_64Linux2_2.6.1.tar.gz -C msms
+export MSMS_BIN=/home/username/software/msms/msms.x86_64Linux2.2.6.1
+export PDB2XYZRN=/home/username/software/msms/pdb_to_xyzrn
+```
+
+### Make sure to set following environment variables in your ~/.bashrc file, and then run source ~/.bashrc to make the changes take effect.
+
+```
+export APBS_BIN=/home/username/software/APBS-3.4.1.Linux/bin/apbs
+export MULTIVALUE_BIN=/home/username/software/APBS-3.4.1.Linux/share/apbs/tools/bin/multivalue
+export PDB2PQR_BIN=/home/username/software/pdb2pqr-linux-bin64-2.1.1/pdb2pqr
+export PATH=$PATH:/home/username/software/reduce_install/bin
+export REDUCE_HET_DICT=/home/username/software/reduce_install/reduce_wwPDB_het_dict.txt
+export MSMS_BIN=/home/username/software/msms/msms.x86_64Linux2.2.6.1
+export PDB2XYZRN=/home/username/software/msms/pdb_to_xyzrn
 ```
 
 ## Download data (下载数据)
@@ -112,7 +136,32 @@ Data upload to https://zenodo.org/records/20592146 , download and place in ./dat
 数据上传至https://zenodo.org/records/20592146，下载后放置在./data/目录下，并使用下述代码解压：
 
 ```
-tar -Jxvf dl_data.tar.xz
+cd /home/username/work/
+git clone https://github.com/toolManAYY/GTmining.git
+cd GTmining
+wget https://zenodo.org/records/20592146/files/dl_data.tar.xz?download=1 -O dl_data.tar.xz
+mkdir -p ./data/
+tar -Jxvf dl_data.tar.xz -C ./data/
+```
+
+If the above steps are completed correctly, the directory structure of ./GTmining/ should be as follows.
+
+如果正确完成上述步骤，./GTmining/的目录结构应该如下。
+
+```
+├── data
+│   └── dl_data
+│       ├── GTA_alldata_id
+│       └── GTB_alldata_id
+└── diffpool
+    ├── exe
+    ├── MaSIF
+    ├── model
+    │   ├── dgl_layers
+    │   └── tensorized_layers
+    ├── model_param_alldata
+    └── NGTLYQ
+
 ```
 
 
@@ -131,6 +180,7 @@ Note: the program currently does not support the prediction of one structure. Pl
 Note: 程序目前暂不支持一个结构的预测，请确保文件夹中至少有2个结构。
 
 ```
+cd diffpool
 python predict_donor_specificity.py --input_path ./NGTLYQ/ --type GTB --output_prefix NGT_results
 ```
 
