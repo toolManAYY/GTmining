@@ -13,6 +13,7 @@ diffpool/predict_data_bk/
 diffpool/nohup.out
 diffpool/__pycache__/*
 diffpool/NGT_results*/
+diffpool/predict_result_custom/
 temp/
 writing.txt
 
