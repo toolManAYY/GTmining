@@ -131,9 +131,9 @@ export PDB2XYZRN=/home/username/software/msms/pdb_to_xyzrn
 
 ## Download data (下载数据)
 
-Data upload to https://zenodo.org/records/20592146 , download and place in ./data/ directory, and decompress it with the following code:
+Data upload to https://zenodo.org/records/20592146 , download and place in ./GTmining/ directory, and decompress it with the following code:
 
-数据上传至https://zenodo.org/records/20592146 ，下载后放置在./data/目录下，并使用下述代码解压：
+数据上传至https://zenodo.org/records/20592146 ，下载后放置在./GTmining/目录下，并使用下述代码解压：
 
 ```
 cd /home/username/work/
