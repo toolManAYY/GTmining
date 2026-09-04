@@ -185,6 +185,9 @@ cd diffpool
 python predict_donor_specificity.py --input_path ./NGTLYQ/ --type GTB --output_prefix NGT_results
 ```
 
+# Acknowledgement
 
+The DiffPool implementation in this repo is adapted from the DGL official example (`examples/pytorch/diffpool`, Apache License 2.0):
+<https://github.com/dmlc/dgl.git>
 
 
