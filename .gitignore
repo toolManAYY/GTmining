@@ -14,6 +14,10 @@ diffpool/nohup.out
 diffpool/__pycache__/*
 diffpool/NGT_results*/
 diffpool/predict_result_custom/
+diffpool/select_epoch_temp_script.py
+diffpool/select_epoch_and_plot_figure.ipynb
+diffpool/calulate_features_SI.ipynb
+diffpool/evaluate_model.ipynb
 temp/
 writing.txt
 
