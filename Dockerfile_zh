@@ -1,0 +1,180 @@
+# GTmining 运行环境镜像
+# 本 Dockerfile 严格按照 README.md 的安装教程编写（Ubuntu 22.04 + conda 环境 GTmining_env）。
+#
+# 约定：
+#   1. msms 安装包由用户自行下载，放在项目根目录（构建上下文）下，文件名保持不变：
+#      msms_i86_64Linux2_2.6.1.tar.gz
+#   2. data 目录不打进镜像，运行时通过 -v 挂载到 /workspace/GTmining/data
+#
+# 构建与使用方式见 README_docker.md
+
+# 基础镜像。默认使用官方 ubuntu:22.04。
+# 部分网络无法访问 Docker Hub（registry-1.docker.io），此时可用国内镜像源构建：
+#   docker build --build-arg BASE_IMAGE=docker.1ms.run/library/ubuntu:22.04 -t gtmining:latest .
+ARG BASE_IMAGE=ubuntu:22.04
+FROM ${BASE_IMAGE}
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    LANG=C.UTF-8 \
+    TZ=Asia/Shanghai
+
+ENV CONDA_DIR=/opt/conda \
+    CONDA_ENV=GTmining_env \
+    SOFTWARE_ROOT=/opt/software \
+    PROJECT_ROOT=/workspace/GTmining
+
+# ------------------------------------------------------------------
+# 1. 系统依赖库（README：Install system dependency libraries）
+#    额外装 gcc-9 / g++-9：PyMesh 自带的 third_party/draco 在 GCC 11（22.04 默认）
+#    下会因缺少 <cstddef> 报 “‘size_t’ does not name a type” 而编译失败，
+#    而 README 实测用的编译器正是 GNU 9.5.0（22.04 的 gcc-9 就是 9.5.0），
+#    所以 PyMesh 一步改用 gcc-9 编译。
+# ------------------------------------------------------------------
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        wget curl git unzip tar ca-certificates \
+        build-essential cmake \
+        gcc-9 g++-9 \
+        libeigen3-dev libgmp-dev libgmpxx4ldbl libmpfr-dev \
+        libboost-dev libboost-thread-dev libtbb-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# ------------------------------------------------------------------
+# 2. Miniconda + conda 环境 GTmining_env (python 3.10)
+# ------------------------------------------------------------------
+# 注意：此处的 ENV PATH 要到下一条指令才生效，所以这条 RUN 里必须用绝对路径调用 conda
+RUN wget -q https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /tmp/miniconda.sh \
+    && bash /tmp/miniconda.sh -b -p ${CONDA_DIR} \
+    && rm -f /tmp/miniconda.sh \
+    && ${CONDA_DIR}/bin/conda clean -afy
+
+ENV PATH=${CONDA_DIR}/bin:$PATH
+
+# 新版 conda（25.x）在非交互环境（docker build）下会因默认频道 repo.anaconda.com
+# 的 ToS 未接受而直接报 CondaToSNonInteractiveError，这里按 conda 给出的指引先接受一次。
+# 该接受记录会写入配置并随镜像保留，后续的 conda install 不再需要重复操作。
+RUN conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main \
+    && conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r \
+    && conda create -y -n ${CONDA_ENV} python=3.10 \
+    && conda clean -afy
+
+# 之后直接使用 GTmining_env 里的 python / pip，无需 conda activate
+ENV PATH=${CONDA_DIR}/envs/${CONDA_ENV}/bin:$PATH
+
+# ------------------------------------------------------------------
+# 3. pytorch / dgl / 其它 python 依赖（README：Create a conda environment）
+# ------------------------------------------------------------------
+RUN conda install -y -n ${CONDA_ENV} \
+        pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=11.8 \
+        -c pytorch -c nvidia \
+    && conda install -y -n ${CONDA_ENV} -c dglteam/label/th21_cu118 dgl \
+    && conda clean -afy
+
+# pip 源。ARG 在 RUN 阶段会作为环境变量传入，pip 会自动读取 PIP_INDEX_URL，
+# 因此这里不需要 ENV，也就不会把这个源固化到最终镜像里。
+# 国内网络访问官方 PyPI 可能极慢（实测约 35 KB/s，而清华镜像可达 80 MB/s），此时可改用：
+#   docker build --build-arg PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple ...
+ARG PIP_INDEX_URL=https://pypi.org/simple
+
+# ipython 供 MaSIF/protonate.py、global_vars.py 里的 IPython.core.debugger 使用；
+# tqdm 供 predict_donor_specificity.py 使用（README 未列出但代码中确有 import）
+RUN pip install --no-cache-dir mkl==2024.0.0 numpy==1.26.4 \
+    && pip install --no-cache-dir pandas==2.1.4 livelossplot==0.5.5 scikit-learn==1.3.2 \
+    && pip install --no-cache-dir openpyxl numba biopython \
+    && pip install --no-cache-dir ipython tqdm
+
+# ------------------------------------------------------------------
+# 4. MaSIF 相关依赖：APBS / pdb2pqr / reduce / pymesh
+#    统一安装在 ${SOFTWARE_ROOT} 下（对应 README 的 /home/username/software/）
+# ------------------------------------------------------------------
+WORKDIR ${SOFTWARE_ROOT}
+
+# 4.1 APBS 3.4.1
+RUN wget -q https://github.com/Electrostatics/apbs/releases/download/v3.4.1/APBS-3.4.1.Linux.zip \
+    && unzip -q APBS-3.4.1.Linux.zip \
+    && rm -f APBS-3.4.1.Linux.zip
+
+# 4.2 pdb2pqr 2.1.1
+RUN wget -q https://github.com/Electrostatics/pdb2pqr/releases/download/v2.1.1/pdb2pqr-linux-bin64-2.1.1.tar.gz \
+    && tar -xf pdb2pqr-linux-bin64-2.1.1.tar.gz \
+    && rm -f pdb2pqr-linux-bin64-2.1.1.tar.gz
+
+# 4.3 reduce（源码编译安装）
+# 末尾的 cp 用于保证 REDUCE_HET_DICT 指向的字典文件一定存在
+RUN git clone https://github.com/rlabduke/reduce.git /tmp/reduce \
+    && mkdir -p /tmp/reduce/build/reduce \
+    && cd /tmp/reduce/build/reduce \
+    && cmake -DCMAKE_INSTALL_PREFIX=${SOFTWARE_ROOT}/reduce_install ../.. \
+    && make -j"$(nproc)" \
+    && make install \
+    && ([ -f ${SOFTWARE_ROOT}/reduce_install/reduce_wwPDB_het_dict.txt ] \
+        || cp /tmp/reduce/reduce_wwPDB_het_dict.txt ${SOFTWARE_ROOT}/reduce_install/) \
+    && rm -rf /tmp/reduce
+
+# 4.4 pymesh（源码编译安装）
+#    用 gcc-9/g++-9 编译（原因见第 1 节说明），gcc-11 会在 draco 上编译失败。
+#    另外 README 在此步骤最后把 numpy 固定为 1.23.5，此处原样保留。
+RUN export CC=gcc-9 CXX=g++-9 \
+    && git clone https://github.com/PyMesh/PyMesh.git /tmp/PyMesh \
+    && cd /tmp/PyMesh \
+    && git submodule update --init --recursive \
+    && pip install --no-cache-dir -r ./python/requirements.txt \
+    && ./setup.py build \
+    && ./setup.py install \
+    && mkdir -p build \
+    && cd build \
+    && cmake .. \
+    && make -j"$(nproc)" \
+    && pip install --no-cache-dir numpy==1.23.5 \
+    && rm -rf /tmp/PyMesh
+
+# ------------------------------------------------------------------
+# 5. msms（由用户自行下载并放在项目根目录下）
+#    实测该压缩包解压后文件位于顶层（无子目录），msms.x86_64Linux2.2.6.1 与
+#    pdb_to_xyzrn 的权限本身就是 0755，无需再 chmod；
+#    且 msms 只动态依赖 libm/libc，在 Ubuntu 22.04 上可直接运行。
+#    这里用 test -x 做一次校验，若用户换用了其它版本的压缩包可尽早暴露问题。
+#
+#    修补相对路径坑：pdb_to_xyzrn / pdb_to_xyzr 内部写的是
+#    `numfile = "./atmtypenumbers"`，即半径表按“当前工作目录”查找。
+#    只要不是在 /opt/software/msms 下调用（例如直接用 $PDB2XYZRN），
+#    就会读不到 atmtypenumbers，并且不报错、静默输出 0.01 的假半径（已实测复现）。
+#    这里改为绝对路径，使其在任何工作目录下都能正确工作。
+# ------------------------------------------------------------------
+COPY msms.tar.gz /tmp/msms.tar.gz
+RUN mkdir -p ${SOFTWARE_ROOT}/msms \
+    && tar -xf /tmp/msms.tar.gz -C ${SOFTWARE_ROOT}/msms \
+    && rm -f /tmp/msms.tar.gz \
+    && mv msms.x86_64Linux2*[0-9] msms
+    && test -x ${SOFTWARE_ROOT}/msms/msms \
+    && test -x ${SOFTWARE_ROOT}/msms/pdb_to_xyzrn \
+    && sed -i "s|\./atmtypenumbers|${SOFTWARE_ROOT}/msms/atmtypenumbers|" \
+              ${SOFTWARE_ROOT}/msms/pdb_to_xyzrn \
+              ${SOFTWARE_ROOT}/msms/pdb_to_xyzr \
+    && grep -q "${SOFTWARE_ROOT}/msms/atmtypenumbers" ${SOFTWARE_ROOT}/msms/pdb_to_xyzrn \
+    && grep -q "${SOFTWARE_ROOT}/msms/atmtypenumbers" ${SOFTWARE_ROOT}/msms/pdb_to_xyzr
+
+# ------------------------------------------------------------------
+# 6. 环境变量（对应 README 中 ~/.bashrc 里需要 export 的内容）
+# ------------------------------------------------------------------
+ENV APBS_BIN=${SOFTWARE_ROOT}/APBS-3.4.1.Linux/bin/apbs \
+    MULTIVALUE_BIN=${SOFTWARE_ROOT}/APBS-3.4.1.Linux/share/apbs/tools/bin/multivalue \
+    PDB2PQR_BIN=${SOFTWARE_ROOT}/pdb2pqr-linux-bin64-2.1.1/pdb2pqr \
+    REDUCE_HET_DICT=${SOFTWARE_ROOT}/reduce_install/reduce_wwPDB_het_dict.txt \
+    MSMS_BIN=${SOFTWARE_ROOT}/msms/msms \
+    PDB2XYZRN=${SOFTWARE_ROOT}/msms/pdb_to_xyzrn \
+    PATH=${SOFTWARE_ROOT}/reduce_install/bin:${CONDA_DIR}/envs/${CONDA_ENV}/bin:${CONDA_DIR}/bin:$PATH
+
+# ------------------------------------------------------------------
+# 7. 拷贝项目代码
+# ------------------------------------------------------------------
+WORKDIR ${PROJECT_ROOT}
+COPY . ${PROJECT_ROOT}/
+
+# data 目录内容不进入镜像，运行时用 -v 挂载（见 README_docker.md）
+RUN mkdir -p ${PROJECT_ROOT}/data
+
+# 预测脚本内部使用相对路径（./exe/USalign、./cazy_cluster_center_*.pdb、
+# ./model_param_alldata/、../data/dl_data/...），所以默认工作目录必须是 diffpool
+WORKDIR ${PROJECT_ROOT}/diffpool
+
+CMD ["/bin/bash"]

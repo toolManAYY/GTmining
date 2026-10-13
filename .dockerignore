@@ -1,0 +1,16 @@
+# The data directory is mounted through -v during runtime without entering the image
+data/
+
+# Version control and caching
+.git
+.gitignore
+.vscode
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Data compression package (dl_data.tar.xz, etc.)
+*.tar.xz
+
+# Explanation: msms_i86_64Linux_22.6.1.tar.gz cannot be ruled out,
+# Because COPY in Dockerfiles requires it as part of the build context.

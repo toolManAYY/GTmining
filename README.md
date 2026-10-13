@@ -185,6 +185,78 @@ cd diffpool
 python predict_donor_specificity.py --input_path ./NGTLYQ/ --type GTB --output_prefix NGT_results
 ```
 
+# Using with Docker (使用Docker)
+
+The following process was successfully tested on Ubuntu 22.04.5 LTS and has an NVIDIA GPU (RTX 4090 D).
+
+下述流程在Ubuntu 22.04.5 LTS上测试成功，并且拥有一个NVIDIA GPU（RTX 4090 D）。
+
+Please follow these steps:
+
+1. Install Docker.
+- Install [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html) for GPU support.
+- Setup running [Docker as a non-root user](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user).
+
+2. Clone this repository and cd into it. Download the data from [Zenodo (dl_data.tar.xz)](https://zenodo.org/records/20592146) and decompress it as described above.
+```
+git clone https://github.com/toolManAYY/GTmining.git
+cd ./GTmining
+```
+
+3. Download the data from [Zenodo (dl_data.tar.xz)](https://zenodo.org/records/20592146) and software from [the official website of "msms"](https://ccsb.scripps.edu/msms/downloads/).
+
+Dowanload repository: https://zenodo.org/records/20592146.
+
+The official website of "msms": https://ccsb.scripps.edu/msms/downloads/. (rename to msms.tar.gz)
+
+
+
+```
+mkdir -p ./data/
+tar -Jxvf dl_data.tar.xz -C ./data/
+```
+
+4. Check that GTmining will be able to use a GPU by running:
+```
+docker run --rm --gpus all nvidia/cuda:11.8.0-base-ubuntu22.04 nvidia-smi
+```
+
+5. Build the Docer image:
+
+```
+docker build -t gtmining:latest .
+```
+
+If you build the image in China, you may need use the following command to build the image:
+
+```
+docker build \
+  --build-arg BASE_IMAGE=docker.1ms.run/library/ubuntu:22.04 \
+  --build-arg PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple \
+  -t gtmining:latest .
+```
+
+6. Run the Docker container with GPU support and mount the data and results directories:
+
+```
+docker run --gpus all -it --rm \
+  --shm-size=8g \
+  -v /the/path/to/GTmining/data:/workspace/GTmining/data \
+  -v /the/path/to/GTmining/GTmining_results:/workspace/results \
+  gtmining:latest
+```
+
+7. Inside the container, run the prediction script with the appropriate arguments:
+
+```
+python predict_donor_specificity.py \
+  --input_path /workspace/GTmining/diffpool/NGTLYQ/ \
+  --type GTB \
+  --output_prefix /workspace/results/NGT_results
+```
+
+8. Once the run is over, the output directory shall contain predicted results. 
+
 # Acknowledgement
 
 The DiffPool implementation in this repo is adapted from the DGL official example (`examples/pytorch/diffpool`, Apache License 2.0):
