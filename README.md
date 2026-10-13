@@ -194,10 +194,12 @@ The following process was successfully tested on Ubuntu 22.04.5 LTS and has an N
 Please follow these steps:
 
 1. Install Docker.
+
 - Install [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html) for GPU support.
 - Setup running [Docker as a non-root user](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user).
 
-2. Clone this repository and cd into it. Download the data from [Zenodo (dl_data.tar.xz)](https://zenodo.org/records/20592146) and decompress it as described above.
+2. Clone this repository and cd into it.
+
 ```
 git clone https://github.com/toolManAYY/GTmining.git
 cd ./GTmining
@@ -208,8 +210,6 @@ cd ./GTmining
 Dowanload repository: https://zenodo.org/records/20592146.
 
 The official website of "msms": https://ccsb.scripps.edu/msms/downloads/. (rename to msms.tar.gz)
-
-
 
 ```
 mkdir -p ./data/
