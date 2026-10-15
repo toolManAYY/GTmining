@@ -242,6 +242,7 @@ docker build \
 docker run --gpus all -it --rm \
   --shm-size=8g \
   -v /the/path/to/GTmining/data:/workspace/GTmining/data \
+  -v /the/path/to/GTmining/diffpool/NGTLYQ:/workspace/GTmining/diffpool/NGTLYQ \
   -v /the/path/to/GTmining/GTmining_results:/workspace/results \
   gtmining:latest
 ```

@@ -1,5 +1,6 @@
 # The data directory is mounted through -v during runtime without entering the image
 data/
+diffpool/NGTLYQ/
 
 # Version control and caching
 .git
