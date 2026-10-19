@@ -476,7 +476,9 @@ def make_database(process_path: list, data_type: str):
         input_dict = input_dict[()]
         if len(input_dict['edges']) <= 100:
             # Used to check for incorrect local meshes
-            print(f"error local feature in {file.split('/')[-1].split('.npy')[0]}")
+            print(f"Error local feature in {file.split('/')[-1].split('.npy')[0]}, we think the local mesh is too small.")
+            print("Please check whether the input structure contains the GTA/GTB domains.")
+            print("You can superpose it with the representative structure in project, and try predicting with only the relevant domain as input.")
             continue
         item_id = file.split('/')[-1].split('.npy')[0]
         # ++ f_A ++

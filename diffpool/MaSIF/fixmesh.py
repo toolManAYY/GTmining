@@ -49,5 +49,13 @@ def fix_mesh(mesh, resolution, detail="normal"):
     mesh, __ = pymesh.remove_obtuse_triangles(mesh, 179.0, 5);
     mesh, __ = pymesh.remove_isolated_vertices(mesh);
     mesh, _ = pymesh.remove_duplicated_vertices(mesh, 0.001)
+
+    # remove_duplicated_vertices can merge vertices of a triangle into the same
+    # vertex, leaving degenerate faces with repeated vertex indices. These break
+    # compute_thetas() in compute_polar_coordinates.py (IndexError at
+    # "v2ix = neigh_tt[1]"), so clean them up here.
+    mesh, __ = pymesh.remove_duplicated_faces(mesh);
+    mesh, __ = pymesh.remove_degenerated_triangles(mesh, 100);
+    mesh, __ = pymesh.remove_isolated_vertices(mesh);
     
     return mesh
